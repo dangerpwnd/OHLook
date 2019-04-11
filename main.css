@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    background: url("./bkgrd 1.svg");
+    background-size: cover;
+    z-index: 1;
+}
+
+.container {
+    margin: 25px 25px;
+    padding: 5px;
+    display: grid;
+    grid-template-areas: "nav1 nav2 nav3 nav4" "content content content content" "footer footer footer footer";
+    grid-template-columns: repeat(4, 1fr [col-start]);
+    grid-template-rows: repeat(3, 1fr [row-start]);
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    background: rgba(255,255,255,0.5);
+    border-radius: 25px;
+    z-index: 25;
+}
+
+
+
+#nav1{
+    grid-area: nav1;
+}
+
+#nav2 {
+    grid-area: nav2;
+}
+
+#nav3 {
+    grid-area: nav3;
+}
+
+#content{
+    grid-area: content;
+    grid-column-start: 
+}
+
+#foot1{
+    grid-area: footer;
+}
+
+#foot2 {
+    grid-area: footer;
+}
+
+#foot3 {
+    grid-area: footer;
+}
+
+#foot4 {
+    grid-area: footer;
+}
