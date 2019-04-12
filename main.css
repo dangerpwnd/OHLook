@@ -9,7 +9,7 @@ body {
     margin: 25px 25px;
     padding: 5px;
     display: grid;
-    grid-template-areas: "nav1 nav2 nav3 nav4" "content content content content" "footer footer footer footer";
+    grid-template-areas: "nav nav nav nav" "content content content content" "footer footer footer footer";
     grid-template-columns: repeat(4, 1fr [col-start]);
     grid-template-rows: repeat(3, 1fr [row-start]);
     grid-gap: 10px;
@@ -22,21 +22,18 @@ body {
 
 
 
-#nav1{
-    grid-area: nav1;
+nav{
+    grid-area: nav;
+    display: flex;
+
 }
 
-#nav2 {
-    grid-area: nav2;
-}
+.nav-item{
 
-#nav3 {
-    grid-area: nav3;
 }
 
 #content{
     grid-area: content;
-    grid-column-start: 
 }
 
 #foot1{
