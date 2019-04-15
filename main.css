@@ -9,12 +9,10 @@ body {
     margin: 25px 25px;
     padding: 5px;
     display: grid;
-    grid-template-areas: "nav nav nav nav" "cont1 cont1 pic1 pic1" "pic2 pic2 cont2 cont2" "footer footer footer footer";
-    grid-template-columns: repeat(4, 1fr [col-start]);
-    grid-template-rows: repeat(4, 1fr [row-start]);
+    grid-template-areas: "nav nav nav nav" "cont1 cont1 pic1 pic1" "pic2 pic2 cont2 cont2" "foot1 foot1 foot2 foot2";
+    grid-template-columns: repeat(4, minmax(max-content, 1fr));
+    grid-template-rows: repeat(4, minmax(max-content, 1fr));
     grid-gap: 10px;
-    justify-items: center;
-    align-items: center;
     background: rgba(255,255,255,0.5);
     border-radius: 25px;
     z-index: 25;
@@ -38,6 +36,8 @@ nav{
 
 #picture1{
   grid-area: pic1;
+  background-image: url("/assets/images/theatre1.jpg");
+  background-size: cover;
 }
 
 #content2{
@@ -46,8 +46,14 @@ nav{
 
 #picture2{
   grid-area: pic2;
+  background-image: url("/assets/images/dancing1.jpg");
+  background-size: cover;
 }
 
-#footer{
-  grid-area: footer;
+#footer1{
+  grid-area: foot1;
+}
+
+#footer2{
+  grid-area: foot2;
 }
