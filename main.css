@@ -29,6 +29,11 @@ nav{
 
 .nav-item{
   flex:1;
+  background-color: rgba(145,68,217,0.5);
+  border-radius: 50px;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
 }
 
 #logo{
