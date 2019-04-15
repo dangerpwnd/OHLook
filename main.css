@@ -9,9 +9,9 @@ body {
     margin: 25px 25px;
     padding: 5px;
     display: grid;
-    grid-template-areas: "nav nav nav nav" "content content content content" "footer footer footer footer";
+    grid-template-areas: "nav nav nav nav" "cont1 cont1 pic1 pic1" "pic2 pic2 cont2 cont2" "footer footer footer footer";
     grid-template-columns: repeat(4, 1fr [col-start]);
-    grid-template-rows: repeat(3, 1fr [row-start]);
+    grid-template-rows: repeat(4, 1fr [row-start]);
     grid-gap: 10px;
     justify-items: center;
     align-items: center;
@@ -20,34 +20,34 @@ body {
     z-index: 25;
 }
 
-
-
 nav{
     grid-area: nav;
     display: flex;
-
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-around;
 }
 
 .nav-item{
-
+  flex:1;
 }
 
-#content{
-    grid-area: content;
+#content1{
+  grid-area: cont1;
 }
 
-#foot1{
-    grid-area: footer;
+#picture1{
+  grid-area: pic1;
 }
 
-#foot2 {
-    grid-area: footer;
+#content2{
+  grid-area: cont2;
 }
 
-#foot3 {
-    grid-area: footer;
+#picture2{
+  grid-area: pic2;
 }
 
-#foot4 {
-    grid-area: footer;
+#footer{
+  grid-area: footer;
 }
