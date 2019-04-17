@@ -46,7 +46,7 @@ nav{
 
 #picture1{
   grid-area: pic1;
-  background-image: url("/assets/images/theatre1.jpg");
+  background-image: url("./assets/images/theatre1.jpg");
   background-size: cover;
 }
 
