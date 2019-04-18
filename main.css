@@ -18,6 +18,15 @@ body {
     z-index: 25;
 }
 
+nav{
+    display: flex;
+    z-index: 26;
+}
+
+.cn-button{
+    flex: 1;
+}
+
 #logo{
   grid-area: logo;
 }
