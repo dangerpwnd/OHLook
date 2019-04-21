@@ -1,8 +1,15 @@
+$size: 1fr;
+
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
 body {
     margin: 0;
-    background: url("./bkgrd 1.svg");
+    background: url("/assets/images/bkgrd 1.svg");
     background-size: cover;
     z-index: 1;
+    box-sizing: border-box;
 }
 
 .container {
@@ -20,11 +27,17 @@ body {
 
 nav{
     display: flex;
+    width: 100%;
     z-index: 26;
 }
 
 .cn-button{
     flex: 1;
+    height: $size;
+    width: $size * 2;
+    border-bottom-left-radius: $size * 2;
+    border-bottom-right-radius: $size * 2;
+
 }
 
 #logo{
@@ -45,7 +58,7 @@ nav{
 
 #picture1{
   grid-area: pic1;
-  background-image: url("./assets/images/theatre1.jpg");
+  background-image: url("/assets/images/theatre1.jpg");
   background-size: cover;
 }
 
@@ -58,4 +71,3 @@ nav{
   background-image: url("/assets/images/dancing1.jpg");
   background-size: cover;
 }
-
