@@ -9,28 +9,22 @@ body {
     margin: 25px 25px;
     padding: 5px;
     display: grid;
-    grid-template-areas: "logo logo phrase ticket" "cont1 cont1 pic1 pic1" "pic2 pic2 cont2 cont2" "foot1 foot1 foot2 foot2";
+    grid-template-areas: "logo logo phrase ticket" "cont1 cont1 pic1 pic1" "pic2 pic2 cont2 cont2";
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 3fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr;
     grid-gap: 10px;
     background: rgba(255,255,255,0.5);
     border-radius: 25px;
     z-index: 25;
 }
 
-
-.nav-item{
-  flex:1;
-  background-color: rgba(145,68,217,0.5);
-  border-radius: 75px;
-  border: 10px solid black;
-  align-items: center;
-  text-align: center;
-  margin: 0 auto;
+nav{
+    display: flex;
+    z-index: 26;
 }
 
-.nav-item:hover{
-  background-color: #FEF88C;
+.cn-button{
+    flex: 1;
 }
 
 #logo{
@@ -65,10 +59,3 @@ body {
   background-size: cover;
 }
 
-#footer1{
-  grid-area: foot1;
-}
-
-#footer2{
-  grid-area: foot2;
-}
