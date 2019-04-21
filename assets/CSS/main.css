@@ -21,16 +21,17 @@ body {
   z-index: 25; }
 
 nav {
+  position: absolute;
   display: flex;
   width: 100%;
   z-index: 26; }
 
 .cn-button {
   flex: 1;
-  height: 1fr;
-  width: 2fr;
-  border-bottom-left-radius: 2fr;
-  border-bottom-right-radius: 2fr; }
+  height: 100%;
+  width: 100%;
+  border-bottom-left-radius: 200%;
+  border-bottom-right-radius: 200%; }
 
 #logo {
   grid-area: logo; }
