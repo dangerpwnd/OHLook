@@ -1,4 +1,4 @@
-  $size: 100%;
+  $size: 1em;
 
 *, *:before, *:after{
   box-sizing: inherit;
@@ -16,9 +16,10 @@ body {
     margin: 25px 25px;
     padding: 5px;
     display: grid;
-    grid-template-areas: "logo logo phrase ticket" "cont1 cont1 pic1 pic1" "pic2 pic2 cont2 cont2";
+    grid-template-areas: "logo logo phrase ticket" "cont1 cont1 pic1 pic1" "pic2 pic2 cont2 cont2"
+        "cont3 cont3 pic3 pic3";
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-rows: 1fr 3fr 3fr 3fr;
     grid-gap: 10px;
     background: rgba(255,255,255,0.5);
     border-radius: 25px;
@@ -26,7 +27,7 @@ body {
 }
 
 nav{
-    position: absolute;
+    position: relative;
     display: flex;
     width: 100%;
     z-index: 26;
@@ -34,10 +35,9 @@ nav{
 
 .cn-button{
     flex: 1;
-    height: $size;
+    /*height: $size;
     width: $size;
-    border-bottom-left-radius: $size * 2;
-    border-bottom-right-radius: $size * 2;
+    border-radius: $size * 2;*/
 
 }
 
@@ -71,4 +71,14 @@ nav{
   grid-area: pic2;
   background-image: url("/assets/images/dancing1.jpg");
   background-size: cover;
+}
+
+#content3 {
+    grid-area: cont3;
+}
+
+#picture3 {
+    grid-area: pic3;
+    background-image: url("/assets/images/music1.jpg");
+    background-size: cover;
 }
