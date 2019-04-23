@@ -37,12 +37,7 @@ nav{
     width: 26em;
     height: 26em;
     overflow: hidden;
-    position: fixed;
-    z-index: 10;
-    bottom: -13em;
-    left: 50%;
     border-radius: 50%;
-    margin-left: -13em;
     transform: scale(0.1);
     transition: all .3s ease;
 }
@@ -62,13 +57,8 @@ nav{
     height: 3.5em;
     width: 3.5em;
     background-color: #111;
-    position: fixed;
-    left: 50%;
-    margin-left: -1.75em;
-    bottom: -1.75em;
     border-radius: 50%;
     cursor: pointer;
-    z-index: 11
 }
 
 .cn-button:hover,
@@ -78,7 +68,7 @@ nav{
 }
 
 .cn-overlay {
-    width: 100%; 
+    width: 100%;
     height:100%;
     background-color: rgba(0,0,0,0.6);
     position: fixed;
@@ -88,7 +78,6 @@ nav{
     right: 0;
     opacity: 0;
     transition: all .3s ease;
-    z-index: 2;
     pointer-events: none;
 }
 
@@ -105,10 +94,6 @@ nav{
     height: 10em;
     transform-origin: 100% 100%;
     overflow: hidden;
-    left: 50%;
-    top: 50%;
-    margin-top: -1.3em;
-    margin-left: -10em;
     transition: border .3s ease;
 }
 
@@ -192,9 +177,6 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
     bottom: 0;
     margin-left: -12.5em;
     overflow: hidden;
-    position: fixed;
-    z-index: 10;
-    left: 50%;
     border: 1px solid #ddd;
 }
 
@@ -264,6 +246,70 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
     }
 }
 
+.csstransforms .cn-wrapper {
+  width: 27em;
+  height: 27em;
+  border-radius: 50%;
+  background: transparent;
+  opacity: 0;
+  transition: all .3s ease 0.3s;
+  transform: scale(0.1);
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/*cover to prevent extra space of anchors from being clickable*/
+.csstransforms .cn-wrapper:after{
+  color: transparent;
+  content:".";
+  display:block;
+  font-size:2em;
+  width:6.2em;
+  height:6.2em;
+  border-radius: 50%;
+}
+
+.csstransforms .cn-wrapper li {
+  overflow: hidden;
+  width: 10em;
+  height: 10em;
+  font-size: 1.5em;
+  transition: all .3s ease;
+  transform: rotate(76deg) skew(60deg);
+  transform-origin: 100% 100%;
+  pointer-events: none;
+}
+
+.csstransforms .cn-wrapper li a {
+
+  display: block;
+  width: 14.5em;
+  height: 14.5em;
+  border-radius: 50%;
+  background: #429a67;
+  background: radial-gradient(transparent 35%, #429a67 35%);
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2em;
+  line-height: 2;
+  transition: all .3s ease;
+  transform: skew(-60deg) rotate(-75deg) scale(1);
+  pointer-events: auto;
+}
+
+.csstransforms .cn-wrapper li a span {
+  display: block;
+  font-size: .5em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.csstransforms .cn-wrapper li a:hover,
+.csstransforms .cn-wrapper li a:active,
+.csstransforms .cn-wrapper li a:focus {
+	background: radial-gradient(transparent 35%, #449e6a 35%);
+}
 #logo{
   grid-area: logo;
 }
