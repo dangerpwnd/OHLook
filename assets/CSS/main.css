@@ -1,53 +1,64 @@
 *, *:before, *:after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 body {
   margin: 0;
   background: url("/assets/images/backgrd3.svg") no-repeat center center fixed;
   background-size: cover;
   z-index: 1;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 .navcontainer {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: center;
-  z-index: 11; }
+  z-index: 11;
+}
 
 .menu-wrapper {
   position: relative;
   height: 0;
   width: 20%;
-  /* any width you want */ }
+  /* any width you want */
+}
 
 .site-wrap {
   max-width: 70em;
   margin: 100px auto;
   background: white;
   padding: 40px;
-  text-align: justify; }
+  text-align: justify;
+}
 
 .align-left {
   float: left;
-  margin-right: 20px; }
+  margin-right: 20px;
+}
 
 .align-right {
   float: right;
-  margin-left: 20px; }
+  margin-left: 20px;
+}
 
 .slide-in {
   opacity: 0;
-  transition: all .5s; }
+  transition: all 0.5s;
+}
 
 .align-left.slide-in {
-  transform: translateX(-30%) scale(0.95); }
+  transform: translateX(-30%) scale(0.95);
+}
 
 .align-right.slide-in {
-  transform: translateX(30%) scale(0.95); }
+  transform: translateX(30%) scale(0.95);
+}
 
 .slide-in.active {
   opacity: 1;
-  transform: translateX(0%) scale(1); }
+  transform: translateX(0%) scale(1);
+}
 
 /*# sourceMappingURL=main.css.map */

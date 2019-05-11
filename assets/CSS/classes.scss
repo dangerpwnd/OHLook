@@ -1,21 +1,17 @@
-h1 {
-  text-align: center;
-}
-
-.PContainer {
+.PContainer{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
 
-.productions {
+.productions{
   width: 15em;
   height: 25em;
   border: 1px solid #CCC;
   perspective: 600px;
 }
 
-.card {
+.card{
   width: 100%;
   height: 100%;
   position: relative;
@@ -24,24 +20,22 @@ h1 {
   cursor: pointer;
 }
 
-.card-face {
+.card-face{
   position: absolute;
   height: 100%;
   width: 100%;
   backface-visibility: hidden;
 }
 
-.card-front {
+.card-front{
   background: red;
 }
 
-.card-back {
+.card-back{
   background: blue;
-  transform: rotateY(180deg);
+  transform: rotateY( 180deg );
 }
 
-.card.is-flipped {
+.card.is-flipped{
   transform: rotateY(180deg);
 }
-
-/*# sourceMappingURL=prod.css.map */

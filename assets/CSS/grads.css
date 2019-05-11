@@ -1,5 +1,6 @@
 ul {
-  list-style-type: none; }
+  list-style-type: none;
+}
 
 .grad-wrapper {
   margin: 0 auto;
@@ -9,7 +10,8 @@ ul {
   background: rgba(255, 255, 255, 0.5);
   border-radius: 50px;
   perspective: 3300px;
-  position: relative; }
+  position: relative;
+}
 
 .tile {
   margin: 0 auto;
@@ -23,15 +25,19 @@ ul {
   position: relative;
   color: #333;
   -webkit-transition: background-color 0.2s ease-out;
-  transition: background-color 0.2s ease-out; }
+  transition: background-color 0.2s ease-out;
+}
 
 .left-gradpic {
-  grid-area: left-gradpic; }
+  grid-area: left-gradpic;
+}
 
 .right-gradpic {
-  grid-area: right-gradpic; }
+  grid-area: right-gradpic;
+}
 
 #info {
-  grid-area: info; }
+  grid-area: info;
+}
 
 /*# sourceMappingURL=grads.css.map */

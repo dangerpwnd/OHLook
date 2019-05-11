@@ -1,7 +1,3 @@
-h1 {
-  text-align: center;
-}
-
 .PContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -44,4 +40,4 @@ h1 {
   transform: rotateY(180deg);
 }
 
-/*# sourceMappingURL=prod.css.map */
+/*# sourceMappingURL=classes.css.map */
