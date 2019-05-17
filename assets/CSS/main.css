@@ -10,10 +10,17 @@ body {
 
 .navcontainer {
   display: flex;
+  flex-direction: row;
   width: 100%;
-  align-items: center;
-  justify-content: center;
-  z-index: 11; }
+  height: 20vh;
+  background-color: black; }
+
+.navlogo {
+  flex: 1; }
+
+.navfirst {
+  flex: 3;
+  background-color: rebeccapurple; }
 
 .site-wrap {
   max-width: 70em;

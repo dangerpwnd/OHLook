@@ -2,7 +2,7 @@
     margin: 25px 25px;
     padding: 5px;
     display: grid;
-    grid-template-areas: "logo logo phrase ticket" "cont1 cont1 pic1 pic1" "pic2 pic2 cont2 cont2"
+    grid-template-areas: "phrase phrase ticket ticket" "cont1 cont1 pic1 pic1" "pic2 pic2 cont2 cont2"
         "cont3 cont3 pic3 pic3";
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 3fr 3fr 3fr;
@@ -11,10 +11,6 @@
     border-radius: 25px;
     z-index: 5;
     padding: 15px;
-}
-
-#logo{
-  grid-area: logo;
 }
 
 #phrase{
