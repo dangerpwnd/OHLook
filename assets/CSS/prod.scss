@@ -6,6 +6,8 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  justify-items:center;
+  align-items: stretch;
 }
 
 .productions{
@@ -33,6 +35,66 @@ h1 {
 
 .card-front{
   background: red;
+}
+
+.card1-front{
+    background:url("/assets/images/prod1.jpg");
+    background-size: cover;
+}
+
+.card2-front {
+    background: url("/assets/images/prod2.jpg");
+    background-size: cover;
+}
+
+.card3-front {
+    background: url("/assets/images/prod3.jpg");
+    background-size: cover;
+}
+
+.card4-front {
+    background: url("/assets/images/prod4.jpg");
+    background-size: cover;
+}
+
+.card5-front {
+    background: url("/assets/images/prod5.jpg");
+    background-size: cover;
+}
+
+.card6-front {
+    background: url("/assets/images/prod6.jpg");
+    background-size: cover;
+}
+
+.card7-front {
+    background: url("/assets/images/prod7.jpg");
+    background-size: cover;
+}
+
+.card8-front {
+    background: url("/assets/images/prod8.jpg");
+    background-size: cover;
+}
+
+.card9-front {
+    background: url("/assets/images/prod9.jpg");
+    background-size: cover;
+}
+
+.card10-front {
+    background: url("/assets/images/prod1.jpg");
+    background-size: cover;
+}
+
+.card11-front {
+    background: url("/assets/images/prod2.jpg");
+    background-size: cover;
+}
+
+.card12-front {
+    background: url("/assets/images/prod3.jpg");
+    background-size: cover;
 }
 
 .card-back{
