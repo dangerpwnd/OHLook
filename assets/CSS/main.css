@@ -12,15 +12,27 @@ body {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 20vh;
-  background-color: black; }
+  height: 20vh; }
 
 .navlogo {
   flex: 1; }
 
+.navlogo img {
+  width: 100%;
+  height: 100%; }
+
 .navfirst {
-  flex: 3;
+  display: flex;
+  justify-content: flex-end;
+  flex: 2;
   background-color: rebeccapurple; }
+
+/* Continue working on https://www.youtube.com/watch?v=dzz8kigJqvs at 4 min */
+.toggle-btn {
+  position: relative;
+  margin: 1.4em;
+  padding: 1em;
+  width: 40; }
 
 .site-wrap {
   max-width: 70em;
