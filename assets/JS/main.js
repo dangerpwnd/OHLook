@@ -1,40 +1,32 @@
-function(){
-	var svg = document.getElementById('menu'),
-	    items = svg.querySelectorAll('.item'),
-	    trigger = svg.getElementById('trigger'),
-	    label = trigger.querySelectorAll('#label')[0],
-	    open = false;
+var tl = new TimelineMax({paused: false});
 
-	    //first scale the elements down
-	    TweenLite.set(items, {scale:0, visibility:"visible"});
-	svg.style.pointerEvents = "none";
+tl.to(".one", 0.8, {
+	y: 6,
+	rotation: 45,
+	ease: Expo.easeInOut
+});
 
-	    //set up event handler
-	    trigger.addEventListener('click', toggleMenu, false);
+tl.to(".two", 0.8, {
+	y:-6,
+	rotation: -45,
+	ease: Expo.easeInOut,
+	delay: -0.8
+});
 
-	    //toggle menu when trigger is clicked
-	    function toggleMenu(event) {
-	     if (!event) var event = window.event;
-	    event.stopPropagation();
-	    open = !open;
-	    if (open) {
-	        TweenMax.staggerTo(items, 0.7, {scale:1, ease:Elastic.easeOut}, 0.05);
-	        label.innerHTML = "-";
-	      svg.style.pointerEvents = "auto";
-	    } else {
-	        TweenMax.staggerTo(items, .3, {scale:0, ease:Back.easeIn}, 0.05);
-	      svg.style.pointerEvents = "none";
-	    }
-	    }
+tl.to(".menu", 2, {
+	top: "0%",
+	ease: Expo.easeInOut,
+	delay: -2
+});
 
-	svg.onclick = function (e) {
-	    e.stopPropagation();
-	}
-	//close the nav when document is clicked
-	document.onclick = function () {
-	    open = false;
-	    TweenMax.staggerTo(items, .3, {scale:0, ease:Back.easeIn}, 0.05);
-	    svg.style.pointerEvents = "none";
-	};
+tl.staggerFrom("menu ul li", 2, {
+	x: -200,
+	opacity: 0,
+	ease: Expo.easeOut
+}, 0.3);
 
-})();
+tl.reverse();
+
+$(".toggle-btn").click(function(){
+	tl.reversed(!tl.reversed());
+});
