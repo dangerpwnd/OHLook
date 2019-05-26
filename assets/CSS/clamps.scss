@@ -1,11 +1,18 @@
 .campContainer{
     display: flex;
-
+    flex-direction: column;
 }
 .camps {
     margin: 2% 1%;
-    min-height: 100vh;
+    min-height: 33vh;
     width:100%;
+}
+
+.camps p{
+        text-transform: uppercase;
+        font-family: 'Amatic SC', cursive;
+        text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+        font-size: 2em;
 }
 
 .theaterCamp{

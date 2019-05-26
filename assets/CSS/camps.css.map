@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,cAAc;EACV,OAAO,EAAE,IAAI;;AAGjB,MAAO;EACH,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,KAAK;EACjB,KAAK,EAAC,IAAI;;AAGd,YAAY;EACR,UAAU,EAAE,kCAAkC;;AAGlD,UAAU;EACN,UAAU,EAAE,kCAAkC;;AAGlD,SAAS;EACL,UAAU,EAAE,kCAAkC",
-"sources": ["camps.scss"],
-"names": [],
-"file": "camps.css"
-}
