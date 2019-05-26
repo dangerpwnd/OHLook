@@ -13,17 +13,25 @@ body {
 ul {
   list-style: none; }
 
-li:first-child {
+.navtop:first-child {
   color: grey;
   font-size: 24px; }
 
-li:not(:first-child) {
+.navtop:not(:first-child) {
   color: grey;
   font-size: 48px; }
 
-a {
+.navSubP, .navSubCl, .navSubCa, .navSubD {
+  color: grey;
+  font-size: 48px;
+  display: none; }
+
+.navlink {
   text-decoration: none;
   color: #fff; }
+
+.navlink:hover {
+  color: grey; }
 
 .navcontainer {
   display: flex;
@@ -68,9 +76,9 @@ a {
 
 .menu {
   z-index: 0;
-  position: absolute;
+  position: fixed;
   background: #101010;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   top: -110%; }
 

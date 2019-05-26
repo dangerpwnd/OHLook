@@ -7,9 +7,6 @@
     <link href="/assets/css/main.css" rel="stylesheet" type="text/css" />
     <link href="/assets/css/auditions.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-    <script src="/assets/js/jQuery.js"></script>
-    <script src="/assets/js/main.js"></script>
 </head>
     <body>
         <nav>
@@ -25,48 +22,81 @@
                     <div class="menu">
                         <div class="data">
                             <ul>
-                                <li>Navigation</li>
-                                <li><a href="#">Productions</a></a></li>
-                                <li><a href="#">Class</a></li>
-                                <li><a href="#">Camps</a></li>
-                                <li><a href="#">Donate</a></li>
+                                <li class="navtop">Navigation</li>
+                                <li class="navtop navTopP"><a class="navlink" href="#">Productions</a>
+                                    <ul>
+                                        <li class="navSubP"><a class="navlink" href="#">Auditions</a></li>
+                                        <li class="navSubP"><a class="navlink" href="#">Current</a></li>
+                                        <li class="navSubP"><a class="navlink" href="#">Late Night</a></li>
+                                    </ul>
+                                </li>
+                                <li class="navtop navTopCl"><a class="navlink" href="#">Class</a>
+                                    <ul>
+                                        <li class="navSubCl"><a class="navlink" href="#">Dance</a></li>
+                                        <li class="navSubCl"><a class="navlink" href="#">Theater</a></li>
+                                        <li class="navSubCl"><a class="navlink" href="#">Purchase</a></li>
+                                    </ul>
+                                </li>
+                                <li class="navtop navTopCa"><a class="navlink" href="#">Camps</a>
+                                    <ul>
+                                        <li class="navSubCa"><a class="navlink" href="#">Dance</a></li>
+                                        <li class="navSubCa"><a class="navlink" href="#">Theater</a></li>
+                                        <li class="navSubCa"><a class="navlink" href="#">Purchase</a></li>
+                                    </ul>
+                                </li>
+                                <li class="navtop navTopD"><a class="navlink" href="#">Donate</a>
+                                    <ul>
+                                        <li class="navSubD"><a class="navlink" href="#">How To</a></li>
+                                        <li class="navSubD"><a class="navlink" href="#">Sponsors</a></li>
+                                        <li class="navSubD"><a class="navlink" href="#">Wish List</a></li>
+                                    </ul></li>
                             </ul>
                         </div>
                     </div>
-                <!--Parent-->
-                <!--PRODUCTIONS > Auditions/Current/Late Night-->
-                <!--CLASS > Dance/Theater/Purchase-->
-                <!--CAMPS > Dance/Theater/Purchase-->
-                <!--DONATE > How To/Sponsors/Wish List-->
             </div>
         </nav>
         <div class="container">
-            <div id="phrase">
+            <!-- <div id="phrase">
                 <p>INSERT PHRASE HERE</p>
             </div>
             <div id="ticket">
                 <p>INSERT PURCHASE HERE</p>
+            </div> -->
+            <div class="content content1">
+                <h2>Audition Information</h2>
+                <h4 class="noticeY">Auditions for our summer season will be <u>May 2nd to 5th</u></h4>
+                <button>Schedule an audition here</button>
+                <p><span class="noticeB">Only one audition per person is necessary.</span> You will be able to indicate at the time of the audition which areas interest you.</p>
+                <p>Ohlook's new 12-Month Rule: If you are an adult (over 18) and have performed with Ohlook during the last year, you don't have to audition for us to be considered.</p>
+                <p>If you would like to be considered without audition please fill out this form before the last night of auditions:</p>
+                <p>On the other hand, if you want to be considered for a role that's very different from what you've done for Ohlook before, then you are more than welcome to audition and show us how perfect you are for that role. </p>
+                <p>All children, ages 5-18, are invited to audition. Everyone who auditions for a Sophomore, Junior or Senior Production will be cast in the show! Those who audition should come prepared to read from the script provided and to sing a song of your own choice. Beginners may sing any song you are comfortable singing. Advanced performers should choose a song from traditional musical theatre and bring sheet music in your key. An accompanist will be provided, or you make bring a recorded accompaniment on your own device (music only – no vocals). We do not have a CD player, so please no CDs. Please come dressed to dance, and wear appropriate, closed-toe shoes – no sandals, please! </p>
             </div>
-            <div id="content1">
-                <h2>Title 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec dolor cursus, ornare massa sed, cursus augue. Aliquam gravida non ante eu aliquet. Integer tempus venenatis nisl ut tempus. In ut diam felis. Fusce elementum augue dolor, eu lacinia elit laoreet sed. Sed dignissim sed magna in tempor. Ut id pellentesque nisl, eu euismod neque. Donec viverra diam vitae nibh semper feugiat. Donec id lectus ipsum. Nam aliquam pulvinar lorem sed commodo. </p>
-                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec sed tellus non ligula ultricies vulputate in et urna. Vivamus bibendum odio arcu. Etiam in lacus malesuada, dapibus tortor ac, mattis neque. Vivamus mollis diam quis diam faucibus bibendum. Duis facilisis arcu ut arcu pretium accumsan. Praesent sollicitudin, arcu quis faucibus pellentesque, justo lacus imperdiet nisi, et egestas dolor metus at nulla. Aliquam a eros semper, faucibus mauris id, scelerisque urna. Aenean laoreet blandit ante, eu lobortis libero fermentum quis. Etiam blandit placerat turpis, aliquet ullamcorper velit posuere sit amet. Praesent ut augue vel libero volutpat facilisis vel eget mauris. Sed vel mauris vel neque placerat finibus non ut tortor. Maecenas sollicitudin dictum lorem, id interdum nisl egestas in. Morbi consequat maximus diam, ut tempor nisi lacinia sit amet.</p>
-                <p>Donec consectetur est sollicitudin, ullamcorper tellus nec, mollis erat. Nunc rutrum dolor velit, sed tempus purus consectetur in. Quisque mattis lorem efficitur leo efficitur tempus. Morbi eu est non est semper aliquet sed ac sem. Nulla faucibus velit vitae tincidunt aliquet. Curabitur metus nulla, sagittis sed maximus vel, ultricies id ipsum. Integer vitae nisl eu quam accumsan iaculis at sit amet quam. Suspendisse tempor massa vitae tellus tincidunt, et finibus risus egestas.</p>
+            <div class="picture picture1"></div>
+            <div class="content content2">
+                <h2>Frequently Asked Questions</h2>
+                <h4 class="noticeY">Do I need an appointment?</h4><p>Yes. If all the appointments are full, please feel free to drop by and we will try to fit you in.</p>
+                <h4 class="noticeY">What should I bring?</h4><p>You should prepare a song (sometimes we have preferences about what kind of song, noted in the audition announcement), and you should bring a legible copy of the piano music for our accompanist, in the key you want. <span class="noticeB">**PLEASE NOTE**</span> If you want our accompanist to play your music well, do NOT bring unattached pages of sheet music. Do NOT bring a lead sheet (music with only vocal lines, no piano part). You should either put your music in a three-ring binder or bring a published book. Mark clearly any cuts or changes. If you're bringing a published music book, please break the binding ahead of time so your music lies flat on the music stand. If you put your sheet music into plastic sleeves, make sure the sleeves have a matte finish, not shiny.  If you are auditioning for a play, please prepare a monologue.</p>
+                <h4 class="noticeY">Can I sing something from the show?</h4><p>The answer is almost always YES at Ohlook. Other companies often have different preferences.</p>
+                <h4 class="noticeY">Do you want me to sing only 16 bars, or more than that? </h4><p>Our best advice is to find a great piece of music about 32 bars, so we don't have to cut you off if we're running late...</p>
+                <h4 class="noticeY">What if I have conflicts with the rehearsal schedule?</h4><p>If you have one or two schedule conflicts, we may be able to make accommodations in the schedule. If it's more than that, especially for summer productions, you probably won't be cast because we move at such a quick pace.  PLEASE bring your weekly schedule and any conflicts with you to the audition.</p>
+                <h4 class="noticeY">Can I submit a video audition if I can't make it to the scheduled auditions?</h4><p>Yes, we do accept video submissions, although we prefer you audition in person.  Please email Jill Lord for video submissions.</p>
+                <h4 class="noticeY">Do I need a picture and resume?</h4><p>If you have those, bring them. If not, it's not a problem.</p>
+                <h4 class="noticeY">I've never worked with Ohlook before -- can I still get a lead?</h4><p>Yes! We often give leading roles to actors who have not worked with us, and we regularly practice colorblind casting.</p>
             </div>
-            <div id="picture1"></div>
-            <div id="content2">
-                <h2>Title 2</h2>
-                <p>Suspendisse eu ex tempor, consectetur nibh non, maximus dui. Donec egestas faucibus ultrices. Nunc quam neque, blandit quis sodales ac, mattis id lectus. Morbi facilisis purus eget suscipit sollicitudin. Proin pretium risus a purus interdum, ut rutrum felis viverra. Etiam a dui malesuada, dignissim velit vel, bibendum dolor. Aenean nec nisi dui. Phasellus eu velit ut elit scelerisque facilisis eget non justo. Proin imperdiet purus dui, nec condimentum lacus interdum sit amet. Aliquam mollis purus id fermentum scelerisque. In congue lorem vel mi lacinia, ut dapibus tellus pharetra. Sed accumsan blandit suscipit. Sed rhoncus erat ut urna dignissim, non ultrices ipsum elementum. Proin porta ornare justo sit amet porta. Duis lorem dolor, molestie a orci id, mollis congue ex.</p>
-                <p>Phasellus eu nunc ut augue pellentesque fermentum. Mauris a metus porttitor, finibus nisi sed, pharetra sem. Cras maximus tellus turpis, vel auctor mi ornare in. Nulla quis tincidunt eros, a molestie urna. Etiam sit amet libero rutrum, mollis justo eu, venenatis tellus. Nullam condimentum nunc purus, ut blandit ligula sagittis nec. Suspendisse vestibulum suscipit enim, sit amet tristique diam suscipit vel. Vivamus elementum erat blandit leo vulputate, non tincidunt metus sollicitudin. Mauris non massa risus. Vestibulum vestibulum leo vitae elit tincidunt laoreet. Nulla diam ante, tempus nec tempus vel, lobortis in neque.</p>
+            <div class="picture picture2"></div>
+            <div class="content content3">
+                <h2>Nervous? Don't be!</h2>
+                <p>We welcome and encourage newcomers to audition for our shows. You will not be the only new person at auditions. Our long-time participants will welcome you and help you feel comfortable in our group. We are here to have fun and make new friends, so all new people are very welcome to join us. The audition process is our chance to get to know you and to see what your performance skills are at this time. </p>
+                <img class="picture3" src="/assets/images/music1.jpg" />
             </div>
-            <div id="picture2"></div>
-            <div id="content3">
-                <h2>Title 3</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec dolor cursus, ornare massa sed, cursus augue. Aliquam gravida non ante eu aliquet. Integer tempus venenatis nisl ut tempus. In ut diam felis. Fusce elementum augue dolor, eu lacinia elit laoreet sed. Sed dignissim sed magna in tempor. Ut id pellentesque nisl, eu euismod neque. Donec viverra diam vitae nibh semper feugiat. Donec id lectus ipsum. Nam aliquam pulvinar lorem sed commodo. </p>
-                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec sed tellus non ligula ultricies vulputate in et urna. Vivamus bibendum odio arcu. Etiam in lacus malesuada, dapibus tortor ac, mattis neque. Vivamus mollis diam quis diam faucibus bibendum. Duis facilisis arcu ut arcu pretium accumsan. Praesent sollicitudin, arcu quis faucibus pellentesque, justo lacus imperdiet nisi, et egestas dolor metus at nulla. Aliquam a eros semper, faucibus mauris id, scelerisque urna. Aenean laoreet blandit ante, eu lobortis libero fermentum quis. Etiam blandit placerat turpis, aliquet ullamcorper velit posuere sit amet. Praesent ut augue vel libero volutpat facilisis vel eget mauris. Sed vel mauris vel neque placerat finibus non ut tortor. Maecenas sollicitudin dictum lorem, id interdum nisl egestas in. Morbi consequat maximus diam, ut tempor nisi lacinia sit amet.</p>
-                <p>Donec consectetur est sollicitudin, ullamcorper tellus nec, mollis erat. Nunc rutrum dolor velit, sed tempus purus consectetur in. Quisque mattis lorem efficitur leo efficitur tempus. Morbi eu est non est semper aliquet sed ac sem. Nulla faucibus velit vitae tincidunt aliquet. Curabitur metus nulla, sagittis sed maximus vel, ultricies id ipsum. Integer vitae nisl eu quam accumsan iaculis at sit amet quam. Suspendisse tempor massa vitae tellus tincidunt, et finibus risus egestas.</p>
+            <div class="content content4">
+                <h2>Didn't get the lead? Wait!</h2>
+                <p>We encourage everyone to accept and embrace the fact that most people in our cast will be in the Chorus, which is great fun. You are going to learn a lot of songs, dances and get to be in a significant amount of the show.  While you might be disappointed at first, please trust us that you will eventually have a great time no matter what role you play in the show. Staying in the show, even if you are disappointed with your role, is the best way for you to learn, grow and possibly play a larger role in a future production. If you drop out because you didn’t get the role you wanted you will miss out on a lot of fun and special memories with good friends. We have no “stars” or “divas” at Ohlook, and we hope everyone who auditions will come with a cooperative, positive attitude that the show must go on! </p>
             </div>
-            <div id="picture3"></div>
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+        <script src="/assets/js/jQuery.js"></script>
+        <script src="/assets/js/main.js"></script>
     </body>
 </html>
