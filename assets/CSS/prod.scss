@@ -1,20 +1,29 @@
 h1 {
-  text-align: center;
+  text-align: left;
+  margin-left: 2%;
+}
+
+.quicknav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2%;
 }
 
 .PContainer{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  justify-items:center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: stretch;
 }
 
 .productions{
-  width: 15em;
-  height: 25em;
+  width: 20em;
+  height: 30em;
   border: 1px solid #CCC;
   perspective: 600px;
+  margin: 2% 0;
 }
 
 .card{
@@ -37,23 +46,35 @@ h1 {
   background: red;
 }
 
+.card-back{
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  transform: rotateY( 180deg );
+}
+
+.card.is-flipped{
+  transform: rotateY(180deg);
+}
+
+
 .card1-front{
-    background:url("/assets/images/prod1.jpg");
+    background:url("/assets/images/prod1.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .card2-front {
-    background: url("/assets/images/prod2.jpg");
+    background: url("/assets/images/prod2.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .card3-front {
-    background: url("/assets/images/prod3.jpg");
+    background: url("/assets/images/prod3.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .card4-front {
-    background: url("/assets/images/prod4.jpg");
+    background: url("/assets/images/prod4.jpg") no-repeat center center;
     background-size: cover;
 }
 
@@ -83,25 +104,17 @@ h1 {
 }
 
 .card10-front {
-    background: url("/assets/images/prod1.jpg");
+    background: url("/assets/images/prod10.jpg");
     background-size: cover;
 }
 
 .card11-front {
-    background: url("/assets/images/prod2.jpg");
+    background: url("/assets/images/prod11.jpg");
     background-size: cover;
 }
 
 .card12-front {
-    background: url("/assets/images/prod3.jpg");
+    background: url("/assets/images/prod12.jpg");
     background-size: cover;
 }
 
-.card-back{
-  background: blue;
-  transform: rotateY( 180deg );
-}
-
-.card.is-flipped{
-  transform: rotateY(180deg);
-}

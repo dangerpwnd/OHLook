@@ -5,7 +5,7 @@
     grid-template-areas: "pic1 pic1 pic1 pic1" "cont1 cont1 cont2 cont2" "pic2 pic2 pic2 pic2"
        "cont3 cont3 cont4 cont4";
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 2fr 1fr 2fr;
+    grid-template-rows: 1fr 2fr 1fr 1fr;
     grid-gap: 5px;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .picture3 {
-    margin: 25px 25px;
+    width: 100%;
     border-radius: 20px;
 }
 
