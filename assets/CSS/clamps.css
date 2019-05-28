@@ -18,12 +18,15 @@
   text-decoration: none; }
 
 .theaterCamp {
-  background: url("/assets/images/theatre2.jpg"); }
+  background: url("/assets/images/theatre2.jpg");
+  background-size: cover; }
 
 .danceCamp {
-  background: url("/assets/images/dancing1.jpg"); }
+  background: url("/assets/images/dancing1.jpg");
+  background-size: contain; }
 
 .infoCamp {
-  background: url("/assets/images/singing1.jpg"); }
+  background: url("/assets/images/singing1.jpg");
+  background-size: contain; }
 
 /*# sourceMappingURL=clamps.css.map */

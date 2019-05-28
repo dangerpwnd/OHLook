@@ -42,14 +42,11 @@ h1 {
   backface-visibility: hidden;
 }
 
-.card-front{
-  background: red;
-}
 
 .card-back{
   display: flex;
   flex-direction: column;
-  background-color: grey;
+  background-color: rgba(255,255,255,0.9);
   transform: rotateY( 180deg );
 }
 

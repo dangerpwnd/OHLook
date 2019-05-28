@@ -3,17 +3,14 @@ ul {
 }
 
 .grad-wrapper{
-  margin: 0 auto;
+  margin: 2%;
   display: grid;
   grid-template-areas:
-  ". logo ."
   "left-gradpic info right-gradpic"
   "left-gradpic info right-gradpic"
-  "left-gradpic info right-gradpic";
+  "left-gradpic info right-gradpic"
+  "left-gradpic mid-gradpic right-gradpic";
   grid-gap: 10px;
-  background: rgba(255,255,255,0.5);
-  border-radius: 50px;
-  perspective: 3300px;
   position: relative;
 }
 
@@ -32,13 +29,25 @@ ul {
   transition: background-color 0.2s ease-out;
 }
 
+.gradpic{
+  border-radius: 15px;
+}
+
 .left-gradpic {
   grid-area: left-gradpic;
 }
+
+.mid-gradpic{
+  grid-area: mid-gradpic;
+}
+
 .right-gradpic {
   grid-area: right-gradpic;
 }
 
 #info{
   grid-area: info;
+  background: rgba(255,255,255,0.5);
+  border-radius: 50px;
+  padding: 1%;
 }

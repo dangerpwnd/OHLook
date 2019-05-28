@@ -59,23 +59,25 @@ ul {
   width: 40px;
   height: 36px;
   right: 5%;
-  z-index: 1; }
+  z-index: 5; }
 
 .one {
   position: absolute;
   width: 40px;
   height: 2px;
-  background: #fff; }
+  background: #fff;
+  z-index: 5; }
 
 .two {
   position: absolute;
   width: 40px;
   height: 2px;
   background: #fff;
-  margin-top: 12px; }
+  margin-top: 12px;
+  z-index: 5; }
 
 .menu {
-  z-index: 0;
+  z-index: 5;
   position: fixed;
   background: #101010;
   height: 100%;
@@ -85,34 +87,5 @@ ul {
 .data {
   padding: 8 em 0 0 2em;
   text-align: left; }
-
-.site-wrap {
-  max-width: 70em;
-  margin: 100px auto;
-  background: white;
-  padding: 40px;
-  text-align: justify; }
-
-.align-left {
-  float: left;
-  margin-right: 20px; }
-
-.align-right {
-  float: right;
-  margin-left: 20px; }
-
-.slide-in {
-  opacity: 0;
-  transition: all .5s; }
-
-.align-left.slide-in {
-  transform: translateX(-30%) scale(0.95); }
-
-.align-right.slide-in {
-  transform: translateX(30%) scale(0.95); }
-
-.slide-in.active {
-  opacity: 1;
-  transform: translateX(0%) scale(1); }
 
 /*# sourceMappingURL=main.css.map */
