@@ -1,113 +1,85 @@
+body{
 
-
-*, *:before, *:after{
-  box-sizing: inherit;
 }
 
-body {
-    margin: 0;
-    width: 100vw;
-    background: url("/assets/images/backgrd3.svg") no-repeat center center fixed;
-    background-size: cover;
-    z-index: 1;
-    box-sizing: border-box;
-    font-family: 'Merriweather', serif;
+footer{
+    background-color: rgb(99, 24, 99);
+    display: flex;
+    justify-content: space-around;
 }
 
-ul{
-  list-style: none;
-}
 
-//.navtop are top catagories
-.navtop:first-child{
-  color: grey;
-  font-size: 24px;
-}
-
-.navtop:not(:first-child){
-  color: grey;
-  font-size: 48px;
-}
-//.navsub are sub-catagories of top
-.navSubP, .navSubCl, .navSubCa, .navSubD{
-  color: grey;
-  font-size: 48px;
-  display:none;
-}
-
-//Properties for all nav links
-.navlink{
-  text-decoration: none;
-  color: #fff;
-}
-
-//hover for all nav links top and sub
-.navlink:hover{
-  color: grey;
-}
-
-.navcontainer {
+//Flex container for hero and quick nav
+.flexMainContainer{
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 20vh;
-
+    align-content: center;
+    height: 85vh;
+    width: 100vw;
 }
 
-.navlogo {
-    flex: 1;
-}
-
-.navlogo img {
-    margin: 2% 5%;
-    width: 100%;
-    height: 100%;
-}
-
-.navfirst {
+.frontHero{
     display: flex;
-    justify-content: flex-end;
-    flex: 2;
-}
-//Wrapper for nav open/close
-.toggle-btn {
-  position: fixed;
-  margin: 1.4em;
-  padding: 1em;
-  width: 40px;
-  height: 36px;
-  right: 5%;
-  z-index: 5;
-}
-//First line in nav open/close
-.one {
-  position: absolute;
-  width: 40px;
-  height: 2px;
-  background: #fff;
-  z-index: 5;
-}
-//Second line in nav open/close
-.two {
-  position: absolute;
-  width: 40px;
-  height: 2px;
-  background: #fff;
-  margin-top: 12px;
-  z-index: 5;
-}
-//Menu background
-.menu{
-  z-index: 5;
-  position: fixed;
-  background: #101010;
-  height: 100%;
-  width:100%;
-  top: -110%;
+    flex-direction: column;
+    background-color: grey;
+    width: 50vw;
+   
 }
 
-.data{
-  padding: 8 em 0 0 2em;
-  text-align: left;
+.frontHero img{
+    max-width: 100%;
+    max-height: 100%;
 }
 
+.front3Guides{
+    background-color: white;
+}
+//Need border shadow for 3d effect
+.front3Guides button{
+    border-radius: 10px;
+}
+
+//Dividing line between sections
+.dividingLine{
+    width: 85vw;
+    border: 5px solid black;
+}
+
+//Flex container for 3 columns
+.flex3Columns{
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.column{
+    border-radius: 15px;
+    border: 2px purple;
+    background-color: white;
+}
+
+.column1{
+    order: 1;
+}
+
+.column2{
+    order: 2;
+}
+
+.column3{
+    order: 3;
+}
+
+.links{
+    text-decoration: none;
+}
+
+.socialLinks{
+    text-decoration: none;
+}
+
+.contactLinks{
+    text-decoration: none;
+}

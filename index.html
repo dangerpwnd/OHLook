@@ -1,39 +1,98 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width" , initial-scale=1, shrink-to-fit=no />
-    <title>Ohlook Theater - Main</title>
-    <link href="/assets/CSS/initial.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
-</head>
-  <body>
-      <div class="panels">
-        <div class="panel panel1">
-            <p><a href="auditions.html">Auditions</a></p>
-            <p>OhLook</p>
-            <p><a href="productions.html">Productions</a></p>
-            <!--Current OhLook Lineup-->
-        </div>
-        <div class="panel panel2">
-          <p><a href="clamps.html">Camps/Classes</a></p>
-          <p>Performing</p>
-          <p><a href="#">Calendar</a></p>
-          <!--Join Learn Love-->
-        </div>
-        <div class="panel panel3">
-          <p><a href="Grads.html">Grads</a></p>
-          <p>Arts</p>
-          <p><a href="awards.html">Awards</a></p>
-          <!--A Brief History Of OhLook-->
-        </div>
-        <div class="panel panel4">
-          <p><a href="donate.html">Donate</a></p>
-          <p>Center</p>
-          <p><a href="sponsors.html">Sponsors</a></p>
-          <!--We Grow Together-->
-        </div>
-      </div>
-      <script src="/assets/js/initial.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width" , initial-scale=1, shrink-to-fit=no />
+        <title>Ohlook Theater - Main</title>
+        <link href="/assets/css/nav.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/css/main.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <nav>
+            <div class="navcontainer">
+                <div class="navlogo">
+                    <img src="/assets/images/logo.svg" />
+                </div>
+                    <div class="navfirst"></div>
+                        <div class="toggle-btn">
+                            <span class="one"></span>
+                            <span class="two"></span>
+                        </div>
+                        <div class="menu">
+                            <div class="data">
+                                <ul>
+                                    <li class="navtop">Navigation</li>
+                                    <li class="navtop navTopP"><a class="navlink" href="#">Productions</a>
+                                        <ul>
+                                            <li class="navSubP"><a class="navlink" href="#">Auditions</a></li>
+                                            <li class="navSubP"><a class="navlink" href="#">Current</a></li>
+                                            <li class="navSubP"><a class="navlink" href="#">Late Night</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="navtop navTopCl"><a class="navlink" href="#">Class</a>
+                                        <ul>
+                                            <li class="navSubCl"><a class="navlink" href="#">Dance</a></li>
+                                            <li class="navSubCl"><a class="navlink" href="#">Theater</a></li>
+                                            <li class="navSubCl"><a class="navlink" href="#">Purchase</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="navtop navTopCa"><a class="navlink" href="#">Camps</a>
+                                        <ul>
+                                            <li class="navSubCa"><a class="navlink" href="#">Dance</a></li>
+                                            <li class="navSubCa"><a class="navlink" href="#">Theater</a></li>
+                                            <li class="navSubCa"><a class="navlink" href="#">Purchase</a></li>
+                                </ul>
+                            </li>
+                            <li class="navtop navTopD"><a class="navlink" href="#">Donate</a>
+                                <ul>
+                                    <li class="navSubD"><a class="navlink" href="#">How To</a></li>
+                                    <li class="navSubD"><a class="navlink" href="#">Sponsors</a></li>
+                                    <li class="navSubD"><a class="navlink" href="#">Wish List</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="flexMainContainer">
+             <!--Photo by Leon Liu on Unsplash-->
+            <div class="frontHero">
+                <img src="/assets/images/frontpage-hero.svg" />
+                <!-- <h1>Where stars come to shine...</h1> -->
+            </div>
+            
+            <div class="front3Guides">
+                <button>Productions</button>
+                <button>Auditions</button>
+                <button>Class/Camps</button>
+            </div>
+        </section>
+        <div class="dividingLine"></div>
+        <section class="flex3columns">
+            <div class="column column1">
+                <h2>This info</h2>
+                <p>Some text</p>
+                <p>Some text</p>
+            </div>
+            <div class="column column2">
+                <h2>This info</h2>
+                <p>Some text</p>
+                <p>Some text</p>
+            </div>
+            <div class="column column3">
+                <h2>This info</h2>
+                <p>Some text</p>
+                <p>Some text</p>
+            </div>
+        </section>
+        <script src="/assets/js/jQuery.js"></script>
+        <script src="/assets/js/nav.js"></script>
+    </body>
+    <footer>
+        <div class="links">Additional links</div>\
+        <div class="socialLinks">Facebook,Twitter,Instagram</div>
+        <div class="contactLinks">Address, Email</div>
+    </footer>
 </html>
+
