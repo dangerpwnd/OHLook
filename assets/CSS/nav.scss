@@ -37,8 +37,6 @@ ul{
 }
 
 .navcontainer {
-  background-image: url("/assets/images/backgrd3.svg");
-  background-size: cover;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -51,9 +49,9 @@ ul{
 }
 
 .navlogo img {
-    margin: 2% 5%;
+    margin: 1% 5%;
     width: 100%;
-    height: 100%;
+    height: 90%;
 }
 
 .navfirst {
