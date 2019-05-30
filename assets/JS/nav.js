@@ -63,5 +63,5 @@ var tl2 = new TimelineMax({paused: false});
 	})}));
 
 	tl2.reverse();
-
+	return tl2();
 });

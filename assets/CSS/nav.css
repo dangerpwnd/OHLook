@@ -50,14 +50,14 @@ ul {
   width: 40px;
   height: 36px;
   right: 5%;
-  z-index: 5; }
+  z-index: 6; }
 
 .one {
   position: absolute;
   width: 40px;
   height: 2px;
   background: #fff;
-  z-index: 5; }
+  z-index: 6; }
 
 .two {
   position: absolute;
@@ -65,7 +65,7 @@ ul {
   height: 2px;
   background: #fff;
   margin-top: 12px;
-  z-index: 5; }
+  z-index: 6; }
 
 .menu {
   z-index: 5;
