@@ -4,8 +4,7 @@ body {
   z-index: 1;
   background-image: url("/assets/images/backgrd3.svg");
   background-size: cover;
-  font-family: 'Spectral', serif;
-  z-index: 1; }
+  font-family: 'Spectral', serif; }
 
 footer {
   background-color: #8d2b8d;

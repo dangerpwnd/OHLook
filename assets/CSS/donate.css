@@ -1,0 +1,14 @@
+body {
+  margin: 0 auto;
+  width: 100%;
+  z-index: 1;
+  background-image: url("/assets/images/backgrd3.svg");
+  background-size: cover;
+  font-family: 'Spectral', serif; }
+
+footer {
+  background-color: #8d2b8d;
+  display: flex;
+  justify-content: space-around; }
+
+/*# sourceMappingURL=donate.css.map */
