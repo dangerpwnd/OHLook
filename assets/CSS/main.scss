@@ -4,6 +4,7 @@ body{
     z-index:1;
     background-image: url("/assets/images/backgrd3.svg");
     background-size: cover;
+    z-index: 1;
 }
 
 footer{
@@ -17,22 +18,32 @@ footer{
 .flexMainContainer{
     display: flex;
     flex-direction: row;
-    width: 100vw;
+    justify-content: center;
+    align-items: center;
 }
 
-.frontHero{
-    background-color: grey;
+.frontPic img{
+    border-radius: 15px;
 }
 
-.frontHero img{
-    width: 50vw;
-}
 
 .front3Guides{
-    background-color: white;
+    background-color: #3c0958;
+    color: #7744e8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.guide {
+    background-color: #240237;
+    color: #a184b1;
+    text-align: center;
+
 }
 //Need border shadow for 3d effect
-.front3Guides button{
+.guide button{
+    margin: 1%;
     border-radius: 10px;
 }
 
@@ -50,6 +61,7 @@ footer{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    margin: 2%;
 }
 
 .column{
