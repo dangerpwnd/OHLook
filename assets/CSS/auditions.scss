@@ -16,30 +16,29 @@ footer{
 .container {
     margin-top: 5%;
     display: grid;
-    grid-template-areas: "pic1 pic1 pic1 pic1" "cont1 cont1 cont2 cont2" "pic2 pic2 pic2 pic2"
+    grid-template-areas: "main1 main1 main1 main1" "cont1 cont1 cont1 cont1" "pic2 pic2 cont2 cont2"
        "cont3 cont3 cont4 cont4";
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 2fr 1fr 1fr;
     grid-gap: 5px;
 }
 
-#phrase{
-  grid-area: phrase;
-}
-
-#ticket{
-  grid-area: ticket;
+.main1{
+  grid-area: main1;
+  background-image: url("/assets/images/theatre1.jpg");
 }
 
 .content {
   margin: 25px 25px;
   padding: 5px;
+  border-radius: 10px;
 }
 
 // Inherits from .content
 .content1{
   grid-area: cont1;
-}  
+}
+
 // Inherits from .content
 .content2{
     grid-area: cont2;
@@ -53,13 +52,9 @@ footer{
   grid-area: cont4;
 }
 
-.picture {
-  background-size: cover;
-}
 // Inherits from .picture
 .picture1{
   grid-area: pic1;
-  background-image: url("/assets/images/theatre1.jpg");
 }
 // Inherits from .picture
 .picture2{
