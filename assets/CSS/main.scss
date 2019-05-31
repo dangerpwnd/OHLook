@@ -8,7 +8,7 @@ body{
 }
 
 footer{
-    background-color: rgb(141, 43, 141);
+    background-color: #5E2590;
     display: flex;
     justify-content: space-around;
 }
@@ -65,13 +65,10 @@ footer{
     }
 }
 
-//Dividing line between sections
-// .dividingLine{
-//     background-image: url("/assets/images/backgrd3.svg");
-//     background-size: cover;
-//     border: 5px outset purple;
-//     margin-top: 0.3%;
-// }
+
+.dividingLine{
+    border: 5px outset white;
+}
 
 //Flex container for 3 columns
 .flex3Columns{
@@ -84,32 +81,25 @@ footer{
 
 .column{
     border-radius: 15px;
-    border: 2px purple;
-    background-color: white;
-}
-
-.column1{
-    order: 1;
-}
-
-.column2{
-    order: 2;
-}
-
-.column3{
-    order: 3;
+    border: 2px white;
+    color: white;
+    background-color:#5E2590;
+    padding: 1%;
 }
 
 .links{
     text-decoration: none;
+    color: #00ADEF;
 }
 
 .socialLinks{
     text-decoration: none;
+    color: #37AB9C;
 }
 
 .contactLinks{
     text-decoration: none;
+    color: #00ADEF;
 }
 
 @media all and (max-width: 768px){

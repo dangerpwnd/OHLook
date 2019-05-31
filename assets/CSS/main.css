@@ -7,7 +7,7 @@ body {
   font-family: 'Spectral', serif; }
 
 footer {
-  background-color: #8d2b8d;
+  background-color: #5E2590;
   display: flex;
   justify-content: space-around; }
 
@@ -50,6 +50,9 @@ footer {
   100% {
     background-color: black;
     color: yellow; } }
+.dividingLine {
+  border: 5px outset white; }
+
 .flex3Columns {
   display: flex;
   flex-direction: row;
@@ -59,26 +62,22 @@ footer {
 
 .column {
   border-radius: 15px;
-  border: 2px purple;
-  background-color: white; }
-
-.column1 {
-  order: 1; }
-
-.column2 {
-  order: 2; }
-
-.column3 {
-  order: 3; }
+  border: 2px white;
+  color: white;
+  background-color: #5E2590;
+  padding: 1%; }
 
 .links {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #00ADEF; }
 
 .socialLinks {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #37AB9C; }
 
 .contactLinks {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #00ADEF; }
 
 @media all and (max-width: 768px) {
   .flexMainContainer {
