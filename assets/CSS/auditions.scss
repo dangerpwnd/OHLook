@@ -1,18 +1,5 @@
-body{
-  margin: 0 auto;
-  width: 100%;
-  z-index:1;
-  background-image: url("/assets/images/backgrd3.svg");
-  background-size: cover;
-  font-family: 'Spectral', serif;
-}
 
-footer{
-  background-color: rgb(141, 43, 141);
-  display: flex;
-  justify-content: space-around;
-}
-
+//Grid container for all info
 .container {
     margin-top: 5%;
     display: grid;
@@ -22,7 +9,26 @@ footer{
     grid-template-rows: 1fr 2fr 1fr 1fr;
     grid-gap: 5px;
 }
-
+//Used to align main window to right
+.subCont{
+  display: flex;
+  justify-content: flex-end;
+}
+//Used to align FAQ into columns
+.subCont2{
+  display: flex;
+  flex-direction: column;
+}
+//Main window to schedule auditions
+.mainInfo{
+  text-align: center;
+  width: 50%;
+  margin: 2%;
+  border: 1px solid white;
+  border-radius: 15px;
+  background-color: rgba(255,255,255,0.7);
+}
+//grid item of main pic and info
 .main1{
   grid-area: main1;
   background-image: url("/assets/images/theatre1.jpg");
@@ -32,6 +38,7 @@ footer{
   margin: 25px 25px;
   padding: 5px;
   border-radius: 10px;
+  color: white;
 }
 
 // Inherits from .content
@@ -60,6 +67,8 @@ footer{
 .picture2{
   grid-area: pic2;
   background-image: url("/assets/images/dancing1.jpg");
+  margin-left: 2%;
+  border-radius: 15px;
 }
 
 .picture3 {
@@ -73,4 +82,14 @@ footer{
 
 .noticeB {
   color: blue;
+}
+
+@media all and (max-width: 768px){
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.mainInfo{
+  width: 100%;
+}
 }

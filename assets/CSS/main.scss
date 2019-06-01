@@ -13,83 +13,14 @@ footer{
     justify-content: space-around;
 }
 
-//Flex container for hero and quick nav
-.flexMainContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.frontPic img{
-    border-radius: 15px;
-}
-
-
-.front3Guides{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 2em;
-}
-
-.guide {
-    color: white;
-    text-align: center;
-
-}
-//Need border shadow for 3d effect
-.guide button{
-    background-color: Transparent;
-    color: white;
-    font-size: 1em;
-    margin: 1%;
-    border: 2px white solid;
-    border-radius: 15px;
-    font-family: 'Spectral', serif;
-}
-
-.guide button:hover {
-    animation: pulse 2s;
-}
-
-@keyframes pulse{
-    0%{
-        background-color: transparent;
-        color: white;
-    }
-    100%{
-        background-color: black;
-        color: yellow;
-    }
-}
-
-
-.dividingLine{
-    border: 5px outset white;
-}
-
-//Flex container for 3 columns
-.flex3Columns{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 2%;
-}
-
-.column{
-    border-radius: 15px;
-    border: 2px white;
-    color: white;
-    background-color:#5E2590;
-    padding: 1%;
-}
 
 .links{
     text-decoration: none;
     color: #00ADEF;
+}
+
+.links:hover{
+    color: #37AB9C;
 }
 
 .socialLinks{
@@ -97,16 +28,117 @@ footer{
     color: #37AB9C;
 }
 
+.fab:hover{
+    color: #00ADEF;
+}
+
 .contactLinks{
     text-decoration: none;
     color: #00ADEF;
 }
 
-@media all and (max-width: 768px){
-    .flexMainContainer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+.contactLinks:hover{
+    color: #37AB9C;
 }
+
+*, *:before, *:after{
+    box-sizing: inherit;
+  }
+  
+  ul{
+    list-style: none;
+  }
+  
+  //.navtop are top catagories
+  .navtop:first-child{
+    color: grey;
+    font-size: 24px;
+  }
+  
+  .navtop:not(:first-child){
+    color: grey;
+    font-size: 48px;
+  }
+  //.navsub are sub-catagories of top
+  .navSubP, .navSubCl, .navSubCa, .navSubD{
+    color: grey;
+    font-size: 48px;
+    display:none;
+  }
+  
+  //Properties for all nav links
+  .navlink{
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  //hover for all nav links top and sub
+  .navlink:hover{
+    color: grey;
+  }
+  
+  .navcontainer {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 20vh;
+  }
+  
+  .navlogo {
+      flex: 1;
+  }
+  
+  .navlogo img {
+      margin: 1% 5%;
+      width: 100%;
+      height: 90%;
+  }
+  
+  .navfirst {
+      display: flex;
+      justify-content: flex-end;
+      flex: 2;
+  }
+  //Wrapper for nav open/close
+  .toggle-btn {
+    position: fixed;
+    margin: 1.4em;
+    padding: 1em;
+    width: 40px;
+    height: 36px;
+    right: 5%;
+    z-index: 6;
+  }
+  //First line in nav open/close
+  .one {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #fff;
+    z-index: 6;
+  }
+  //Second line in nav open/close
+  .two {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #fff;
+    margin-top: 12px;
+    z-index: 6;
+  }
+  //Menu background
+  .menu{
+    z-index: 5;
+    position: fixed;
+    background: #101010;
+    height: 100%;
+    width:100%;
+    top: -110%;
+  }
+  
+  .data{
+    padding: 8 em 0 0 2em;
+    text-align: left;
+  }
+  
+  
