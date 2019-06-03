@@ -4,7 +4,7 @@ body {
   z-index: 1;
   background-image: url("/assets/images/backgrd3.svg");
   background-size: cover;
-  font-family: 'Spectral', serif; }
+  font-family: 'Lato', sans-serif; }
 
 footer {
   background-color: #5E2590;
