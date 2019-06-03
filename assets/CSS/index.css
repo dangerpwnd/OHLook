@@ -24,8 +24,7 @@
   font-size: 1em;
   margin: 1%;
   border: 2px white solid;
-  border-radius: 15px;
-  font-family: 'Spectral', serif; }
+  border-radius: 15px; }
 
 .guide button:hover {
   animation: pulse 2s; }
