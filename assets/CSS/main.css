@@ -13,24 +13,27 @@ footer {
 
 .links {
   text-decoration: none;
-  color: #00ADEF; }
+  color: white; }
 
 .links:hover {
-  color: #37AB9C; }
+  color: #00ADEF; }
 
 .socialLinks {
-  text-decoration: none;
-  color: #37AB9C; }
+  color: white; }
 
-.fab:hover {
+.socialLinks a {
+  text-decoration: none;
+  color: white; }
+
+.socialLinks a:hover {
   color: #00ADEF; }
 
 .contactLinks {
   text-decoration: none;
-  color: #00ADEF; }
+  color: white; }
 
 .contactLinks:hover {
-  color: #37AB9C; }
+  color: #00ADEF; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
