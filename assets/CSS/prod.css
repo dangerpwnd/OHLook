@@ -14,20 +14,20 @@ h1 {
   font-size: 2em;
   font-weight: bold;
   text-decoration: none;
-  color: #5E2590; }
+  color: #5e2590; }
 
-.PContainer {
+.pContainer, .pContainer2 {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: stretch; }
+  justify-content: space-evenly;
+  height: 90vh;
+  width: 90vw; }
 
 .productions {
-  width: 20em;
-  height: 30em;
+  flex: 1;
   border: 1px solid #CCC;
-  perspective: 600px;
-  margin: 2% 0; }
+  perspective: 600px; }
 
 .card {
   width: 100%;
@@ -46,59 +46,52 @@ h1 {
 .card-back {
   display: flex;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.9);
   transform: rotateY(180deg);
   overflow-y: auto; }
 
 .card.is-flipped {
   transform: rotateY(180deg); }
 
-.card1-front {
-  background: url("/assets/images/prod1.jpg") no-repeat center center;
+.transCont {
+  background-color: rgba(94, 37, 144, 0.6);
+  color: white; }
+
+.card1-front, .card1-back {
+  background: url("/assets/images/aladdin.png");
   background-size: cover; }
 
-.card2-front {
-  background: url("/assets/images/prod2.jpg") no-repeat center center;
+.card2-front, .card2-back {
+  background: url("/assets/images/ella.png");
   background-size: cover; }
 
-.card3-front {
-  background: url("/assets/images/prod3.jpg") no-repeat center center;
+.card3-front, .card3-back {
+  background: url("/assets/images/matilda.png");
   background-size: cover; }
 
-.card4-front {
-  background: url("/assets/images/prod4.jpg") no-repeat center center;
+.card4-front, .card4-back {
+  background: url("/assets/images/polkadots.png");
   background-size: cover; }
 
-.card5-front {
-  background: url("/assets/images/prod5.jpg");
+.card5-front, .card5-back {
+  background: url("/assets/images/psycho.png");
   background-size: cover; }
 
-.card6-front {
-  background: url("/assets/images/prod6.jpg");
+.card6-front, .card6-back {
+  background: url("/assets/images/chicago.png");
   background-size: cover; }
 
-.card7-front {
-  background: url("/assets/images/prod7.jpg");
+.card7-front, .card7-back {
+  background: url("/assets/images/disenchanted.png");
   background-size: cover; }
 
-.card8-front {
-  background: url("/assets/images/prod8.jpg");
+.card8-front, .card8-back {
+  background: url("/assets/images/jekyll.png");
   background-size: cover; }
 
-.card9-front {
-  background: url("/assets/images/prod9.jpg");
-  background-size: cover; }
-
-.card10-front {
-  background: url("/assets/images/prod10.jpg");
-  background-size: cover; }
-
-.card11-front {
-  background: url("/assets/images/prod11.jpg");
-  background-size: cover; }
-
-.card12-front {
-  background: url("/assets/images/prod12.jpg");
-  background-size: cover; }
+@media all and (max-width: 650px) {
+  .PContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
 
 /*# sourceMappingURL=prod.css.map */
