@@ -9,7 +9,9 @@ body {
 footer {
   background-color: #5E2590;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  align-items: center;
+  text-align: center; }
 
 .links {
   text-decoration: none;

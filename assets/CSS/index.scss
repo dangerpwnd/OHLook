@@ -56,7 +56,7 @@
 }
 
 //Flex container for 3 columns
-.flex3Columns{
+.flex2Columns{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -70,6 +70,11 @@
     color: white;
     background-color:#5E2590;
     padding: 1%;
+    margin:1%;
+}
+
+.column3{
+    margin-bottom:2%;
 }
 
 
