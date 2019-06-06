@@ -1,10 +1,18 @@
+.latenight {
+  background-color: black;
+  background-image: none; }
+
 .lnInfo {
   display: flex;
   flex-direction: row;
   justify-content: space-around; }
 
 .lnColumn {
+  color: red;
   text-align: center; }
+
+.lnColumn p {
+  color: blue; }
 
 .pContainer {
   display: flex;
