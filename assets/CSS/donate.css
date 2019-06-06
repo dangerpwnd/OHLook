@@ -5,12 +5,16 @@
   align-items: center; }
 
 .listLinks {
-  list-style-image: url();
   font-size: 2.5em;
   font-weight: bold; }
 
+.listLinks li {
+  list-style-image: url("/assets/Images/star.svg"); }
+
 .amazonSmile {
-  background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/x-locale/paladin/charitycentral/banner-background-image._CB309675353_.png"); }
+  background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/x-locale/paladin/charitycentral/banner-background-image._CB309675353_.png");
+  width: 300px;
+  height: 250px; }
 
 .mainContainer {
   display: flex;
@@ -24,5 +28,9 @@
 
 .donateInfo h1 {
   border: 1px solid white; }
+
+@media all and (max-width: 768) {
+  .listContainer {
+    flex-direction: column; } }
 
 /*# sourceMappingURL=donate.css.map */
