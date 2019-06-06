@@ -1,12 +1,16 @@
 button {
   background-color: #5E2590;
-  border: 1px solid #5E2590;
+  border: 5px solid white;
   color: white;
   border-radius: 10px;
   font-size: 2em; }
 
+button:hover {
+  background-color: white;
+  color: #5E2590; }
+
 .container {
-  margin-top: 5%;
+  margin-top: 3%;
   display: grid;
   grid-template-areas: "main1 main1 main1 main1" "cont1 cont1 cont1 cont1" "pic2 pic2 cont2 cont2" "cont3 cont3 cont4 cont4";
   grid-template-columns: repeat(4, 1fr);
@@ -27,7 +31,7 @@ button {
   margin: 2%;
   border: 1px solid white;
   border-radius: 15px;
-  background-color: rgba(255, 255, 255, 0.7); }
+  background-color: rgba(94, 37, 144, 0.8); }
 
 .main1 {
   grid-area: main1;
