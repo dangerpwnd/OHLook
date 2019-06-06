@@ -23,11 +23,14 @@
   justify-content: space-evenly; }
 
 .donateInfo {
-  border: 2px solid purple;
-  border-radius: 15px; }
+  margin: 1%;
+  border: 2px solid white;
+  border-radius: 15px;
+  background-color: #5E2590; }
 
 .donateInfo h1 {
-  border: 1px solid white; }
+  text-align: center;
+  color: white; }
 
 @media all and (max-width: 768) {
   .listContainer {
