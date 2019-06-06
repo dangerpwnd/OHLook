@@ -32,36 +32,36 @@ $(document).ready(function(){
 		tl1.reversed(!tl1.reversed());
 	});
 
-var tl2 = new TimelineMax({paused: false});
+// var tl2 = new TimelineMax({paused: false});
 
-	tl2.add($(".navTopP").hover(function() {
-		TweenMax.staggerFrom($(".navSubP"), 1, {
-		display: "block",
-		opacity: 0,
-		ease: Expo.easeOut
-	})}));
+// 	tl2.add($(".navTopP").hover(function() {
+// 		TweenMax.staggerFrom($(".navSubP"), 1, {
+// 		display: "block",
+// 		opacity: 0,
+// 		ease: Expo.easeOut
+// 	})}));
 	
-	tl2.add($(".navTopCl").hover(function() {
-		TweenMax.staggerFrom($(".navSubCl"), 1, {
-		display: "block",
-		opacity: 0,
-		ease: Expo.easeOut
-	})}));
+// 	tl2.add($(".navTopCl").hover(function() {
+// 		TweenMax.staggerFrom($(".navSubCl"), 1, {
+// 		display: "block",
+// 		opacity: 0,
+// 		ease: Expo.easeOut
+// 	})}));
 
-	tl2.add($(".navTopCa").hover(function() {
-	TweenMax.staggerFrom($(".navSubCa"), 1, {
-	display: "block",
-	opacity: 0,
-	ease: Expo.easeOut
-	})}));
+// 	tl2.add($(".navTopCa").hover(function() {
+// 	TweenMax.staggerFrom($(".navSubCa"), 1, {
+// 	display: "block",
+// 	opacity: 0,
+// 	ease: Expo.easeOut
+// 	})}));
 
-	tl2.add($(".navTopD").hover(function() {
-	TweenMax.staggerFrom($(".navSubD"), 1, {
-	display: "block",
-	opacity: 0,
-	ease: Expo.easeOut
-	})}));
+// 	tl2.add($(".navTopD").hover(function() {
+// 	TweenMax.staggerFrom($(".navSubD"), 1, {
+// 	display: "block",
+// 	opacity: 0,
+// 	ease: Expo.easeOut
+// 	})}));
 
-	tl2.reverse();
-	return tl2();
+// 	tl2.reverse();
+// 	return tl2();
 });
