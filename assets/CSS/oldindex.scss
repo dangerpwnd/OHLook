@@ -1,0 +1,88 @@
+
+//Flex container for hero and quick nav
+.flexMainContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.frontPic img{
+    border-radius: 15px;
+}
+
+
+.front3Guides{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2em;
+}
+
+.guide {
+    color: white;
+    text-align: center;
+
+}
+//Need border shadow for 3d effect
+.guide button{
+    background-color: Transparent;
+    color: white;
+    font-size: 1em;
+    margin: 1%;
+    border: 2px white solid;
+    border-radius: 15px;
+}
+
+.guide button:hover {
+    animation: pulse 2s;
+}
+
+@keyframes pulse{
+    0%{
+        background-color: transparent;
+        color: white;
+    }
+    100%{
+        background-color: black;
+        color: yellow;
+    }
+}
+
+
+.dividingLine{
+    border: 5px outset white;
+}
+
+//Flex container for 3 columns
+.flex2Columns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2%;
+}
+
+.column{
+    border-radius: 15px;
+    border: 2px white;
+    color: white;
+    background-color:#5E2590;
+    padding: 1%;
+    margin:1%;
+}
+
+.column3{
+    margin-bottom:2%;
+}
+
+
+@media all and (max-width: 768px){
+    .flexMainContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
