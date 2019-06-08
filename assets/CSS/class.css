@@ -1,18 +1,22 @@
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
-  margin: 0; }
+  margin: 0;
+}
 
 *, *:before, *:after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 .panels {
   min-height: 75vh;
   overflow: hidden;
   display: flex;
   font-size: 3em;
-  font-weight: 200; }
+  font-weight: 200;
+}
 
 .panel {
   background: #6B0F9C;
@@ -33,19 +37,24 @@ body {
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
-  filter: grayscale(100%); }
+  filter: grayscale(100%);
+}
 
 .panel1 {
-  background-image: url(/assets/images/theatre1.jpg); }
+  background-image: url(/assets/images/theatre1.jpg);
+}
 
 .panel2 {
-  background-image: url(/assets/images/theatre2.jpg); }
+  background-image: url(/assets/images/theatre2.jpg);
+}
 
 .panel3 {
-  background-image: url(/assets/images/singing1.jpg); }
+  background-image: url(/assets/images/singing1.jpg);
+}
 
 .panel4 {
-  background-image: url(/assets/images/music1.jpg); }
+  background-image: url(/assets/images/music1.jpg);
+}
 
 /* Flex Items */
 .panel > * {
@@ -55,31 +64,39 @@ body {
   flex: 1 0 auto;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+}
 
 .panel > *:first-child {
-  transform: translateY(-100%); }
+  transform: translateY(-100%);
+}
 
 .panel.open-active > *:first-child {
-  transform: translateY(0); }
+  transform: translateY(0);
+}
 
 .panel > *:last-child {
-  transform: translateY(100%); }
+  transform: translateY(100%);
+}
 
 .panel.open-active > *:last-child {
-  transform: translateY(0); }
+  transform: translateY(0);
+}
 
 .panel a {
   text-decoration: none;
-  color: blue; }
+  color: blue;
+}
 
 .panel p {
   text-transform: uppercase;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
-  font-size: 1em; }
+  font-size: 1em;
+}
 
 .panel p:nth-child(2) {
-  font-size: 1em; }
+  font-size: 1em;
+}
 
 .panel.open {
   flex: 5;
@@ -88,26 +105,34 @@ body {
   -moz-filter: grayscale(0);
   -o-filter: grayscale(0);
   -ms-filter: grayscale(0);
-  filter: grayscale(0); }
+  filter: grayscale(0);
+}
 
 @media only screen and (max-width: 600px) {
   .panels {
-    flex-direction: column; }
+    flex-direction: column;
+  }
 
   .panel.open {
     flex: 5;
-    font-size: 1em; }
+    font-size: 1em;
+  }
 
   .panel > *:first-child {
-    transform: translateX(-100%); }
+    transform: translateX(-100%);
+  }
 
   .panel.open-active > *:first-child {
-    transform: translateX(0); }
+    transform: translateX(0);
+  }
 
   .panel > *:last-child {
-    transform: translateX(100%); }
+    transform: translateX(100%);
+  }
 
   .panel.open-active > *:last-child {
-    transform: translateX(0); } }
+    transform: translateX(0);
+  }
+}
 
 /*# sourceMappingURL=class.css.map */

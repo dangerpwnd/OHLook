@@ -3,11 +3,13 @@ button {
   border: 5px solid white;
   color: white;
   border-radius: 10px;
-  font-size: 2em; }
+  font-size: 2em;
+}
 
 button:hover {
   background-color: white;
-  color: #5E2590; }
+  color: #5E2590;
+}
 
 .container {
   margin-top: 3%;
@@ -15,15 +17,18 @@ button:hover {
   grid-template-areas: "main1 main1 main1 main1" "cont1 cont1 cont1 cont1" "pic2 pic2 cont2 cont2" "cont3 cont3 cont4 cont4";
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 2fr 1fr 1fr;
-  grid-gap: 5px; }
+  grid-gap: 5px;
+}
 
 .subCont {
   display: flex;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+}
 
 .subCont2 {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+}
 
 .mainInfo {
   text-align: center;
@@ -31,57 +36,73 @@ button:hover {
   margin: 2%;
   border: 1px solid white;
   border-radius: 15px;
-  background-color: rgba(94, 37, 144, 0.8); }
+  background-color: rgba(94, 37, 144, 0.8);
+}
 
 .main1 {
   grid-area: main1;
-  background-image: url("/assets/images/theatre1.jpg"); }
+  background-image: url("/assets/images/theatre1.jpg");
+}
 
 .content {
   margin: 25px 25px;
   padding: 5px;
   border-radius: 10px;
-  color: white; }
+  color: white;
+  font-size: 1.4em;
+}
 
 .content1 {
-  grid-area: cont1; }
+  grid-area: cont1;
+}
 
 .content2 {
-  grid-area: cont2; }
+  grid-area: cont2;
+}
 
 .content3 {
-  grid-area: cont3; }
+  grid-area: cont3;
+}
 
 .content4 {
-  grid-area: cont4; }
+  grid-area: cont4;
+}
 
 .picture1 {
-  grid-area: pic1; }
+  grid-area: pic1;
+}
 
 .picture2 {
   grid-area: pic2;
   background-image: url("/assets/images/dancing1.jpg");
   margin-left: 2%;
-  border-radius: 15px; }
+  border-radius: 15px;
+}
 
 .picture3 {
   width: 100%;
-  border-radius: 20px; }
+  border-radius: 20px;
+}
 
 .noticeY {
   color: yellow;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .noticeB {
   color: blue;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 @media all and (max-width: 768px) {
   .container {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+  }
 
   .mainInfo {
-    width: 100%; } }
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=auditions.css.map */

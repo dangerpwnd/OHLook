@@ -52,11 +52,13 @@ button:hover{
   padding: 5px;
   border-radius: 10px;
   color: white;
+  font-size: 1.4em;
 }
 
 // Inherits from .content
 .content1{
   grid-area: cont1;
+  
 }
 
 // Inherits from .content

@@ -1,31 +1,37 @@
 .latenight {
   background-color: black;
-  background-image: none; }
+  background-image: none;
+}
 
 .lnInfo {
   display: flex;
   flex-direction: row;
-  justify-content: space-around; }
+  justify-content: space-around;
+}
 
 .lnColumn {
   color: red;
-  text-align: center; }
+  text-align: center;
+}
 
 .lnColumn p {
-  color: blue; }
+  color: blue;
+}
 
 .pContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: stretch; }
+  align-items: stretch;
+}
 
 .productions {
   width: 20em;
   height: 30em;
   border: 1px solid #CCC;
   perspective: 600px;
-  margin: 2% 0; }
+  margin: 2% 0;
+}
 
 .card {
   width: 100%;
@@ -33,34 +39,41 @@
   position: relative;
   transition: transform 1s;
   transform-style: preserve-3d;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .card-face {
   position: absolute;
   height: 100%;
   width: 100%;
-  backface-visibility: hidden; }
+  backface-visibility: hidden;
+}
 
 .card-back {
   display: flex;
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.9);
   transform: rotateY(180deg);
-  overflow-y: auto; }
+  overflow-y: auto;
+}
 
 .card.is-flipped {
-  transform: rotateY(180deg); }
+  transform: rotateY(180deg);
+}
 
 .card1-front {
   background: url("/assets/images/prod1.jpg") no-repeat center center;
-  background-size: cover; }
+  background-size: cover;
+}
 
 .card2-front {
   background: url("/assets/images/prod2.jpg") no-repeat center center;
-  background-size: cover; }
+  background-size: cover;
+}
 
 .card3-front {
   background: url("/assets/images/prod3.jpg") no-repeat center center;
-  background-size: cover; }
+  background-size: cover;
+}
 
 /*# sourceMappingURL=latenight.css.map */
