@@ -35,17 +35,6 @@ $(document).ready(function(){
 		tl1.reversed(!tl1.reversed());
 	});
 
-	$(".navTop").mouseenter(function(e){
-		console.log("Mouse is on");
-	});
-
-	$(".navTop").mouseleave(function(e){
-		console.log("Mouse is off")
-	})
-
-
-
-
 
 
 	// $(".navTop").hover(function() {

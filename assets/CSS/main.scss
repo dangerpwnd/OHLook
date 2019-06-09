@@ -1,3 +1,4 @@
+//default font, background
 body{
     margin: 0 auto;
     width: 100%;
@@ -6,7 +7,7 @@ body{
     background-size: cover;
     font-family: 'Lato', sans-serif;
 }
-
+//default footer
 footer{
     background-color: #5E2590;
     display: flex;
@@ -15,7 +16,7 @@ footer{
     text-align: center;
 }
 
-
+//left-link footer
 .links{
     text-decoration: none;
     color: white ;
@@ -24,7 +25,7 @@ footer{
 .links:hover{
     color: #00ADEF;
 }
-
+//middle-link footer
 .socialLinks{
     color: white;
 }
@@ -37,7 +38,7 @@ footer{
 .socialLinks a:hover{
   color: #00ADEF;
 }
-
+//right-link footer
 .contactLinks{
     text-decoration: none;
     color: white;
