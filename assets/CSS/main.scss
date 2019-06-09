@@ -55,21 +55,20 @@ footer{
     list-style: none;
   }
   
-  //.navtop are top catagories
-  .navtop:first-child{
+  //.navTop are top catagories
+  .navTop:first-child{
     color: grey;
     font-size: 24px;
   }
   
-  .navtop:not(:first-child){
+  .navTop:not(:first-child){
     color: grey;
     font-size: 48px;
   }
   //.navsub are sub-catagories of top
-  .navSubP, .navSubCl, .navSubCa, .navSubD{
+  .navSub{
     color: grey;
     font-size: 48px;
-    display:none;
   }
   
   //Properties for all nav links

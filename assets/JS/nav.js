@@ -1,5 +1,8 @@
 $(document).ready(function(){
+	
 	var tl1 = new TimelineMax({paused: false});
+
+	// tl1.set(".navSub",{xPercent:0});
 
 	tl1.add(TweenMax.to(".one", 0.5, {
 		y: 6,
@@ -20,7 +23,7 @@ $(document).ready(function(){
 		delay: -1
 	}));
 
-	tl1.add(TweenMax.staggerFrom(".navtop", 1, {
+	tl1.add(TweenMax.staggerFrom(".navTop", 1, {
 		x: -200,
 		opacity: 0,
 		ease: Expo.easeOut
@@ -32,27 +35,30 @@ $(document).ready(function(){
 		tl1.reversed(!tl1.reversed());
 	});
 
-// var tl2 = new TimelineMax({paused: false});
+	$(".navTop").mouseenter(function(e){
+		console.log("Mouse is on");
+	});
 
-// 	tl2.add($(".navTopP").hover(function() {
-// 		TweenMax.staggerFrom($(".navSubP"), 1, {
-// 		display: "block",
-// 		opacity: 0,
-// 		ease: Expo.easeOut
-// 	})}));
+	$(".navTop").mouseleave(function(e){
+		console.log("Mouse is off")
+	})
+
+
+
+
+
+
+	// $(".navTop").hover(function() {
+	// TweenMax.staggerFrom($("navSub"), 1, {
+	// 	opacity: 0,
+	// 	ease: Expo.easeOut
+	// })});
 	
 // 	tl2.add($(".navTopCl").hover(function() {
 // 		TweenMax.staggerFrom($(".navSubCl"), 1, {
 // 		display: "block",
 // 		opacity: 0,
 // 		ease: Expo.easeOut
-// 	})}));
-
-// 	tl2.add($(".navTopCa").hover(function() {
-// 	TweenMax.staggerFrom($(".navSubCa"), 1, {
-// 	display: "block",
-// 	opacity: 0,
-// 	ease: Expo.easeOut
 // 	})}));
 
 // 	tl2.add($(".navTopD").hover(function() {
