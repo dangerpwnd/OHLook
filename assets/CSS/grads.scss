@@ -1,4 +1,13 @@
 
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  color: #5E2590;
+}
+
 ul {
   list-style-type: none;
 }
@@ -18,20 +27,78 @@ ul {
 .tile{
   margin: 0 auto;
   color: white;
-  font-size: 1.3em;
-  text-align: center;
-  height: 8em;
+  font-size: 0.7em;
   font-weight: 300;
   overflow: hidden;
   cursor: pointer;
   position: relative;
-  color: #333;
-  -webkit-transition: background-color 0.2s ease-out;
-  transition: background-color 0.2s ease-out;
+
 }
 
-.gradpic{
+.grad{
+  display: flex;
+  height: 15em;
+  width: 15em;
   border-radius: 15px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2%;
+}
+
+//Grad Info
+.gradInfo{
+  visibility: hidden;
+  color: white;
+}
+
+//Info on Grads
+.subInfo{
+  font-size: 0.4em;
+}
+
+.grad1{
+  background-image: url("/assets/images/Pim Head.jpg");
+  background-size: cover;
+}
+
+.grad2{
+  background-image: url("/assets/images/Victoria Head.jpg");
+  background-size: cover;
+}
+
+.grad3{
+  background-image: url("/assets/images/Zoe Head.jpg");
+  background-size: cover;
+}
+
+.grad4{
+  background-image: url("/assets/images/Lexy Head.jpg");
+  background-size: cover;
+}
+
+.grad5{
+  background-image: url("/assets/images/Logan Head.jpg");
+  background-size: cover;
+}
+
+.grad6{
+  background-image: url("/assets/images/Stephen Head.jpg");
+  background-size: cover;
+}
+
+.grad7{
+  background-image: url("/assets/images/Daniella Head.jpg");
+  background-size: cover;
+}
+
+.grad8{
+  background-image: url("/assets/images/Ryan Head.jpg");
+  background-size: cover;
+}
+
+.grad9{
+  background-image: url("/assets/images/PJ Head.jpeg");
+  background-size: cover;
 }
 
 .left-gradpic {
