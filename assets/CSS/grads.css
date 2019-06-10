@@ -87,6 +87,7 @@ ul {
 
 #info {
   grid-area: info;
+  width: 100%;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 50px;
   padding: 1%; }
