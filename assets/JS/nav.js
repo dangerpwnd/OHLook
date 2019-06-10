@@ -2,7 +2,7 @@ $(document).ready(function(){
 	
 	var tl1 = new TimelineMax({paused: false});
 
-	// tl1.set(".navSub",{xPercent:0});
+	tl1.set(".navSub",{xPercent:0});
 
 	tl1.add(TweenMax.to(".one", 0.5, {
 		y: 6,
@@ -35,28 +35,22 @@ $(document).ready(function(){
 		tl1.reversed(!tl1.reversed());
 	});
 
+	$(".navTop").hover(over, out);
+	function over(){
+		$navs = $(this).find('.navSub');
+		TweenMax.staggerTo($navs, 1, {
+			autoAlpha: 1,
+			visibility:'visible', 
+			ease: Power2.easeOut
+		}, 0.3);
+	}
+	function out(){
+		$navs = $(this).find('.navSub');
+		TweenMax.staggerTo($navs, 1, {
+			autoAlpha: 0,
+			visibility:'hidden', 
+			ease: Power2.easeOut
+		}, 0.3)
+	}
 
-
-	// $(".navTop").hover(function() {
-	// TweenMax.staggerFrom($("navSub"), 1, {
-	// 	opacity: 0,
-	// 	ease: Expo.easeOut
-	// })});
-	
-// 	tl2.add($(".navTopCl").hover(function() {
-// 		TweenMax.staggerFrom($(".navSubCl"), 1, {
-// 		display: "block",
-// 		opacity: 0,
-// 		ease: Expo.easeOut
-// 	})}));
-
-// 	tl2.add($(".navTopD").hover(function() {
-// 	TweenMax.staggerFrom($(".navSubD"), 1, {
-// 	display: "block",
-// 	opacity: 0,
-// 	ease: Expo.easeOut
-// 	})}));
-
-// 	tl2.reverse();
-// 	return tl2();
 });

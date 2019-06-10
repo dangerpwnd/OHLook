@@ -69,8 +69,11 @@ footer{
   }
   //.navsub are sub-catagories of top
   .navSub{
+    display: inline-block;
+    visibility: hidden;
     color: grey;
     font-size: 48px;
+    margin: 0 2%;
   }
   
   //Properties for all nav links
