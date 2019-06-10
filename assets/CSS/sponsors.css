@@ -2,18 +2,18 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .thankYou {
+  width: 80vw;
+  height: 50vh;
   text-align: center;
-}
+  margin: 1% auto; }
 
 .sponsors {
   width: 80vw;
   text-align: center;
   border: 1px solid white;
-  border-radius: 15px;
-}
+  border-radius: 15px; }
 
 /*# sourceMappingURL=sponsors.css.map */
