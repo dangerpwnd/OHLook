@@ -121,4 +121,13 @@ ul {
   padding: 8 em 0 0 2em;
   text-align: left; }
 
+@media all and (max-width: 768px) {
+  .menu {
+    position: absolute;
+    height: 200%;
+    top: -200%; }
+
+  .navSub {
+    display: block; } }
+
 /*# sourceMappingURL=main.css.map */

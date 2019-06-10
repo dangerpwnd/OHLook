@@ -151,4 +151,15 @@ footer{
     text-align: left;
   }
   
-  
+  @media all and (max-width: 768px){
+    .menu{
+      position: absolute;
+      height: 200%;
+      top: -200%;
+    }
+
+    .navSub{
+      display: block;
+    }
+
+  }
