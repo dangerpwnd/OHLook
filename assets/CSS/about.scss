@@ -10,17 +10,14 @@
     flex: 1;
 }
 
-.aboutInfo.open{
-    flex: 5;
-}
-
-.aboutInfo h1{
+.abouth1{
     writing-mode: vertical-rl;
     text-orientation: upright;
 }
 
-.aboutInfo h2,p{
+.aboutInfo h2,p,li{
     overflow: hidden;
+    visibility: hidden;
 }
 
 .about{

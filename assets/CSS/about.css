@@ -8,15 +8,13 @@
   padding: 1%;
   flex: 1; }
 
-.aboutInfo.open {
-  flex: 5; }
-
-.aboutInfo h1 {
+.abouth1 {
   writing-mode: vertical-rl;
   text-orientation: upright; }
 
-.aboutInfo h2, p {
-  overflow: hidden; }
+.aboutInfo h2, p, li {
+  overflow: hidden;
+  visibility: hidden; }
 
 .about {
   background-color: black;
