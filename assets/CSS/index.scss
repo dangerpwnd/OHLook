@@ -98,11 +98,6 @@ body {
 .panel.open {
     flex: 5;
     font-size: 3em;
-    // -webkit-filter: grayscale(0);
-    // -moz-filter: grayscale(0);
-    // -o-filter: grayscale(0);
-    // -ms-filter: grayscale(0);
-    // filter: grayscale(0);
 }
 
 @media all and (max-width: 600px) {

@@ -1,0 +1,33 @@
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 2%; }
+
+.aboutInfo {
+  border: 1px solid white;
+  padding: 1%; }
+
+.aboutInfo.open {
+  flex: 5; }
+
+.aboutInfo h1 {
+  writing-mode: vertical-rl;
+  text-orientation: upright; }
+
+.about {
+  background-color: black;
+  color: white; }
+
+.directors {
+  background-color: #00ADEF;
+  color: white; }
+
+.musicians {
+  background-color: #37AB9C;
+  color: white; }
+
+.instructors {
+  background-color: #5E2590;
+  color: white; }
+
+/*# sourceMappingURL=about.css.map */
