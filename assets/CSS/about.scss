@@ -7,6 +7,7 @@
 .aboutInfo{
     border: 1px solid white;
     padding: 1%;
+    flex: 1;
 }
 
 .aboutInfo.open{
@@ -16,6 +17,10 @@
 .aboutInfo h1{
     writing-mode: vertical-rl;
     text-orientation: upright;
+}
+
+.aboutInfo h2,p{
+    overflow: hidden;
 }
 
 .about{
