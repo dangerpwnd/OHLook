@@ -1,5 +1,5 @@
 body {
-  font-family: 'Nunito Sans', sans-serif; }
+  font-family: 'Montserrat', sans-serif; }
 
 .latenight {
   background-color: black;
@@ -11,19 +11,29 @@ body {
   justify-content: space-around; }
 
 .lnColumn {
-  color: red;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 15px;
   text-align: center;
-  flex: 1; }
+  flex: 1;
+  margin: 2%;
+  padding: 0 1%; }
+
+.lnColumn h1 {
+  text-shadow: -1px 0 5px #ff0000, 1px 0 5px #ff0000, 0 -1px 5px #ff0000, 0 1px 5px #ff0000;
+  color: white; }
 
 .lnColumn p {
   flex: 1;
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
-  color: blue; }
+  color: #B1E4FC; }
+
+.lnFollow {
+  font-size: 3em; }
 
 .pContainer {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  margin-bottom: 2%; }
 
 .card {
   width: 300px;
@@ -50,11 +60,15 @@ body {
   transform: rotateY(180deg); }
 
 .card1-front {
-  background: url("/assets/images/silence.png");
+  background: url("/assets/images/jerry.png");
   background-size: cover; }
 
 .card2-front {
-  background: url("/assets/images/jerry.png");
+  background: url("/assets/images/silence.png");
   background-size: cover; }
+
+@media all and (max-width: 768px) {
+  .lnInfo {
+    flex-direction: column; } }
 
 /*# sourceMappingURL=latenight.css.map */
