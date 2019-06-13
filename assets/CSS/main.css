@@ -9,10 +9,22 @@ body {
 
 footer {
   background-color: #5E2590;
+  text-align: center; }
+
+.sponsorAd {
+  width: 85vw;
+  height: 40vh;
+  border-radius: 15px; }
+
+.passion {
+  margin: 1% auto;
+  background-image: url("/assets/images/passion.jpg");
+  background-size: 100% 100%; }
+
+.linkContainer {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  text-align: center; }
+  align-items: center; }
 
 .links {
   text-decoration: none;

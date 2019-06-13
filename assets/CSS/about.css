@@ -6,7 +6,8 @@
 .aboutInfo {
   border: 1px solid white;
   padding: 1%;
-  flex: 1; }
+  flex: 1;
+  overflow-y: auto; }
 
 .abouth1 {
   writing-mode: vertical-rl;
@@ -20,7 +21,7 @@
   overflow: hidden;
   visibility: hidden; }
 
-.aboutInfo > li {
+.aboutInfo > ul {
   overflow: hidden;
   visibility: hidden; }
 

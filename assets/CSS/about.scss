@@ -8,6 +8,7 @@
     border: 1px solid white;
     padding: 1%;
     flex: 1;
+    overflow-y: auto;
 }
 
 .abouth1{
@@ -25,7 +26,7 @@
     visibility: hidden;
 }
 
-.aboutInfo > li{
+.aboutInfo > ul{
     overflow: hidden;
     visibility: hidden;
 }
