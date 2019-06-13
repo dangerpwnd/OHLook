@@ -42,10 +42,7 @@ body {
   background-image: url(/assets/images/theatre2.jpg); }
 
 .panel3 {
-  background-image: url(/assets/images/singing1.jpg); }
-
-.panel4 {
-  background-image: url(/assets/images/music1.jpg); }
+  background-image: url(/assets/images/theater1.jpg); }
 
 /* Flex Items */
 .panel > * {

@@ -36,7 +36,9 @@ button:hover {
 
 .main1 {
   grid-area: main1;
-  background-image: url("/assets/images/theatre1.jpg"); }
+  height: 30em;
+  background-image: url("/assets/images/singing1.jpg");
+  background-size: cover; }
 
 .content {
   margin: 25px 25px;
