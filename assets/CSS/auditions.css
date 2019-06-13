@@ -45,7 +45,7 @@ button:hover {
   padding: 5px;
   border-radius: 10px;
   color: white;
-  font-size: 1.4em; }
+  font-size: 1em; }
 
 .content1 {
   grid-area: cont1; }
