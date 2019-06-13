@@ -15,7 +15,17 @@
     text-orientation: upright;
 }
 
-.aboutInfo h2,p,li{
+.aboutInfo > h2{
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.aboutInfo > p{
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.aboutInfo > li{
     overflow: hidden;
     visibility: hidden;
 }
