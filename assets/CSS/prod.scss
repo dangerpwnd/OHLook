@@ -38,6 +38,7 @@ h1 {
   transition: transform 1s;
   transform-style: preserve-3d;
   cursor: pointer;
+  margin-bottom: 1%;
 }
 
 .card-face{
@@ -45,6 +46,7 @@ h1 {
   width: 100%;
   position: absolute;
   backface-visibility: hidden;
+  border-radius: 15px;
 }
 
 .card-back{

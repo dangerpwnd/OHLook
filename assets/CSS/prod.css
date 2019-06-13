@@ -32,13 +32,15 @@ h1 {
   position: relative;
   transition: transform 1s;
   transform-style: preserve-3d;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-bottom: 1%; }
 
 .card-face {
   height: 100%;
   width: 100%;
   position: absolute;
-  backface-visibility: hidden; }
+  backface-visibility: hidden;
+  border-radius: 15px; }
 
 .card-back {
   display: flex;
