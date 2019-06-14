@@ -84,7 +84,8 @@ button:hover{
 // Inherits from .picture
 .picture2{
   grid-area: pic2;
-  background-image: url("/assets/images/dancing1.jpg");
+  background-image: url("/assets/images/theater2.jpg");
+  background-size: cover;
   margin-left: 2%;
   border-radius: 15px;
 }
