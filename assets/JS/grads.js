@@ -1,5 +1,6 @@
 var expandLeftGrad = document.querySelectorAll(".leftTile");
 var expandRightGrad = document.querySelectorAll(".rightTile");
+var expandYearGrad = document.querySelectorAll(".yearSelect");
 
 expandLeftGrad.forEach(function(grad){
     var timeLine = new TimelineMax();
@@ -33,6 +34,30 @@ expandRightGrad.forEach(function(grad){
     }
 });
 
+expandYearGrad.forEach(function(grad){
+    var timeLine = new TimelineMax();
+    var target = grad.getElementsByTagName("li");
+    TweenLite.set(target, {
+        height:0,
+        autoAlpha:0
+    });
+    timeLine.to(target, 1, {
+        height: "auto",
+        autoAlpha:1,
+        visibility:"visible",
+        ease: Cubic.easeInOut
+    });
+    grad.addEventListener("click", toggleAnimation);
+    timeLine.reverse();
+    function toggleAnimation(){
+        if(timeLine.reversed()){
+            timeLine.play();
+        }
+        else{
+            timeLine.reverse();
+        }
+    }
+})
     
 
 

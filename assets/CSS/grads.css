@@ -8,6 +8,24 @@ a:hover {
 ul {
   list-style-type: none; }
 
+.yearSelect {
+  cursor: pointer;
+  font-size: 1.5em;
+  font-weight: bold; }
+
+.yearSelect > li {
+  position: relative;
+  visibility: hidden;
+  height: auto;
+  overflow: hidden;
+  font-size: .75em;
+  font-weight: normal;
+  cursor: auto; }
+
+.yearSelect > .year {
+  font-size: .80em;
+  font-weight: bold; }
+
 .grad-wrapper {
   margin: 2%;
   display: grid;
