@@ -37,19 +37,17 @@
     border: 2px solid white;
     border-radius: 5px;
     text-align: center;
+    background-color: white;
+    color: #5E2590
 }
 
 .donateClick:hover{
-    background-color: white;
-    cursor: pointer;
+    a{color: white;}
+    background-color: #5E2590;
 }
 
-a{
+.donateLink > a{
     text-decoration: none;
-    color: white;
-}
-
-a:hover{
     color: #5E2590;
 }
 

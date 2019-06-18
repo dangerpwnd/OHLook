@@ -30,17 +30,17 @@
   padding: 0 1%;
   border: 2px solid white;
   border-radius: 5px;
-  text-align: center; }
+  text-align: center;
+  background-color: white;
+  color: #5E2590; }
 
 .donateClick:hover {
-  background-color: white;
-  cursor: pointer; }
+  background-color: #5E2590; }
+  .donateClick:hover a {
+    color: white; }
 
-a {
+.donateLink > a {
   text-decoration: none;
-  color: white; }
-
-a:hover {
   color: #5E2590; }
 
 @media all and (max-width: 768px) {
