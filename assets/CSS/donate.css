@@ -22,8 +22,9 @@
   background-color: rgba(255, 255, 255, 0.5);
   width: 100%; }
 
-.donateInfo > h1 {
-  text-align: center; }
+.donateInfo > h1, h2 {
+  text-align: center;
+  color: #5E2590; }
 
 .donateClick {
   margin: 1%;
