@@ -26,4 +26,38 @@
   display: flex;
   flex-direction: column; }
 
+.center {
+  text-align: center; }
+
+.title {
+  font-size: 1.2em;
+  color: #5E2590;
+  margin: 1% 0; }
+
+.purpCol {
+  color: #5E2590; }
+
+a {
+  text-decoration: none;
+  color: #5E2590; }
+
+.border {
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 1%; }
+
+.border:hover {
+  background-color: white; }
+
+.purchaseClick {
+  margin: 5% 2%;
+  padding: 0 1%;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-align: center; }
+
+.purchaseClick:hover {
+  background-color: white;
+  cursor: pointer; }
+
 /*# sourceMappingURL=purchase.css.map */
