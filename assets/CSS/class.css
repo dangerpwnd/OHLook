@@ -2,7 +2,8 @@ html {
   box-sizing: border-box; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  font-family: 'Playfair Display', serif; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
