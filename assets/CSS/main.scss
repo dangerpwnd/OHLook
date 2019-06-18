@@ -1,3 +1,11 @@
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+ul{
+  list-style: none;
+}
+
 //default font, background
 body{
     margin: 0 auto;
@@ -8,6 +16,7 @@ body{
     font-family: 'Lato', sans-serif;
     max-width: 100%;
 }
+
 //default footer
 footer{
     display: flex;
@@ -65,14 +74,6 @@ footer{
 .contactLinks:hover{
     color: #00ADEF;
 }
-
-*, *:before, *:after{
-    box-sizing: inherit;
-  }
-  
-  ul{
-    list-style: none;
-  }
   
   //.navTop are top catagories
   .navTop:first-child{
