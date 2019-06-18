@@ -41,4 +41,8 @@
   background-color: #5E2590;
   color: white; }
 
+@media all and (max-width: 768px) {
+  .mainContainer {
+    flex-direction: column; } }
+
 /*# sourceMappingURL=about.css.map */

@@ -10,26 +10,28 @@ body{
 }
 //default footer
 footer{
+    display: flex;
+    flex-direction: column;
     background-color: #5E2590;
     text-align: center;
+    max-width: 100%;
 }
 
 .sponsorAd{
-  width: 85vw;
-  height: 40vh;
+  height: 15em;
   border-radius: 15px;
+  margin: 1%;
 }
 
 .passion{
-  margin: 1% auto;
-  background-image: url("/assets/images/passion.jpg");
+  background-image: url("/assets/images/passion.svg");
   background-size: 100% 100%;
 }
 
 .linkContainer{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    align-items: center;
 }
 
 //left-link footer
