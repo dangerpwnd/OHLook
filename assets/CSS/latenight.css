@@ -74,6 +74,17 @@ body {
   background: url("/assets/images/silence.png");
   background-size: cover; }
 
+.lateFooter {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  text-align: center;
+  max-width: 100%; }
+
+.hopstingLate {
+  background-image: url("/assets/images/hopstinglate.png");
+  background-size: 100% 100%; }
+
 @media all and (max-width: 768px) {
   .lnInfo {
     flex-direction: column; } }

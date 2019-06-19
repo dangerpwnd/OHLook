@@ -90,6 +90,20 @@ body{
     background: url("/assets/images/silence.png");
     background-size: cover;
 }
+//Footer for late night page
+.lateFooter{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    text-align: center;
+    max-width: 100%;
+}
+
+//Hop and sting logo for late night page
+.hopstingLate{
+  background-image: url("/assets/images/hopstinglate.png");
+  background-size: 100% 100%;
+}
 
 @media all and (max-width: 768px){
     .lnInfo{
