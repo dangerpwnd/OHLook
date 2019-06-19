@@ -87,6 +87,50 @@ body {
   -ms-filter: grayscale(0);
   filter: grayscale(0); }
 
+.pContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly; }
+
+.card {
+  width: 20em;
+  height: 20em;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  margin-bottom: 1%; }
+
+.card-face {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 15px; }
+
+.card-back {
+  display: flex;
+  flex-direction: column;
+  transform: rotateY(180deg);
+  overflow-y: auto; }
+
+.card.is-flipped {
+  transform: rotateY(180deg); }
+
+.transCont {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  height: auto;
+  text-align: center;
+  padding: 2%; }
+
+.prodLinks {
+  color: white; }
+
+.card-front, .card-back {
+  background: url("/assets/images/aladdin.png");
+  background-size: cover; }
+
 @media only screen and (max-width: 600px) {
   .panels {
     flex-direction: column; }
