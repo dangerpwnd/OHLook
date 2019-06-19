@@ -10,6 +10,12 @@ body {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+//Text-centered
+.textC{
+    text-align: center;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 10px;
+}
 
 .panels {
     min-height: 75vh;
@@ -157,8 +163,12 @@ body {
   }
   
   .card-front, .card-back {
-      background: url("/assets/images/aladdin.png");
-      background-size: cover;
+      background: url("/assets/images/icons.svg");
+      border: 1px solid black;
+      padding: 1%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
   }
 
 

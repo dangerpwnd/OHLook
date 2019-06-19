@@ -8,6 +8,11 @@ body {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+.textC {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px; }
+
 .panels {
   min-height: 75vh;
   overflow: hidden;
@@ -128,8 +133,12 @@ body {
   color: white; }
 
 .card-front, .card-back {
-  background: url("/assets/images/aladdin.png");
-  background-size: cover; }
+  background: url("/assets/images/icons.svg");
+  border: 1px solid black;
+  padding: 1%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 @media only screen and (max-width: 600px) {
   .panels {
