@@ -149,6 +149,7 @@ footer {
     top: -200%; }
 
   .navSub {
-    display: block; } }
+    display: block;
+    visibility: visible; } }
 
 /*# sourceMappingURL=main.css.map */
