@@ -10,7 +10,7 @@ body {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-//Text-centered
+//Card Titles
 .textC{
     text-align: center;
     background-color: rgba(255,255,255,0.9);
@@ -137,6 +137,12 @@ body {
     border-radius: 15px;
   }
   
+.card-front{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
   .card-back{
     display: flex;
     flex-direction: column;

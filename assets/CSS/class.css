@@ -113,6 +113,11 @@ body {
   backface-visibility: hidden;
   border-radius: 15px; }
 
+.card-front {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .card-back {
   display: flex;
   flex-direction: column;
