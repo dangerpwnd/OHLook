@@ -82,8 +82,10 @@ body {
   max-width: 100%; }
 
 .hopstingLate {
-  background-image: url("/assets/images/hopstinglate.png");
-  background-size: 100% 100%; }
+  background-image: url("/assets/images/hopstinglate.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 @media all and (max-width: 768px) {
   .lnInfo {

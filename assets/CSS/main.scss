@@ -27,9 +27,9 @@ footer{
 }
 
 .sponsorAd{
-  height: 15em;
-  border-radius: 15px;
+  height: 12em;
   margin: 1%;
+  border-radius: 15px;
 }
 
 .sponsorLink{
@@ -40,12 +40,17 @@ footer{
 
 .passion{
   background-image: url("/assets/images/passion.svg");
-  background-size: 100% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
 }
 
 .hopsting{
   background-image: url("/assets/images/hopsting.png");
-  background-size: 100% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .linkContainer{
