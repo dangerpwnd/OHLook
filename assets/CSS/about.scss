@@ -1,39 +1,52 @@
 //Main flex container
 .mainContainer{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 2%;
 }
+
+.quicknav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2%;
+  }
+  
+  .quickitem a{
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #5E2590;
+  }
 
 //Style for column info
 .aboutInfo{
     border: 1px solid white;
     padding: 1%;
     flex: 1;
-    overflow-y: auto;
 }
-
-//Initial state of column titles
-// .abouth1{
-//     writing-mode: vertical-rl;
-//     text-orientation: upright;
-// }
 
 //Flex wrapper for all bios
 .bio-wrapper{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     margin: 1%;
     position: relative;
 }
 //Style for bio tile
 .bio{
   display: flex;
-  height: 15em;
+  min-height: 15em;
+  max-height: 25em;
   width: 15em;
   border-radius: 15px;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   padding: 2%;
   cursor: pointer;
 }
@@ -42,25 +55,16 @@
     visibility: hidden;
     color: white;
 }
-//Style for bio p 
-.subInfo{
-    font-size: 0.4em;
+//Style for title
+.subTitleInfo{
+    font-size: 1em;
 }
 
-// .aboutInfo > h2{
-//     overflow: hidden;
-//     visibility: hidden;
-// }
-
-// .aboutInfo > p{
-//     overflow: hidden;
-//     visibility: hidden;
-// }
-
-// .aboutInfo > ul{
-//     overflow: hidden;
-//     visibility: hidden;
-// }
+//Style for bio info
+.subInfo{
+    font-size: 0.5em;
+    
+}
 
 //Style for About Column
 .about{
