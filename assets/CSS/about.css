@@ -45,7 +45,8 @@
 .transBack {
   visibility: hidden;
   background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 15px; }
+  border-radius: 10px;
+  padding: 5%; }
 
 .bioInfo {
   visibility: hidden;
