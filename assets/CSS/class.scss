@@ -177,6 +177,26 @@ body {
       background-repeat: no-repeat;
       background-position: center;
   }
+//Purchase button for each class
+  .purchaseClick{
+    margin:1%;
+    padding: 0 1%;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    color: #5E2590
+}
+
+.purchaseClick:hover{
+    a{color: white;}
+    background-color: #5E2590;
+}
+
+.purchaseLink > a{
+    text-decoration: none;
+    color: #5E2590;
+}
 
 
 @media only screen and (max-width: 600px) {
