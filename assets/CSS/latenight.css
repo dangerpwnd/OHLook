@@ -87,6 +87,24 @@ body {
   background-repeat: no-repeat;
   background-position: center; }
 
+.purchaseClick {
+  margin: 1%;
+  padding: 0 1%;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-align: center;
+  background-color: white;
+  color: #5E2590; }
+
+.purchaseClick:hover {
+  background-color: #5E2590; }
+  .purchaseClick:hover a {
+    color: white; }
+
+.purchaseLink > a {
+  text-decoration: none;
+  color: #5E2590; }
+
 @media all and (max-width: 768px) {
   .lnInfo {
     flex-direction: column; } }
