@@ -1,16 +1,12 @@
-var panels = document.querySelectorAll('.aboutInfo');
+//variables
+var expandBio = document.querySelectorAll('.bio');
 
-
-panels.forEach(function(panel){
+//bio tile animation
+expandBio.forEach(function(bio){
     var timeLine = new TimelineMax();
-	var tween = timeLine.add(TweenMax.to(panel,0.5, {flex:3}));
-	var tween2 = timeLine.add(TweenMax.to(panel.querySelector("h1"), 0.5, {autoAlpha:0, ease: Power2.easeOut}));
-	var tween3 = timeLine.add(TweenMax.to(panel.querySelector("h1"), 0.5, {writingMode:"horizontal-tb", textOrientation:"sideways",autoAlpha:1, ease: Power2.easeOut}));
-	var tween4 = timeLine.add(TweenMax.to(panel.querySelectorAll("h2"), 0.5, {autoAlpha:1, visibility:'visible', ease: Power2.easeOut}));
-	var tween5 = timeLine.add(TweenMax.to(panel.querySelectorAll("p"), 0.5, {autoAlpha:1, visibility:'visible', ease: Power2.easeOut}));
-	var tween5 = timeLine.add(TweenMax.to(panel.querySelectorAll("ul"), 0.5, {autoAlpha:1, visibility:'visible', ease: Power2.easeOut}));
-
-    panel.addEventListener("click", toggleAnimation);
+    var tween = timeLine.add(TweenMax.to(bio,1, {xPercent: 100, autoAlpha: 1, zIndex:5, scale:2.5, ease: Power2.easeOut}));
+    var tween2 = timeLine.add(TweenMax.to(bio.querySelectorAll('.bioInfo'), 1, {yPercent: -100, autoAlpha:1, visibility:'visible', ease: Power2.easeOut}));
+    bio.addEventListener("click", toggleAnimation);
     timeLine.reverse();
     function toggleAnimation(){
         if(timeLine.reversed()){

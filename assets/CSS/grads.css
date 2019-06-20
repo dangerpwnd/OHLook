@@ -29,18 +29,22 @@ ul {
 .grad-wrapper {
   margin: 2%;
   display: grid;
-  grid-template-areas: "left-gradpic info right-gradpic" "left-gradpic info right-gradpic" "left-gradpic info right-gradpic" "left-gradpic mid-gradpic right-gradpic";
+  grid-template-areas: "left-gradpic info right-gradpic" "left-gradpic info right-gradpic" "left-gradpic info right-gradpic" "left-gradpic info right-gradpic";
   grid-gap: 10px;
   position: relative; }
 
-.tile {
-  margin: 0 auto;
-  color: white;
-  font-size: 0.7em;
-  font-weight: 300;
-  overflow: hidden;
-  cursor: pointer;
-  position: relative; }
+.left-gradpic {
+  grid-area: left-gradpic; }
+
+.right-gradpic {
+  grid-area: right-gradpic; }
+
+#info {
+  grid-area: info;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  padding: 1%; }
 
 .grad {
   display: flex;
@@ -94,21 +98,5 @@ ul {
 .grad9 {
   background-image: url("/assets/images/PJ Head.jpeg");
   background-size: cover; }
-
-.left-gradpic {
-  grid-area: left-gradpic; }
-
-.mid-gradpic {
-  grid-area: mid-gradpic; }
-
-.right-gradpic {
-  grid-area: right-gradpic; }
-
-#info {
-  grid-area: info;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 50px;
-  padding: 1%; }
 
 /*# sourceMappingURL=grads.css.map */

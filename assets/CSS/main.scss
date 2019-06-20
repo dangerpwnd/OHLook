@@ -1,7 +1,8 @@
+//Default element style
 *, *:before, *:after{
   box-sizing: inherit;
 }
-
+//Default element style
 ul{
   list-style: none;
 }
@@ -16,81 +17,38 @@ body{
     font-family: 'Lato', sans-serif;
     max-width: 100%;
 }
-
-//default footer
-footer{
-    display: flex;
-    flex-direction: column;
-    background-color: #5E2590;
-    text-align: center;
-    max-width: 100%;
+//Navigation container
+.navcontainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 20vh;
 }
-
-.sponsorAd{
-  height: 12em;
-  margin: 1%;
-  border-radius: 15px;
+//OHLOOK Logo flex item
+.navlogo {
+  flex: 1;
 }
-
-.sponsorLink{
-  display:block;
+//OHLOOK Logo image
+.navlogo img {
+  margin: 2% 5%;
   width: 100%;
   height: 100%;
 }
-
-.passion{
-  background-image: url("/assets/images/passion.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  
+//OHLOOK news middle section of nav
+.navnews{
+margin:2%;
+flex: 2;
+border-radius: 15px;
+background-image: url("/assets/images/dance.svg");
+background-size: 100% 100%;
+}
+//Nav button right section of nav
+.navfirst {
+  display: flex;
+  justify-content: flex-end;
+  flex: 0.5;
 }
 
-.hopsting{
-  background-image: url("/assets/images/hopsting.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.linkContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-//left-link footer
-.links{
-    text-decoration: none;
-    color: white ;
-}
-
-.links:hover{
-    color: #00ADEF;
-}
-//middle-link footer
-.socialLinks{
-    color: white;
-}
-
-.socialLinks a{
-  text-decoration: none;
-  color: white;
-}
-
-.socialLinks a:hover{
-  color: #00ADEF;
-}
-//right-link footer
-.contactLinks{
-    text-decoration: none;
-    color: white;
-}
-
-.contactLinks:hover{
-    color: #00ADEF;
-}
-  
   //.navTop are top catagories
   .navTop:first-child{
     color: grey;
@@ -121,36 +79,6 @@ footer{
     color: grey;
   }
   
-  .navcontainer {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      height: 20vh;
-  }
-  
-  .navlogo {
-      flex: 1;
-  }
-  
-  .navlogo img {
-      margin: 2% 5%;
-      width: 100%;
-      height: 100%;
-  }
-  
-  .navnews{
-    margin:2%;
-    flex: 2;
-    border-radius: 15px;
-    background-image: url("/assets/images/dance.svg");
-    background-size: 100% 100%;
-  }
-
-  .navfirst {
-      display: flex;
-      justify-content: flex-end;
-      flex: 0.5;
-  }
   //Wrapper for nav open/close
   .toggle-btn {
     position: fixed;
@@ -192,7 +120,83 @@ footer{
     padding: 8 em 0 0 2em;
     text-align: left;
   }
+
+
+//default footer
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #5E2590;
+    text-align: center;
+    max-width: 100%;
+}
+//Sponsor Ads
+.sponsorAd{
+  height: 12em;
+  margin: 1%;
+  border-radius: 15px;
+}
+//Sponsor Links
+.sponsorLink{
+  display:block;
+  width: 100%;
+  height: 100%;
+}
+//Passion Lighting Ad 
+.passion{
+  background-image: url("/assets/images/passion.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   
+}
+//Hop and Sting Ad
+.hopsting{
+  background-image: url("/assets/images/hopsting.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+//Footer Links
+.linkContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+//left-link footer
+.links{
+    text-decoration: none;
+    color: white ;
+}
+
+.links:hover{
+    color: #00ADEF;
+}
+//middle-link footer
+.socialLinks{
+    color: white;
+}
+
+.socialLinks a{
+  text-decoration: none;
+  color: white;
+}
+
+.socialLinks a:hover{
+  color: #00ADEF;
+}
+//right-link footer
+.contactLinks{
+    text-decoration: none;
+    color: white;
+}
+
+.contactLinks:hover{
+    color: #00ADEF;
+}
+
+
   @media all and (max-width: 768px){
     .menu{
       position: absolute;

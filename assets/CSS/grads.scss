@@ -1,4 +1,4 @@
-
+//Default link style
 a{
   text-decoration: none;
   color: white;
@@ -7,17 +7,18 @@ a{
 a:hover{
   color: #5E2590;
 }
-
+//Default ul style
 ul {
   list-style-type: none;
 }
 
+//Select element for drop down effect
 .yearSelect{
   cursor: pointer;
   font-size: 1.5em;
   font-weight: bold;
 }
-
+//Style for grad list
 .yearSelect > li{
   position: relative;
   visibility: hidden;
@@ -27,12 +28,13 @@ ul {
   font-weight: normal;
   cursor: auto;
 }
-
+//Bold year for grad list
 .yearSelect > .year{
   font-size: .80em;
   font-weight: bold;
 }
 
+//Grid wrapper for grads
 .grad-wrapper{
   margin: 2%;
   display: grid;
@@ -40,22 +42,28 @@ ul {
   "left-gradpic info right-gradpic"
   "left-gradpic info right-gradpic"
   "left-gradpic info right-gradpic"
-  "left-gradpic mid-gradpic right-gradpic";
+  "left-gradpic info right-gradpic";
   grid-gap: 10px;
   position: relative;
 }
-
-.tile{
-  margin: 0 auto;
-  color: white;
-  font-size: 0.7em;
-  font-weight: 300;
-  overflow: hidden;
-  cursor: pointer;
-  position: relative;
-
+//Left tile
+.left-gradpic {
+  grid-area: left-gradpic;
+}
+//Right tile
+.right-gradpic {
+  grid-area: right-gradpic;
+}
+//Info section
+#info{
+  grid-area: info;
+  width: 100%;
+  background: rgba(255,255,255,0.5);
+  border-radius: 50px;
+  padding: 1%;
 }
 
+//Style for grad tile
 .grad{
   display: flex;
   height: 15em;
@@ -67,13 +75,13 @@ ul {
   cursor: pointer;
 }
 
-//Grad Info
+//Grad Style for All
 .gradInfo{
   visibility: hidden;
   color: white;
 }
 
-//Info on Grads
+//Grad Style for Info
 .subInfo{
   font-size: 0.4em;
 }
@@ -123,22 +131,5 @@ ul {
   background-size: cover;
 }
 
-.left-gradpic {
-  grid-area: left-gradpic;
-}
 
-.mid-gradpic{
-  grid-area: mid-gradpic;
-}
 
-.right-gradpic {
-  grid-area: right-gradpic;
-}
-
-#info{
-  grid-area: info;
-  width: 100%;
-  background: rgba(255,255,255,0.5);
-  border-radius: 50px;
-  padding: 1%;
-}
