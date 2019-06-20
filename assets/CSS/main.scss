@@ -132,9 +132,8 @@ footer{
 }
 //Sponsor Ads
 .sponsorAd{
-  height: 12em;
+  height: 8em;
   margin: 1%;
-  border-radius: 15px;
 }
 //Sponsor Links
 .sponsorLink{
@@ -161,41 +160,26 @@ footer{
 .linkContainer{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    color: white;
+}
+
+.footerFlex{
+  flex:1;
 }
 
 //left-link footer
-.links{
+.links a{
     text-decoration: none;
-    color: white ;
+    color:white;
 }
 
-.links:hover{
+.links a:hover{
     color: #00ADEF;
 }
-//middle-link footer
+
 .socialLinks{
-    color: white;
+  align-self: center;
 }
-
-.socialLinks a{
-  text-decoration: none;
-  color: white;
-}
-
-.socialLinks a:hover{
-  color: #00ADEF;
-}
-//right-link footer
-.contactLinks{
-    text-decoration: none;
-    color: white;
-}
-
-.contactLinks:hover{
-    color: #00ADEF;
-}
-
 
   @media all and (max-width: 768px){
     .menu{

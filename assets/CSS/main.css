@@ -105,9 +105,8 @@ footer {
   max-width: 100%; }
 
 .sponsorAd {
-  height: 12em;
-  margin: 1%;
-  border-radius: 15px; }
+  height: 8em;
+  margin: 1%; }
 
 .sponsorLink {
   display: block;
@@ -129,31 +128,20 @@ footer {
 .linkContainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-around; }
+  color: white; }
 
-.links {
+.footerFlex {
+  flex: 1; }
+
+.links a {
   text-decoration: none;
   color: white; }
 
-.links:hover {
+.links a:hover {
   color: #00ADEF; }
 
 .socialLinks {
-  color: white; }
-
-.socialLinks a {
-  text-decoration: none;
-  color: white; }
-
-.socialLinks a:hover {
-  color: #00ADEF; }
-
-.contactLinks {
-  text-decoration: none;
-  color: white; }
-
-.contactLinks:hover {
-  color: #00ADEF; }
+  align-self: center; }
 
 @media all and (max-width: 768px) {
   .menu {
