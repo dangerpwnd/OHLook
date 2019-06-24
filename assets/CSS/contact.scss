@@ -1,3 +1,4 @@
+//Main flex container
 .mainContainer{
     display: flex;
     flex-direction: row;
@@ -5,6 +6,7 @@
     justify-content: space-evenly;
 }
 
+//Left flex item with map
 .mapFlex{
     display: flex;
     flex-direction: column;
@@ -12,6 +14,7 @@
     align-items: center;
 }
 
+//Right flex item with contact form/Email buttons
 .contactFlex{
     display: flex;
     flex-direction:row;
@@ -20,26 +23,22 @@
     align-items: center;
 }
 
-.contactForm{
-    flex:1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
+//General flex item
 .contactInfo{
-    padding: 1%;
-    margin: 1%;
-    border-radius: 15px;
-    background-color: rgba(255,255,255,0.5);
-    width: 100%;
+  padding: 1%;
+  margin: 1%;
+  border-radius: 15px;
+  background-color: rgba(255,255,255,0.5);
+  width: 100%;
 }
 
+//Flex Title style
 .contactTitle{
     text-align: center;
     color: #5E2590;
 }
 
+//Email divs styled like buttons
 .contactClick{
     margin:1%;
     padding: 0 1%;
@@ -50,6 +49,7 @@
     color: #5E2590
 }
 
+//Button like animation
 .contactClick:hover{
     a{color: white;}
     background-color: #5E2590;
@@ -60,6 +60,7 @@
     color: #5E2590;
 }
 
+//Contact Form
 .flex-outer{
   list-style-type: none;
   padding: 0;
