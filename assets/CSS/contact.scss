@@ -61,60 +61,63 @@
 }
 
 //Contact Form
-.flex-outer{
+.formFlex{
   list-style-type: none;
   padding: 0;
-  max-width: 800px;
+  max-width: 45vw;
   margin: 0 auto;
 }
 
-.flex-outer li{
+.formFlex li{
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
   align-items: center;
+  justify-content: center;
 }
 
-.flex-outer > li:not(:last-child) {
-  margin-bottom: 20px;
+.formFlex > li:not(:last-child) {
+  margin-bottom: 1%;
 }
 
-.flex-outer li label,
-.flex-outer li p {
-  padding: 8px;
+.formFlex li label{
+  padding: 0.5%;
   font-weight: 300;
   letter-spacing: .09em;
   text-transform: uppercase;
+  flex: 1;
 }
 
-.flex-outer > li > label,
-.flex-outer li p {
-  flex: 1 0 120px;
-  max-width: 220px;
+.formFlex li input{
+  flex: 3;
+  padding: 0.5%;
 }
 
-.flex-outer > li > label + * {
-  flex: 1 0 220px;
+.formFlex li input:focus, .formFlex li textarea:focus{
+  border: 1px black solid;
 }
 
-.flex-outer li p {
-  margin: 0;
+.formFlex li textarea {
+  flex: 3;
+  padding: 1%;
 }
 
-.flex-outer li input:not([type='checkbox']),
-.flex-outer li textarea {
-  padding: 15px;
-  border: none;
-}
 
-.flex-outer li button {
+.formFlex li button {
   margin-left: auto;
-  padding: 8px 16px;
-  border: none;
-  background: #333;
-  color: #f2f2f2;
+  padding: 1%;
+  background: #5E2590;
+  color: white;
   text-transform: uppercase;
   letter-spacing: .09em;
-  border-radius: 2px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.formFlex li button:hover{
+  color: #5E2590;
+  background-color: white;
 }
 
 @media all and (max-width: 768px){

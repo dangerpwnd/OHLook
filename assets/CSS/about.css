@@ -33,7 +33,7 @@
 .bio {
   display: flex;
   min-height: 15em;
-  max-height: 25em;
+  max-height: 30em;
   width: 15em;
   border-radius: 15px;
   flex-direction: column;
