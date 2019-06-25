@@ -125,6 +125,12 @@ footer {
   background-repeat: no-repeat;
   background-position: center; }
 
+.ccare {
+  background-image: url("/assets/images/ccare.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
 .linkContainer {
   display: flex;
   flex-direction: row;
