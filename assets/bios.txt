@@ -1,0 +1,65 @@
+                <figure class="bio biodir5">
+                    <div class="transBack">
+                        <p class="bioInfo subTitleInfo">Alex Heika</p>
+                        <p class="bioInfo subTitleInfo">Artistic Director - LATE NIGHT</p>
+                        <p class="bioInfo subInfo">Directorial credits at Ohlook include Jerry Springer the Opera (2019,
+                            2015) and Carrie the Musical
+                            (2013). Performance credits around Dallas include work at Ohlook, Circle Theatre, Uptown
+                            Players,
+                            WaterTower, Firehouse, Theatre Three, Dallas Children's Theater and Lyric Stage. Chicago
+                            credits
+                            include
+                            work at Bailiwick Chicago, Chicago Shakespeare, Paramount, Haven, Emerald City and Kokandy
+                            Productions.
+                            instagram: @alexbheika</p>
+                    </div>
+                </figure>
+                <figure class="bio biono">
+                    <div class="transBack">
+                        <p class="bioInfo subTitleInfo">Jonathan Fruge</p>
+                        <p class="bioInfo subTitleInfo">Theater Instructor</p>
+                        <p class="bioInfo subInfo">Jonathan Frugé, a native of Lubbock, Texas, has been hailed as
+                            “always funny”, “always good for a smile”,
+                            and “gripping” in his vocal performances.</p>
+                        <p class="bioInfo subInfo">Jonathan is a highly sought-after stage performer, having performed
+                            in such productions as 35mm, Songs
+                            for a New World, Les Miserables, Candide, Sweeney Todd, My Fair Lady, The Sound of Music,
+                            The King and
+                            I, Grease and West Side Story, to name a few. Jonathan is also credited more than 500
+                            performances as
+                            Billy Bob in the National Touring Cast of the 3 Redneck Tenors, and more than 30 appearances
+                            with the
+                            cast of Not Really 3 Tenors on cruise lines such as Celebrity, Royal Caribbean and Holland
+                            America.</p>
+                        <p class="bioInfo subInfo">Mr. Frugé's concert credits include performances at Carnegie Hall,
+                            Walt Disney Concert Hall, the Meyerson
+                            Center, the Texas State Capitol, two appearances at the Texas Music Educators Association
+                            convention in
+                            San Antonio, 2004 Southwest American Choral Directors Association in Little Rock, the 2005
+                            American
+                            Choral Directors Association National Convention in Los Angeles, the 2007 American Choral
+                            Masterpieces
+                            Festival and the 2009 Texoma NATS Convention.</p>
+                        <p class="bioInfo subInfo">Jonathan is also an accomplished choral singer, having been featured
+                            with the Texas Tech University
+                            Choir, Texas Tech Madrigal Singers, the Texas Tech Matador Singers, Lubbock Chorale, Lubbock
+                            Symphony
+                            Orchestra and Denton Bach Society.</p>
+                        <p class="bioInfo subInfo">Jonathan holds a Bachelor of Arts degree in Music Performance and his
+                            Masters of Music in Vocal
+                            Performance from Texas Tech University.</p>
+                    </div>
+                </figure>
+                <figure class="bio bioinst5">
+                    <div class="transBack">
+                        <p class="bioInfo subTitleInfo">Breanne Jackson</p>
+                        <p class="bioInfo subTitleInfo">Theater Instructor</p>
+                        <p class="bioInfo subInfo">Breanne is about to enter her Junior year at Pace University in New
+                            York City as an Arts & Entertainment
+                            Management. She currently works for The Actors Theatre Workshop, a non-profit theatre and
+                            children’s
+                            center in New York. She has spent the last 4 summers teaching and the last 7 years
+                            performing in shows
+                            at Ohlook and she has loved every minute of it!</p>
+                    </div>
+                </figure>
