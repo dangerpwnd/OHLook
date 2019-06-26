@@ -2,6 +2,13 @@
 *, *:before, *:after{
   box-sizing: inherit;
 }
+
+*:focus{
+  background: black;
+  color: white;
+  border: blue 2px dotted;
+}
+
 //Default element style
 ul{
   list-style: none;
@@ -141,6 +148,11 @@ footer{
   width: 100%;
   height: 100%;
 }
+
+.sponsorLink:focus{
+  background: none;
+}
+
 //Passion Lighting Ad 
 .passion{
   background-image: url("/assets/images/passion.svg");
