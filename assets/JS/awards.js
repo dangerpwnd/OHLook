@@ -2,8 +2,6 @@ $(document).ready(function(){
     //Init ScrollMagic
     var controller = new ScrollMagic.Controller();
 
-
-
     //loop thru each .project element
     $('.pic').each(function(){
             //build a scene

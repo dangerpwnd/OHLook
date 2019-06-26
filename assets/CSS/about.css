@@ -144,6 +144,20 @@
 
 @media all and (max-width: 768px) {
   .mainContainer {
-    flex-direction: column; } }
+    flex-direction: column; }
+
+  .quicknav {
+    flex-direction: column; }
+
+  .bio {
+    min-height: 12em;
+    max-height: 25em;
+    width: 12em; }
+
+  .subTitleInfo {
+    font-size: 0.7em; }
+
+  .subInfo {
+    font-size: 0.4em; } }
 
 /*# sourceMappingURL=about.css.map */

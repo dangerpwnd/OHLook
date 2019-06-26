@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>OHLOOK - Auditions</title>
-    <link href="/assets/css/normalize.css" />
+    <link href="/assets/css/normalize.css" rel="stylesheet" type="text/css" />
     <link href="/assets/css/main.css" rel="stylesheet" type="text/css" />
     <link href="/assets/css/auditions.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
@@ -70,8 +70,8 @@
                 <div class="mainInfo">
                     <h1>Audition Information</h1>
                     <h3 class="noticeY">Auditions for our summer season will be <u>May 2nd to 5th</u></h3>
-                    <a href="https://ohlookauditions.acuityscheduling.com/schedule.php?calendarID=1098808"><button>Schedule
-                            an audition here</button></a>
+                    <form action="https://ohlookauditions.acuityscheduling.com/schedule.php?calendarID=1098808"><input
+                            type="submit" value="Schedule an audition here" /></form>
                     <p><span class="noticeY">Only one audition per person is necessary.</span> You will be able to
                         indicate at the time of the audition which areas interest you.</p>
                     <p><span class="noticeY">Ohlook's new 12-Month Rule:</span> If you are an adult (over 18) and have
@@ -86,7 +86,7 @@
             </div>
         </div>
         <!-- FAQ -->
-        <div class="content content1">
+        <div class="content">
             <div class="subCont2">
                 <h2>Frequently Asked Questions</h2>
                 <h4 class="noticeY">Do I need an appointment?</h4>
@@ -127,33 +127,46 @@
             </div>
         </div>
         <!-- FAQ Cont. -->
-        <div class="content content2">
-            <h4 class="noticeY">Do I need a picture and resume?</h4>
-            <p>If you have those, bring them. If not, it's not a problem.</p>
-            <h4 class="noticeY">I've never worked with Ohlook before -- can I still get a lead?</h4>
-            <p>Yes! We often give leading roles to actors who have not worked with us, and we regularly practice
-                colorblind casting.</p>
-        </div>
-        <div class="picture2"></div>
-        <!-- Inspirational paragraph -->
-        <div class="content content3">
-            <h2>Nervous? Don't be!</h2>
-            <p>We welcome and encourage newcomers to audition for our shows. You will not be the only new person at
-                auditions. Our long-time participants will welcome you and help you feel comfortable in our group. We
-                are here to have fun and make new friends, so all new people are very welcome to join us. The audition
-                process is our chance to get to know you and to see what your performance skills are at this time. </p>
+        <div class="contentFlex">
+            <div class="picture"><img src="/assets/images/theater2.jpg" alt="Group of singers"></div>
+            <div class="content">
+                <h4 class="noticeY">Do I need a picture and resume?</h4>
+                <p>If you have those, bring them. If not, it's not a problem.</p>
+                <h4 class="noticeY">I've never worked with Ohlook before -- can I still get a lead?</h4>
+                <p>Yes! We often give leading roles to actors who have not worked with us, and we regularly practice
+                    colorblind casting.</p>
+            </div>
         </div>
         <!-- Inspirational paragraph -->
-        <div class="content content4">
-            <h2>Didn't get the lead? Wait!</h2>
-            <p>We encourage everyone to accept and embrace the fact that most people in our cast will be in the Chorus,
-                which is great fun. You are going to learn a lot of songs, dances and get to be in a significant amount
-                of the show. While you might be disappointed at first, please trust us that you will eventually have a
-                great time no matter what role you play in the show. Staying in the show, even if you are disappointed
-                with your role, is the best way for you to learn, grow and possibly play a larger role in a future
-                production. If you drop out because you didn’t get the role you wanted you will miss out on a lot of fun
-                and special memories with good friends. We have no “stars” or “divas” at Ohlook, and we hope everyone
-                who auditions will come with a cooperative, positive attitude that the show must go on! </p>
+        <div class="contentFlex">
+            <div class="content">
+                <h2>Nervous? Don't be!</h2>
+                <p>We welcome and encourage newcomers to audition for our shows. You will not be the only new person at
+                    auditions. Our long-time participants will welcome you and help you feel comfortable in our group.
+                    We
+                    are here to have fun and make new friends, so all new people are very welcome to join us. The
+                    audition
+                    process is our chance to get to know you and to see what your performance skills are at this time.
+                </p>
+            </div>
+            <!-- Inspirational paragraph -->
+            <div class="content">
+                <h2>Didn't get the lead? Wait!</h2>
+                <p>We encourage everyone to accept and embrace the fact that most people in our cast will be in the
+                    Chorus,
+                    which is great fun. You are going to learn a lot of songs, dances and get to be in a significant
+                    amount
+                    of the show. While you might be disappointed at first, please trust us that you will eventually have
+                    a
+                    great time no matter what role you play in the show. Staying in the show, even if you are
+                    disappointed
+                    with your role, is the best way for you to learn, grow and possibly play a larger role in a future
+                    production. If you drop out because you didn’t get the role you wanted you will miss out on a lot of
+                    fun
+                    and special memories with good friends. We have no “stars” or “divas” at Ohlook, and we hope
+                    everyone
+                    who auditions will come with a cooperative, positive attitude that the show must go on! </p>
+            </div>
         </div>
     </div>
     <script src="/assets/js/jquery.js"></script>

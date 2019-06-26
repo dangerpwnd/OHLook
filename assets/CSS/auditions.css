@@ -1,4 +1,4 @@
-button {
+input {
   background-color: #5E2590;
   border: 5px solid white;
   color: white;
@@ -6,17 +6,14 @@ button {
   font-size: 2em;
   cursor: pointer; }
 
-button:hover {
+input:hover {
   background-color: white;
   color: #5E2590; }
 
 .container {
   margin-top: 3%;
-  display: grid;
-  grid-template-areas: "main1 main1 main1 main1" "cont1 cont1 cont1 cont1" "pic2 pic2 cont2 cont2" "cont3 cont3 cont4 cont4";
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 2fr 1fr 1fr;
-  grid-gap: 5px; }
+  display: flex;
+  flex-direction: column; }
 
 .subCont {
   display: flex;
@@ -36,7 +33,7 @@ button:hover {
 
 .main1 {
   grid-area: main1;
-  height: 30em;
+  height: 25em;
   background-image: url("/assets/images/singing1.jpg");
   background-size: cover; }
 
@@ -48,33 +45,18 @@ button:hover {
   background-color: rgba(0, 0, 0, 0.3);
   font-size: 1em;
   border-radius: 15px;
-  height: auto; }
+  flex: 1; }
 
-.content1 {
-  grid-area: cont1; }
+.contentFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
 
-.content2 {
-  grid-area: cont2; }
-
-.content3 {
-  grid-area: cont3; }
-
-.content4 {
-  grid-area: cont4; }
-
-.picture1 {
-  grid-area: pic1; }
-
-.picture2 {
-  grid-area: pic2;
-  background-image: url("/assets/images/theater2.jpg");
-  background-size: cover;
-  margin-left: 2%;
-  border-radius: 15px; }
-
-.picture3 {
+.picture > img {
+  height: 100%;
   width: 100%;
-  border-radius: 20px; }
+  border-radius: 15px;
+  flex: 1; }
 
 .noticeY {
   color: yellow;
@@ -90,6 +72,17 @@ button:hover {
     flex-direction: column; }
 
   .mainInfo {
-    width: 100%; } }
+    width: 100%; }
+
+  .subCont {
+    justify-content: center; }
+
+  .main1 {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center; }
+
+  form {
+    font-size: 0.7em; } }
 
 /*# sourceMappingURL=auditions.css.map */
