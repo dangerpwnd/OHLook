@@ -52,11 +52,14 @@ input:hover {
   flex-direction: row;
   justify-content: space-evenly; }
 
-.picture > img {
-  height: 100%;
-  width: 100%;
-  border-radius: 15px;
+.picture {
+  padding: 1%;
   flex: 1; }
+
+.picture > img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 15px; }
 
 .noticeY {
   color: yellow;
@@ -83,6 +86,9 @@ input:hover {
     background-position: center; }
 
   form {
-    font-size: 0.7em; } }
+    font-size: 0.7em; }
+
+  .contentFlex {
+    flex-direction: column; } }
 
 /*# sourceMappingURL=auditions.css.map */

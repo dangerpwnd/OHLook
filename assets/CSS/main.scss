@@ -177,6 +177,38 @@ footer{
   background-position: center;
 }
 
+//Grapevine Memories Ad
+.gmemories{
+  background-image: url("/assets/images/memories.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+//Tommy Tamales Ad
+.tamales{
+  background-image: url("/assets/images/tamale.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+//Amores Ad
+.amores{
+  background-image: url("/assets/images/amores.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+//Los Amigos Ad
+.amigos{
+  background-image: url("/assets/images/amigos.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 //Footer Links
 .linkContainer{
     display: flex;

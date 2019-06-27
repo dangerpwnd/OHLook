@@ -21,8 +21,7 @@
   padding: 1%;
   margin: 1%;
   border-radius: 15px;
-  background-color: rgba(255, 255, 255, 0.5);
-  width: 100%; }
+  background-color: rgba(255, 255, 255, 0.5); }
 
 .contactTitle {
   text-align: center;
@@ -74,9 +73,6 @@
   flex: 3;
   padding: 0.5%; }
 
-.formFlex li input:focus, .formFlex li textarea:focus {
-  border: 1px black solid; }
-
 .formFlex li textarea {
   flex: 3;
   padding: 1%; }
@@ -95,8 +91,15 @@
   color: #5E2590;
   background-color: white; }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 1024px) {
   .mainContainer {
+    flex-direction: column; }
+
+  .mapFlex > iframe {
+    width: 300px;
+    height: 300px; }
+
+  .formFlex > li {
     flex-direction: column; } }
 
 /*# sourceMappingURL=contact.css.map */

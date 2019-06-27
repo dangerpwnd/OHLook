@@ -199,9 +199,9 @@ body {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
 .panels{
-        flex-direction: column;
+    flex-direction: column;
 }
 
 .panel.open{

@@ -19,4 +19,9 @@
   width: 45vw;
   text-align: center; }
 
+.individual > li {
+  font-size: 2em;
+  margin: 1%;
+  color: white; }
+
 /*# sourceMappingURL=sponsors.css.map */

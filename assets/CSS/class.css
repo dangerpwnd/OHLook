@@ -164,7 +164,7 @@ body {
   text-decoration: none;
   color: #5E2590; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
   .panels {
     flex-direction: column; }
 
