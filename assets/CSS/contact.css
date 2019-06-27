@@ -91,6 +91,11 @@
   color: #5E2590;
   background-color: white; }
 
+.hidden {
+  font-size: 2em;
+  color: #5E2590;
+  visibility: hidden; }
+
 @media all and (max-width: 1024px) {
   .mainContainer {
     flex-direction: column; }
