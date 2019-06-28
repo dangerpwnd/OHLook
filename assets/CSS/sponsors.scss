@@ -26,10 +26,35 @@
     width: 80%;
     background-color:rgba(255,255,255,0.3);
     border-radius: 15px;
+    padding: 2%;
 }
 
 .individual > li{
     font-size: 2em;
     margin: 1%;
     color: white;
+}
+
+@media all and (max-width: 768px){
+    .flexSponsors{
+        flex-direction: column;
+    }
+
+    .thankYou{
+        height: 20vh;
+    }
+
+    .sponsors{
+        width: 90vw;
+    }
+
+    .individual{
+        width: 90%;
+        padding: 5%;
+    }
+
+    .individual > li{
+        font-size: 1.5em;
+        margin: 5%;
+    }
 }

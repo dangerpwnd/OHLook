@@ -78,7 +78,7 @@ body {
   flex: 5;
   font-size: 3em; }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 1024px) {
   .panel p {
     font-size: 1em; }
 

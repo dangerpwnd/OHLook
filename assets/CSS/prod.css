@@ -111,10 +111,27 @@ h1 {
   text-decoration: none;
   color: #5E2590; }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 400px) {
+  .card {
+    width: 18em;
+    height: 18em;
+    margin-bottom: 5%; } }
+@media all and (min-width: 401px) and (max-width: 768px) {
   .pContainer, .pContainer2 {
     flex-direction: column;
     justify-content: center;
-    align-items: center; } }
+    align-items: center; }
+
+  .card {
+    width: 20em;
+    height: 20em;
+    margin-bottom: 5%; }
+
+  .quicknav {
+    text-align: center;
+    font-size: 0.9em; }
+
+  h1 {
+    text-align: center; } }
 
 /*# sourceMappingURL=prod.css.map */

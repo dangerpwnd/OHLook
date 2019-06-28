@@ -105,8 +105,21 @@ body {
   text-decoration: none;
   color: #5E2590; }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 400px) {
   .lnInfo {
-    flex-direction: column; } }
+    flex-direction: column; }
+
+  .card {
+    width: 18em;
+    height: 18em;
+    margin-bottom: 5%; } }
+@media all and (min-width: 401px) and (max-width: 768px) {
+  .lnInfo {
+    flex-direction: column; }
+
+  .card {
+    width: 20em;
+    height: 20em;
+    margin-bottom: 5%; } }
 
 /*# sourceMappingURL=latenight.css.map */
