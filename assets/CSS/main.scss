@@ -124,7 +124,7 @@ background-size: contain;
   }
   
   .data{
-    padding: 8em 0 0 2em;
+    padding-bottom: 2em;
     text-align: left;
   }
 
@@ -213,11 +213,15 @@ footer{
 .linkContainer{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
     color: white;
 }
 
 .footerFlex{
   flex:1;
+  
 }
 
 //left-link footer
@@ -244,6 +248,22 @@ footer{
     .navSub{
       display: block;
       visibility: visible;
+    }
+
+    .navnews{
+      flex: 1;
+    }
+
+  }
+
+  @media all and (max-width: 768px){
+    .navnews{
+      visibility: hidden;
+      flex: 1;
+    }
+
+    .navlogo{
+      flex: 2;
     }
 
   }
