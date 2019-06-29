@@ -11,17 +11,14 @@ ul {
 
 body {
   margin: 0 auto;
-  width: 100%;
   z-index: 1;
   background-image: url("/assets/images/backgrd3.svg");
   background-size: cover;
-  font-family: 'Lato', sans-serif;
-  max-width: 100%; }
+  font-family: 'Lato', sans-serif; }
 
 .navcontainer {
   display: flex;
   flex-direction: row;
-  width: 100%;
   height: 25vh; }
 
 .navlogo {

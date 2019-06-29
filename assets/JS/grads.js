@@ -2,12 +2,19 @@
 var expandLeftGrad = document.querySelectorAll(".leftTile");
 var expandRightGrad = document.querySelectorAll(".rightTile");
 var expandYearGrad = document.querySelectorAll(".yearSelect");
+var height = $(window).height();
+var width = $(window).width();
+
 
 //Left tile animation
 expandLeftGrad.forEach(function(grad){
+    if(width > 1024){
     var timeLine = new TimelineMax();
-    var tween = timeLine.add(TweenMax.to(grad,1, {xPercent: 100, autoAlpha: 1, zIndex:5, scale:2.5, ease: Power2.easeOut}));
-    var tween2 = timeLine.add(TweenMax.to(grad.querySelectorAll('.gradInfo'), 1, {yPercent: -100, autoAlpha:1, visibility:'visible', ease: Power2.easeOut}));
+    
+    var tween = timeLine.add(TweenMax.to(grad,1, {xPercent: 100, autoAlpha: 1, zIndex:5, scale:2, ease: Power2.easeOut}));
+    var tween2 = timeLine.add(TweenMax.to(grad.querySelector('.transBack'), 0.5,{autoAlpha:1, visibility:'visible', ease: Power2.easeOut} ));
+    var tween3 = timeLine.add(TweenMax.to(grad.querySelectorAll('.gradInfo'), 0.5, {autoAlpha:1, visibility:'visible', ease: Power2.easeOut}));
+    var tween4 = timeLine.add(TweenMax.to(grad.querySelectorAll('.subInfo'), 0.5, {autoAlpha:1, visibility:'visible', ease: Power2.easeOut}));
     grad.addEventListener("click", toggleAnimation);
     timeLine.reverse();
     function toggleAnimation(){
@@ -18,13 +25,51 @@ expandLeftGrad.forEach(function(grad){
             timeLine.reverse();
         }
     }
+}
+else if(width < 450){
+    var timeLine = new TimelineMax();
+    var tween = timeLine.add(TweenMax.to(grad,1, {autoAlpha: 1, zIndex:5, ease: Power2.easeOut}));
+    var tween2 = timeLine.add(TweenMax.to(grad.querySelector('.transBack'), 0.5,{autoAlpha:1, visibility:'visible', ease: Power2.easeOut} ));
+    var tween3 = timeLine.add(TweenMax.to(grad.querySelectorAll('.gradInfo'), 0.5, {autoAlpha:1, visibility:'visible', ease: Power2.easeOut}));
+    var tween4 = timeLine.add(TweenMax.to(grad.querySelectorAll('.subInfo'), 0.5, {autoAlpha:1, visibility:'visible', ease: Power2.easeOut}));
+    grad.addEventListener("click", toggleAnimation);
+    timeLine.reverse();
+    function toggleAnimation(){
+        if(timeLine.reversed()){
+            timeLine.play();
+        }
+        else{
+            timeLine.reverse();
+        }
+    }
+}
+else{
+    var timeLine = new TimelineMax();
+    var tween = timeLine.add(TweenMax.to(grad,1, {autoAlpha: 1, zIndex:5, scale:1.5, ease: Power2.easeOut}));
+    var tween2 = timeLine.add(TweenMax.to(grad.querySelector('.transBack'), 0.5,{autoAlpha:1, visibility:'visible', ease: Power2.easeOut} ));
+    var tween3 = timeLine.add(TweenMax.to(grad.querySelectorAll('.gradInfo'), 0.5, {autoAlpha:1, visibility:'visible', ease: Power2.easeOut}));
+    var tween4 = timeLine.add(TweenMax.to(grad.querySelectorAll('.subInfo'), 0.5, {autoAlpha:1, visibility:'visible', ease: Power2.easeOut}));
+    grad.addEventListener("click", toggleAnimation);
+    timeLine.reverse();
+    function toggleAnimation(){
+        if(timeLine.reversed()){
+            timeLine.play();
+        }
+        else{
+            timeLine.reverse();
+        }
+    }
+}
 });
 
 //Right tile animation
 expandRightGrad.forEach(function(grad){
+    if(width > 1024){
     var timeLine = new TimelineMax();
-    var tween = timeLine.add(TweenMax.to(grad,1, {xPercent: -100, autoAlpha: 1, zIndex:5, scale:2.8, ease: Power2.easeOut}));
-    var tween2 = timeLine.add(TweenMax.to(grad.querySelectorAll('.gradInfo'), 1, {yPercent: -100, autoAlpha:1, visibility:'visible', ease: Power2.easeOut}));
+    var tween = timeLine.add(TweenMax.to(grad,1, {xPercent: -100, autoAlpha: 1, zIndex:5, scale:2, ease: Power2.easeOut}));
+    var tween2 = timeLine.add(TweenMax.to(grad.querySelector('.transBack'), 0.5,{autoAlpha:1, visibility:'visible', ease: Power2.easeOut} ));
+    var tween3 = timeLine.add(TweenMax.to(grad.querySelectorAll('.gradInfo'), 0.5, {autoAlpha:1, visibility:'visible', ease: Power2.easeOut}));
+    var tween4 = timeLine.add(TweenMax.to(grad.querySelectorAll('.subInfo'), 0.5, {autoAlpha:1, visibility:'visible', ease: Power2.easeOut}));
     grad.addEventListener("click", toggleAnimation);
     timeLine.reverse();
     function toggleAnimation(){
@@ -35,6 +80,41 @@ expandRightGrad.forEach(function(grad){
             timeLine.reverse();
         }
     }
+}
+else if(width < 450){
+    var timeLine = new TimelineMax();
+    var tween = timeLine.add(TweenMax.to(grad,1, {autoAlpha: 1, zIndex:5, ease: Power2.easeOut}));
+    var tween2 = timeLine.add(TweenMax.to(grad.querySelector('.transBack'), 0.5,{autoAlpha:1, visibility:'visible', ease: Power2.easeOut} ));
+    var tween3 = timeLine.add(TweenMax.to(grad.querySelectorAll('.gradInfo'), 0.5, {autoAlpha:1, visibility:'visible', ease: Power2.easeOut}));
+    var tween4 = timeLine.add(TweenMax.to(grad.querySelectorAll('.subInfo'), 0.5, {autoAlpha:1, visibility:'visible', ease: Power2.easeOut}));
+    grad.addEventListener("click", toggleAnimation);
+    timeLine.reverse();
+    function toggleAnimation(){
+        if(timeLine.reversed()){
+            timeLine.play();
+        }
+        else{
+            timeLine.reverse();
+        }
+    }
+}
+else{
+    var timeLine = new TimelineMax();
+    var tween = timeLine.add(TweenMax.to(grad,1, {autoAlpha: 1, zIndex:5, scale:1.5, ease: Power2.easeOut}));
+    var tween2 = timeLine.add(TweenMax.to(grad.querySelector('.transBack'), 0.5,{autoAlpha:1, visibility:'visible', ease: Power2.easeOut} ));
+    var tween3 = timeLine.add(TweenMax.to(grad.querySelectorAll('.gradInfo'), 0.5, {autoAlpha:1, visibility:'visible', ease: Power2.easeOut}));
+    var tween4 = timeLine.add(TweenMax.to(grad.querySelectorAll('.subInfo'), 0.5, {autoAlpha:1, visibility:'visible', ease: Power2.easeOut}));
+    grad.addEventListener("click", toggleAnimation);
+    timeLine.reverse();
+    function toggleAnimation(){
+        if(timeLine.reversed()){
+            timeLine.play();
+        }
+        else{
+            timeLine.reverse();
+        }
+    }
+}
 });
 
 //Grad Collapse/Expand for year span
