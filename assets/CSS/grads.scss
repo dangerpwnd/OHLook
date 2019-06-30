@@ -72,6 +72,9 @@ ul {
   border-radius: 15px;
   padding: 2%;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 //Transparent background for content
@@ -150,14 +153,14 @@ ul {
 
   .grad-wrapper{
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: stretch;
+    align-items: stretch;
   }
+
   .grad{
-    flex: 1;
-  min-height: 20em;
+  min-height: 15em;
   max-height: 30em;
-  min-width: 20em;
+  min-width: 15em;
   max-height: 30em;
   }
 
