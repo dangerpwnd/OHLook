@@ -35,7 +35,7 @@ body {
   border-radius: 15px;
   background-image: url("/assets/images/news.svg");
   background-size: cover;
-  background-size: 100% 100%; }
+  background-position: center; }
 
 .newsLink {
   width: 100%;
