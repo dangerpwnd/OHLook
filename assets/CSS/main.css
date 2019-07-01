@@ -183,13 +183,22 @@ footer {
 
 @media all and (max-width: 1024px) {
   .menu {
-    position: absolute;
-    height: 200%;
-    top: -200%; }
+    position: fixed;
+    height: 100%;
+    top: -100%; }
+
+  .navTop:first-child {
+    color: grey;
+    font-size: 1.3em; }
+
+  .navTop:not(:first-child) {
+    color: grey;
+    font-size: 1.5em; }
 
   .navSub {
     display: block;
-    visibility: visible; }
+    visibility: visible;
+    font-size: 1.2em; }
 
   .navnews {
     flex: 1; } }
