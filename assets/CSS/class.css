@@ -167,6 +167,10 @@ body {
   text-decoration: none;
   color: #5E2590; }
 
+.tripleT {
+  margin: 2%;
+  background: url(/assets/images/news.svg); }
+
 @media only screen and (max-width: 1024px) {
   .panels {
     flex-direction: column; }
