@@ -169,7 +169,11 @@ body {
 
 .tripleT {
   margin: 2%;
-  background: url(/assets/images/news.svg); }
+  background: url(/assets/images/news.svg);
+  border-radius: 15px; }
+
+.tripleCont {
+  font-size: 2em; }
 
 @media only screen and (max-width: 1024px) {
   .panels {

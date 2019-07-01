@@ -201,11 +201,17 @@ body {
     color: #5E2590;
 }
 
+//Triple Threat container
 .tripleT{
     margin: 2%;
     background: url(/assets/images/news.svg);
+    border-radius: 15px;
 }
 
+//Triple Threat content
+.tripleCont{
+    font-size: 2em;
+}
 
 
 @media only screen and (max-width: 1024px) {
