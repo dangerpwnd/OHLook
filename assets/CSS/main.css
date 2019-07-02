@@ -116,12 +116,12 @@ footer {
   height: 8em;
   margin: 1%; }
 
-.sponsorLink {
+.ohlookSponL {
   display: block;
   width: 100%;
   height: 100%; }
 
-.sponsorLink:focus {
+.ohlookSponL:focus {
   background: none; }
 
 .passion {
