@@ -29,7 +29,7 @@ h1 {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  perspective: 600px;
+  perspective: 50em;
 }
 
 .card{
@@ -47,7 +47,9 @@ h1 {
   height: 100%;
   width: 100%;
   position: absolute;
+  
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   border-radius: 15px;
 }
 
@@ -56,6 +58,7 @@ h1 {
   flex-direction: column;
   transform: rotateY( 180deg );
   overflow-y: auto;
+  
   
 }
 

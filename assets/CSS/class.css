@@ -114,8 +114,8 @@ body {
   height: 100%;
   width: 100%;
   position: absolute;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   border-radius: 15px; }
 
 .card-front {

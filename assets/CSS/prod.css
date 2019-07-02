@@ -25,7 +25,7 @@ h1 {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  perspective: 600px; }
+  perspective: 50em; }
 
 .card {
   width: 30em;
@@ -41,6 +41,7 @@ h1 {
   width: 100%;
   position: absolute;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   border-radius: 15px; }
 
 .card-back {
