@@ -99,10 +99,10 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  perspective: 100px;
-  -webkit-perspective: 100px;
-  -o-perspective: 100px;
-  -moz-perspective: 100px; }
+  perspective: 6000px;
+  -webkit-perspective: 6000px;
+  -o-perspective: 6000px;
+  -moz-perspective: 6000px; }
 
 .card {
   width: 20em;
