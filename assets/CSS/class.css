@@ -1,200 +1,43 @@
-html {
-  box-sizing: border-box; }
+/*
+Error: Invalid CSS after "}": expected selector or at-rule, was "}"
+        on line 128 of ./class.scss
 
-body {
-  margin: 0;
-  font-family: 'Playfair Display', serif; }
+123:     perspective: 1000px;
+124:     -webkit-perspective: 1000px;
+125:     -o-perspective: 1000px;
+126:     -moz-perspective: 1000px;
+127: }
+128:   }
+129:   
+130:   .card{
+131:     width: 20em;
+132:     height: 20em;
+133:     position: relative;
 
-*, *:before, *:after {
-  box-sizing: inherit; }
-
-.textC {
-  margin: 2% auto;
-  padding: 2%;
-  text-align: center;
-  width: 80vw;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 10px; }
-
-.panels {
-  min-height: 75vh;
-  overflow: hidden;
-  display: flex;
-  font-size: 3em;
-  font-weight: 200; }
-
-.panel {
-  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
-  color: white;
-  text-align: center;
-  align-items: center;
-  /* Safari transitionend event.propertyName === flex */
-  /* Chrome + FF transitionend event.propertyName === flex-grow */
-  transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
-  font-size: 1em;
-  background-size: cover;
-  background-position: center;
-  flex: 1;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  filter: grayscale(100%); }
-
-.panel1 {
-  background-image: url(/assets/images/dance1.jpg); }
-
-.panel2 {
-  background-image: url(/assets/images/theater3.jpg); }
-
-.panel3 {
-  background-image: url(/assets/images/theater1.jpg); }
-
-/* Flex Items */
-.panel > * {
-  margin: 0;
-  width: 100%;
-  transition: transform 0.5s;
-  flex: 1 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.panel > *:first-child {
-  transform: translateY(-100%); }
-
-.panel.open-active > *:first-child {
-  transform: translateY(0); }
-
-.panel > *:last-child {
-  transform: translateY(100%); }
-
-.panel.open-active > *:last-child {
-  transform: translateY(0); }
-
-.panel a {
-  text-decoration: none;
-  color: white; }
-
-.panel p {
-  text-transform: uppercase;
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
-  font-size: 1em; }
-
-.panel p:nth-child(2) {
-  font-size: 1em; }
-
-.panel.open {
-  flex: 5;
-  font-size: 1.5em;
-  -webkit-filter: grayscale(0);
-  -moz-filter: grayscale(0);
-  -o-filter: grayscale(0);
-  -ms-filter: grayscale(0);
-  filter: grayscale(0); }
-
-.pContainer {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  perspective: 600px; }
-
-.card {
-  width: 20em;
-  height: 20em;
-  position: relative;
-  transition: transform 1s;
-  transform-style: preserve-3d;
-  cursor: pointer;
-  margin-bottom: 1%; }
-
-.card-face {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  border-radius: 15px; }
-
-.card-front {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.card-back {
-  display: flex;
-  flex-direction: column;
-  transform: rotateY(180deg);
-  overflow-y: auto; }
-
-.card.is-flipped {
-  transform: rotateY(180deg); }
-
-.transCont {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  height: auto;
-  text-align: center;
-  padding: 2%;
-  border-radius: 15px; }
-
-.prodLinks {
-  color: white; }
-
-.card-front, .card-back {
-  background: url("/assets/images/icons.svg");
-  border: 1px solid black;
-  padding: 1%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.purchaseClick {
-  margin: 1%;
-  padding: 0 1%;
-  border: 2px solid white;
-  border-radius: 5px;
-  text-align: center;
-  background-color: white;
-  color: #5E2590; }
-
-.purchaseClick:hover {
-  background-color: #5E2590; }
-  .purchaseClick:hover a {
-    color: white; }
-
-.purchaseLink > a {
-  text-decoration: none;
-  color: #5E2590; }
-
-.tripleT {
-  margin: 2%;
-  background: url(/assets/images/news.svg);
-  border-radius: 15px; }
-
-.tripleCont {
-  font-size: 2em; }
-
-@media only screen and (max-width: 1024px) {
-  .panels {
-    flex-direction: column; }
-
-  .panel.open {
-    flex: 5;
-    font-size: 1em; }
-
-  .panel > *:first-child {
-    transform: translateX(-100%); }
-
-  .panel.open-active > *:first-child {
-    transform: translateX(0); }
-
-  .panel > *:last-child {
-    transform: translateX(100%); }
-
-  .panel.open-active > *:last-child {
-    transform: translateX(0); } }
-
-/*# sourceMappingURL=class.css.map */
+Backtrace:
+./class.scss:128
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:42:in `parse'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"}\": expected selector or at-rule, was \"}\"\A         on line 128 of ./class.scss\A \A 123:     perspective: 1000px;\A 124:     -webkit-perspective: 1000px;\A 125:     -o-perspective: 1000px;\A 126:     -moz-perspective: 1000px;\A 127: }\A 128:   }\A 129:   \A 130:   .card{\A 131:     width: 20em;\A 132:     height: 20em;\A 133:     position: relative;"; }
