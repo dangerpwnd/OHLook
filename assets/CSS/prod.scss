@@ -29,9 +29,11 @@ h1 {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+  perspective: 600px;
 }
 
 .card{
+  
   width: 30em;
   height: 30em;
   position: relative;

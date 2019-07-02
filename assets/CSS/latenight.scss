@@ -49,6 +49,7 @@ body{
     flex-flow: row wrap;
     justify-content: space-evenly;
     margin-bottom: 2%;
+    perspective: 600px;
   }
   
 .card{
@@ -64,13 +65,14 @@ body{
     position: absolute;
     height: 100%;
     width: 100%;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    border-radius: 15px;
 }
 
 .card-back{
     display: flex;
     flex-direction: column;
-    // background-color: rgba(255,255,255,0.2);
     color: white;
     transform: rotateY( 180deg );
     overflow-y: auto;
@@ -79,6 +81,12 @@ body{
 
 .card.is-flipped{
     transform: rotateY(180deg);
+}
+
+.card-front{
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
 
 .card1-front{

@@ -120,6 +120,7 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    perspective: 600px;
   }
   
   .card{
@@ -136,6 +137,7 @@ body {
     height: 100%;
     width: 100%;
     position: absolute;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 15px;
   }

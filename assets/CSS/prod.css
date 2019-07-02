@@ -24,7 +24,8 @@ h1 {
 .pContainer, .pContainer2 {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  perspective: 600px; }
 
 .card {
   width: 30em;
