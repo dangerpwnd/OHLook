@@ -2,10 +2,10 @@
 Error: Invalid CSS after "}": expected selector or at-rule, was "}"
         on line 128 of ./class.scss
 
-123:     perspective: 1000px;
-124:     -webkit-perspective: 1000px;
-125:     -o-perspective: 1000px;
-126:     -moz-perspective: 1000px;
+123:     perspective: 100px;
+124:     -webkit-perspective: 100px;
+125:     -o-perspective: 100px;
+126:     -moz-perspective: 100px;
 127: }
 128:   }
 129:   
@@ -40,4 +40,4 @@ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"}\": expected selector or at-rule, was \"}\"\A         on line 128 of ./class.scss\A \A 123:     perspective: 1000px;\A 124:     -webkit-perspective: 1000px;\A 125:     -o-perspective: 1000px;\A 126:     -moz-perspective: 1000px;\A 127: }\A 128:   }\A 129:   \A 130:   .card{\A 131:     width: 20em;\A 132:     height: 20em;\A 133:     position: relative;"; }
+  content: "Error: Invalid CSS after \"}\": expected selector or at-rule, was \"}\"\A         on line 128 of ./class.scss\A \A 123:     perspective: 100px;\A 124:     -webkit-perspective: 100px;\A 125:     -o-perspective: 100px;\A 126:     -moz-perspective: 100px;\A 127: }\A 128:   }\A 129:   \A 130:   .card{\A 131:     width: 20em;\A 132:     height: 20em;\A 133:     position: relative;"; }
