@@ -113,6 +113,7 @@ footer {
   max-width: 100%; }
 
 .sponsorAd {
+  display: block;
   height: 8em;
   margin: 1%; }
 
