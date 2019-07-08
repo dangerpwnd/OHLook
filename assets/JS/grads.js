@@ -129,6 +129,7 @@ expandYearGrad.forEach(function(grad){
         height: "auto",
         autoAlpha:1,
         visibility:"visible",
+        margin: "2%",
         ease: Cubic.easeInOut
     });
     grad.addEventListener("click", toggleAnimation);
