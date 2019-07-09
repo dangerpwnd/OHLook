@@ -31,6 +31,14 @@
   background-color: rgba(255,255,255,0.5);
 }
 
+//Sub flex to left side of page
+.contactLeft{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
 //Flex Title style
 .contactTitle{
     text-align: center;
@@ -120,6 +128,41 @@
   font-size: 2em;
   color: #5E2590;
   visibility: hidden;
+}
+
+.bigIcons{
+    margin: 2%;
+    text-align: center;
+    font-size: 3em;
+    color: white;
+}
+
+.newsLetter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1%;
+  margin: 1%;
+  border-radius: 15px;
+  background-color: rgba(255,255,255,0.5);
+  color:#5E2590;
+}
+
+.newsLetter > form > button{
+  padding: 1%;
+  background: #5E2590;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newsLetter > form > button:hover{
+  color: #5E2590;
+  background-color: white;
 }
 
 @media all and (max-width: 1024px){
