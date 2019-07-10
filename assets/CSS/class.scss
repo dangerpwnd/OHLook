@@ -223,16 +223,27 @@ body {
     color: #5E2590;
 }
 
-//Triple Threat container
-.tripleT{
+//Info container
+.infoCont{
     margin: 2%;
-    background: url(/assets/images/news.svg);
+    background: url(/assets/images/newsbkg.svg);
+    background-size: cover;
     border-radius: 15px;
 }
 
 //Triple Threat content
 .tripleCont{
     font-size: 2em;
+}
+
+//Class Schedule Heading
+.schedContTitle{
+    font-size: 3.5em;
+}
+
+//Class Schedule
+.schedCont{
+    font-size: 1.5em;
 }
 
 
