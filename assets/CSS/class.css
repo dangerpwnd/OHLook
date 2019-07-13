@@ -226,16 +226,20 @@ body {
   border-radius: 15px;
 }
 
+.infoButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
 .tripleCont {
   font-size: 2em;
 }
 
 .schedContTitle {
   font-size: 3.5em;
-}
-
-.schedCont {
-  font-size: 1.5em;
 }
 
 @media only screen and (max-width: 1024px) {
