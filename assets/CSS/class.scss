@@ -250,11 +250,20 @@ body {
 @media only screen and (max-width: 1024px) {
 .panels{
     flex-direction: column;
+
+}
+
+.tripleCont{
+    font-size: 1.2em;
+}
+
+.panel{
+    font-size: 0.6em;
 }
 
 .panel.open{
     flex: 5;
-    font-size: 1em;
+    font-size: 0.6em;
 }
 
 .panel > *:first-child {

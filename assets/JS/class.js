@@ -13,7 +13,7 @@
 	// panels.forEach(panel => panel.addEventListener('click', toggleOpen));
 
 	// Hover over item to expand and add open class
-	panels.forEach(panel => panel.addEventListener('focus', toggleOpen));
+	panels.forEach(panel => panel.addEventListener('click', toggleOpen));
 	panels.forEach(panel => panel.addEventListener('mouseenter', toggleOpen));
 	panels.forEach(panel => panel.addEventListener('mouseleave', toggleOpen));
 	

@@ -1,53 +1,64 @@
 a {
   text-decoration: none;
-  color: #00ADEF; }
+  color: #00ADEF;
+}
 
 a:hover {
-  color: #37AB9C; }
+  color: #37AB9C;
+}
 
 ul {
-  list-style-type: none; }
+  list-style-type: none;
+}
 
 .yearSelect {
   cursor: pointer;
   font-size: 1.5em;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .yearSelect > li {
   position: relative;
   visibility: hidden;
   height: auto;
   overflow: hidden;
-  font-size: .75em;
+  font-size: 0.75em;
   font-weight: normal;
-  cursor: auto; }
+  cursor: auto;
+}
 
 .yearSelect > .year {
-  font-size: .80em;
-  font-weight: bold; }
+  font-size: 0.8em;
+  font-weight: bold;
+}
 
 .grad-wrapper {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+}
 
 .gradSection {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex: 1; }
+  flex: 1;
+}
 
 .left-gradpic {
-  flex: 1; }
+  flex: 1;
+}
 
 .right-gradpic {
-  flex: 1; }
+  flex: 1;
+}
 
 .info {
   flex: 1;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 50px;
-  padding: 2%; }
+  padding: 2%;
+}
 
 .grad {
   min-height: 15em;
@@ -58,7 +69,8 @@ ul {
   cursor: pointer;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+}
 
 .transBack {
   background: rgba(255, 255, 255, 0.5);
@@ -68,74 +80,93 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+}
 
 .gradInfo {
   flex: 1;
   visibility: hidden;
-  color: #5E2590; }
+  color: #5E2590;
+}
 
 .subInfo {
   flex: 1;
   visibility: hidden;
   color: #5E2590;
-  font-size: 0.5em; }
+  font-size: 0.5em;
+}
 
 .grad1 {
   background-image: url("/assets/images/Pim Head.jpg");
-  background-size: cover; }
+  background-size: cover;
+}
 
 .grad2 {
   background-image: url("/assets/images/Victoria Head.jpg");
-  background-size: cover; }
+  background-size: cover;
+}
 
 .grad3 {
   background-image: url("/assets/images/Zoe Head.jpg");
-  background-size: cover; }
+  background-size: cover;
+}
 
 .grad4 {
   background-image: url("/assets/images/Lexy Head.jpg");
-  background-size: cover; }
+  background-size: cover;
+}
 
 .grad5 {
   background-image: url("/assets/images/Logan Head.jpg");
-  background-size: cover; }
+  background-size: cover;
+}
 
 .grad6 {
   background-image: url("/assets/images/Stephen Head.jpg");
-  background-size: cover; }
+  background-size: cover;
+}
 
 .grad7 {
   background-image: url("/assets/images/Daniella Head.jpg");
-  background-size: cover; }
+  background-size: cover;
+}
 
 .grad8 {
   background-image: url("/assets/images/Ryan Head.jpg");
-  background-size: cover; }
+  background-size: cover;
+}
 
 .grad9 {
   background-image: url("/assets/images/PJ Head.jpeg");
-  background-size: cover; }
+  background-size: cover;
+}
 
 @media all and (max-width: 599px) {
   .grad-wrapper {
     flex-direction: column;
     justify-content: stretch;
-    align-items: stretch; }
+    align-items: stretch;
+  }
 
   .grad {
     min-height: 15em;
     max-height: 30em;
     min-width: 15em;
-    max-height: 30em; }
+    max-height: 30em;
+  }
 
   .gradInfo {
-    font-size: 1.2em; }
+    font-size: 1.2em;
+  }
 
   .subInfo {
-    font-size: 0.8em; } }
+    font-size: 0.8em;
+  }
+}
 @media all and (min-width: 600px) and (max-width: 1024px) {
   .grad-wrapper {
-    flex-direction: column; } }
+    flex-direction: column;
+  }
+}
 
 /*# sourceMappingURL=grads.css.map */
