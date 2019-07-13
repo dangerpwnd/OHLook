@@ -1,21 +1,32 @@
 .mainContainer {
   display: flex;
   flex-direction: row;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .purchaseInfo {
   padding: 1%;
   margin: 1%;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.5);
-  flex: 1; }
+}
 
 .moreFlex {
-  flex: 2; }
+  flex: 2;
+}
+
+.colFlex {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
 .purchaseLinks {
   align-self: center;
-  text-align: center; }
+  text-align: center;
+}
 
 .purchasePolicy {
   padding: 1%;
@@ -23,58 +34,72 @@
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.5);
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+}
 
 .center {
-  text-align: center; }
+  text-align: center;
+}
 
 .title {
   font-size: 1.2em;
   color: #5E2590;
-  margin: 1% 0; }
+  margin: 1% 0;
+}
 
 .purpCol {
-  color: #5E2590; }
+  color: #5E2590;
+}
 
 a {
   text-decoration: none;
-  color: #5E2590; }
+  color: #5E2590;
+}
 
 .border {
   border: 2px solid white;
   border-radius: 10px;
-  padding: 1%; }
+  padding: 1%;
+}
 
 .border:hover {
-  background-color: white; }
+  background-color: white;
+}
 
 .purchaseClick {
   margin: 5% 2%;
   padding: 0 1%;
   border: 2px solid white;
   border-radius: 5px;
-  text-align: center; }
+  text-align: center;
+}
 
 .purchaseClick:hover {
   background-color: white;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 @media all and (max-width: 768px) {
   .mainContainer {
     flex-direction: column;
     margin: 3%;
-    padding: 3%; }
+    padding: 3%;
+  }
 
   .purchaseInfo {
     margin: 3%;
-    padding: 3%; }
+    padding: 3%;
+  }
 
   .purchasePolicy {
     margin: 3%;
-    padding: 3%; }
+    padding: 3%;
+  }
 
   .border {
     border: none;
-    border-radius: 0; } }
+    border-radius: 0;
+  }
+}
 
 /*# sourceMappingURL=purchase.css.map */
