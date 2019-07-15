@@ -1,24 +1,31 @@
-	//Animation for index
-	const panels = document.querySelectorAll('.panel');
-	function toggleOpen() {
-		this.classList.toggle('open');
+
+const panels = document.querySelectorAll(".panel");
+const titles = document.querySelectorAll(".panelTitle");
+const links = document.querySelectorAll(".panelLink");
+
+TweenLite.set(titles, {
+	yPercent: 50
+});
+
+TweenLite.set(links, {
+	xPercent: 100
+})
+
+panels.forEach(function(panel){
+
+	var timeLine = new TimelineMax();
+	var tween = timeLine.add(TweenMax.to(panel, 0.25, {filter: "greyscale(0)"}));
+	var tween2 = timeLine.add(TweenMax.to(panel.querySelectorAll(".panelTitle"),0.25, {yPercent: 0, ease: Power2.easeOut}));
+	var tween3 = timeLine.add(TweenMax.to(panel.querySelectorAll(".panelLink"), 0.25, {xPercent: 0, autoAlpha:1, visibility: "visible", ease: Power2.easeOut}))
+	panel.addEventListener("mouseenter", toggleAnimation);
+	panel.addEventListener("mouseleave", toggleAnimation);
+    timeLine.reverse();
+    function toggleAnimation(){
+        if(timeLine.reversed()){
+            timeLine.play();
+        }
+        else{
+            timeLine.reverse();
+        }
 	}
-	function toggleActive(e) {
-		if (e.propertyName.includes('flex')) {
-			this.classList.toggle('open-active');
-		}
-	}
-
-
-	// panels.forEach(panel => panel.addEventListener('click', toggleOpen));
-
-	// Hover over item to expand and add open class
-	panels.forEach(panel => panel.addEventListener('click', toggleOpen));
-	panels.forEach(panel => panel.addEventListener('mouseenter', toggleOpen));
-	panels.forEach(panel => panel.addEventListener('mouseleave', toggleOpen));
-	
-	//Will toggle open-active on flexed items at end of transition
-	panels.forEach(function(panel){
-		if(!panel.className.includes('toggleActive')){
-			panel.addEventListener('transitionend', toggleActive);}
-	});
+})

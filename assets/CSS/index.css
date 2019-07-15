@@ -1,21 +1,17 @@
 html {
   box-sizing: border-box;
-  font-family: "Playfair Display", serif;
-}
+  font-family: 'Playfair Display', serif; }
 
 body {
-  margin: 0;
-}
+  margin: 0; }
 
 *, *:before, *:after {
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
 .panels {
   min-height: 100vh;
   overflow: hidden;
-  display: flex;
-}
+  display: flex; }
 
 .panel {
   box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
@@ -30,24 +26,19 @@ body {
   flex: 1;
   justify-content: center;
   display: flex;
-  flex-direction: column;
-}
+  flex-direction: column; }
 
 .panel1 {
-  background-color: #5E2590;
-}
+  background-color: #5E2590; }
 
 .panel2 {
-  background-color: #00ADEF;
-}
+  background-color: #00ADEF; }
 
 .panel3 {
-  background-color: #37AB9C;
-}
+  background-color: #37AB9C; }
 
 .panel4 {
-  background-color: black;
-}
+  background-color: black; }
 
 /* Flex Items */
 .panel > * {
@@ -57,77 +48,59 @@ body {
   flex: 1 0 auto;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .panel > *:first-child {
-  transform: translateY(-100%);
-}
+  transform: translateY(-100%); }
 
 .panel.open-active > *:first-child {
-  transform: translateY(0);
-}
+  transform: translateY(0); }
 
 .panel > *:last-child {
-  transform: translateY(100%);
-}
+  transform: translateY(100%); }
 
 .panel.open-active > *:last-child {
-  transform: translateY(0);
-}
+  transform: translateY(0); }
 
 .panel p {
   text-transform: uppercase;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
-  font-size: 1em;
-}
+  font-size: 2em; }
 
 .panel a {
   text-decoration: none;
-  color: white;
-}
+  color: white; }
 
 .panel p:nth-child(2) {
-  font-size: 2em;
-}
+  font-size: 2em; }
 
 .panel.open {
   flex: 5;
-  font-size: 3em;
-}
+  font-size: 3em; }
 
 @media all and (max-width: 1024px) {
   .panel p {
-    font-size: 1em;
-  }
+    font-size: 1em; }
 
   .panel.open:nth-child(2) {
-    font-size: 1.45em;
-  }
+    font-size: 1.45em; }
 
   .panel.open {
-    font-size: 2em;
-  }
+    font-size: 2em; }
 
   .panels {
-    flex-direction: column;
-  }
+    flex-direction: column; }
 
   .panel > *:first-child {
-    transform: translateX(-100%);
-  }
+    transform: translateX(-100%); }
 
   .panel.open-active > *:first-child {
-    transform: translateX(0);
-  }
+    transform: translateX(0); }
 
   .panel > *:last-child {
-    transform: translateX(100%);
-  }
+    transform: translateX(100%); }
 
   .panel.open-active > *:last-child {
-    transform: translateX(0);
-  }
-}
+    transform: translateX(0); } }
 
 /*# sourceMappingURL=index.css.map */

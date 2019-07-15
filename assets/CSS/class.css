@@ -1,15 +1,12 @@
 html {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
   margin: 0;
-  font-family: "Playfair Display", serif;
-}
+  font-family: 'Playfair Display', serif; }
 
 *, *:before, *:after {
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
 .textC {
   margin: 2% auto;
@@ -17,16 +14,14 @@ body {
   text-align: center;
   width: 80vw;
   background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 10px;
-}
+  border-radius: 10px; }
 
 .panels {
   min-height: 75vh;
   overflow: hidden;
   display: flex;
   font-size: 3em;
-  font-weight: 200;
-}
+  font-weight: 200; }
 
 .panel {
   box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
@@ -46,20 +41,16 @@ body {
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
+  filter: grayscale(100%); }
 
 .panel1 {
-  background-image: url(/assets/images/dance1.jpg);
-}
+  background-image: url(/assets/images/dance1.jpg); }
 
 .panel2 {
-  background-image: url(/assets/images/theater3.jpg);
-}
+  background-image: url(/assets/images/theater3.jpg); }
 
 .panel3 {
-  background-image: url(/assets/images/theater1.jpg);
-}
+  background-image: url(/assets/images/theater1.jpg); }
 
 /* Flex Items */
 .panel > * {
@@ -69,49 +60,19 @@ body {
   flex: 1 0 auto;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-
-.panel > *:first-child {
-  transform: translateY(-100%);
-}
-
-.panel.open-active > *:first-child {
-  transform: translateY(0);
-}
-
-.panel > *:last-child {
-  transform: translateY(100%);
-}
-
-.panel.open-active > *:last-child {
-  transform: translateY(0);
-}
+  align-items: center; }
 
 .panel a {
   text-decoration: none;
-  color: white;
-}
+  color: white; }
 
 .panel p {
   text-transform: uppercase;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
-  font-size: 1em;
-}
+  font-size: 1em; }
 
-.panel p:nth-child(2) {
-  font-size: 1em;
-}
-
-.panel.open {
-  flex: 5;
-  font-size: 1.5em;
-  -webkit-filter: grayscale(0);
-  -moz-filter: grayscale(0);
-  -o-filter: grayscale(0);
-  -ms-filter: grayscale(0);
-  filter: grayscale(0);
-}
+.panelLink {
+  visibility: hidden; }
 
 .pContainer {
   display: flex;
@@ -120,8 +81,7 @@ body {
   perspective: 6000px;
   -webkit-perspective: 6000px;
   -o-perspective: 6000px;
-  -moz-perspective: 6000px;
-}
+  -moz-perspective: 6000px; }
 
 .card {
   width: 20em;
@@ -136,8 +96,7 @@ body {
   -moz-transform-style: preserve-3d;
   -moz-transition: -moz-transform 1s;
   cursor: pointer;
-  margin-bottom: 1%;
-}
+  margin-bottom: 1%; }
 
 .card-face {
   height: 100%;
@@ -147,14 +106,12 @@ body {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -o-backface-visibility: hidden;
-  border-radius: 15px;
-}
+  border-radius: 15px; }
 
 .card-front {
   display: flex;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .card-back {
   display: flex;
@@ -164,16 +121,14 @@ body {
   -moz-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
-  overflow-y: auto;
-}
+  overflow-y: auto; }
 
 .card.is-flipped {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
-}
+  -ms-transform: rotateY(180deg); }
 
 .transCont {
   background-color: rgba(0, 0, 0, 0.5);
@@ -181,12 +136,10 @@ body {
   height: auto;
   text-align: center;
   padding: 2%;
-  border-radius: 15px;
-}
+  border-radius: 15px; }
 
 .prodLinks {
-  color: white;
-}
+  color: white; }
 
 .card-front, .card-back {
   background: url("/assets/images/icons.svg");
@@ -194,8 +147,7 @@ body {
   padding: 1%;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
-}
+  background-position: center; }
 
 .purchaseClick {
   margin: 1%;
@@ -204,20 +156,16 @@ body {
   border-radius: 5px;
   text-align: center;
   background-color: white;
-  color: #5E2590;
-}
+  color: #5E2590; }
 
 .purchaseClick:hover {
-  background-color: #5E2590;
-}
-.purchaseClick:hover a {
-  color: white;
-}
+  background-color: #5E2590; }
+  .purchaseClick:hover a {
+    color: white; }
 
 .purchaseLink > a {
   text-decoration: none;
-  color: #5E2590;
-}
+  color: #5E2590; }
 
 .modal {
   position: fixed;
@@ -228,8 +176,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   visibility: hidden;
-  transform: scale(1.1);
-}
+  transform: scale(1.1); }
 
 .modalContent {
   position: absolute;
@@ -241,27 +188,23 @@ body {
   border-radius: 0.5rem;
   max-width: 70vw;
   max-height: 90vh;
-  overflow-y: auto;
-}
+  overflow-y: auto; }
 
 .modalContent > img {
-  object-fit: contain;
-}
+  object-fit: contain; }
 
 .showModal {
   opacity: 1;
   z-index: 11;
   visibility: visible;
   transform: scale(1);
-  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-}
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s; }
 
 .infoCont {
   margin: 2%;
   background: url(/assets/images/newsbkg.svg);
   background-size: cover;
-  border-radius: 15px;
-}
+  border-radius: 15px; }
 
 .infoButtons {
   margin: 5% 0;
@@ -269,8 +212,7 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  text-align: center;
-}
+  text-align: center; }
 
 .infoClick {
   margin: 2%;
@@ -280,56 +222,43 @@ body {
   border-radius: 5px;
   text-align: center;
   background-color: white;
-  color: #5E2590;
-}
+  color: #5E2590; }
 
 .infoClick:hover {
   color: white;
   background-color: #5E2590;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .tripleCont {
-  font-size: 2em;
-}
+  font-size: 2em; }
 
 .schedContTitle {
-  font-size: 3.5em;
-}
+  font-size: 3.5em; }
 
 @media only screen and (max-width: 1024px) {
   .panels {
-    flex-direction: column;
-  }
+    flex-direction: column; }
 
   .tripleCont {
-    font-size: 1.2em;
-  }
+    font-size: 1.2em; }
 
   .panel {
-    font-size: 0.6em;
-  }
+    font-size: 0.6em; }
 
   .panel.open {
     flex: 5;
-    font-size: 0.6em;
-  }
+    font-size: 0.6em; }
 
   .panel > *:first-child {
-    transform: translateX(-100%);
-  }
+    transform: translateX(-100%); }
 
   .panel.open-active > *:first-child {
-    transform: translateX(0);
-  }
+    transform: translateX(0); }
 
   .panel > *:last-child {
-    transform: translateX(100%);
-  }
+    transform: translateX(100%); }
 
   .panel.open-active > *:last-child {
-    transform: translateX(0);
-  }
-}
+    transform: translateX(0); } }
 
 /*# sourceMappingURL=class.css.map */
