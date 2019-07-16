@@ -14,7 +14,7 @@ TweenLite.set(links, {
 panels.forEach(function(panel){
 
 	var timeLine = new TimelineMax();
-	var tween = timeLine.add(TweenMax.to(panel, 0.25, {filter: "greyscale(0)"}));
+	var tween = timeLine.add(TweenMax.to(panel, 0.25, {flex: 3, filter: "greyscale(0)"}));
 	var tween2 = timeLine.add(TweenMax.to(panel.querySelectorAll(".panelTitle"),0.25, {yPercent: 0, ease: Power2.easeOut}));
 	var tween3 = timeLine.add(TweenMax.to(panel.querySelectorAll(".panelLink"), 0.25, {xPercent: 0, autoAlpha:1, visibility: "visible", ease: Power2.easeOut}))
 	panel.addEventListener("mouseenter", toggleAnimation);
