@@ -9,22 +9,13 @@ body {
 *, *:before, *:after {
   box-sizing: inherit; }
 
-.textC {
-  margin: 2% auto;
-  padding: 2%;
-  text-align: center;
-  width: 80vw;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 10px; }
-
 .panels {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: stretch;
   min-height: 75vh;
-  font-size: 2.5em;
-  font-weight: 200; }
+  font-size: 6em; }
 
 .panel {
   box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
@@ -32,10 +23,6 @@ body {
   color: white;
   text-align: center;
   align-items: center;
-  /* Safari transitionend event.propertyName === flex */
-  /* Chrome + FF transitionend event.propertyName === flex-grow */
-  transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
-  font-size: 1em;
   background-size: cover;
   background-position: center;
   flex: 1;
@@ -46,6 +33,9 @@ body {
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
   filter: grayscale(100%); }
+
+.tColor .panelTitle {
+  color: #00ADEF; }
 
 .panel1 {
   background-image: url(/assets/images/dance1.jpg);
@@ -59,15 +49,6 @@ body {
   background-image: url(/assets/images/theater1.jpg);
   background-size: cover; }
 
-/* Flex Items */
-.panel > * {
-  margin: 0;
-  transition: transform 0.5s;
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
 .panel a {
   text-decoration: none;
   color: white; }
@@ -78,7 +59,8 @@ body {
   font-size: 1em; }
 
 .panelLink {
-  visibility: hidden; }
+  visibility: hidden;
+  margin: auto; }
 
 .pContainer {
   display: flex;
@@ -143,6 +125,14 @@ body {
   text-align: center;
   padding: 2%;
   border-radius: 15px; }
+
+.textC {
+  margin: 2% auto;
+  padding: 2%;
+  text-align: center;
+  width: 80vw;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px; }
 
 .prodLinks {
   color: white; }
@@ -241,30 +231,23 @@ body {
 .schedContTitle {
   font-size: 3.5em; }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .panels {
-    flex-direction: column; }
+    font-size: 4em; }
 
   .tripleCont {
     font-size: 1.2em; }
 
   .panel {
-    font-size: 0.6em; }
+    font-size: 0.6em; } }
+@media only screen and (max-width: 767px) {
+  .panels {
+    font-size: 2em; }
 
-  .panel.open {
-    flex: 5;
-    font-size: 0.6em; }
+  .tripleCont {
+    font-size: 1.2em; }
 
-  .panel > *:first-child {
-    transform: translateX(-100%); }
-
-  .panel.open-active > *:first-child {
-    transform: translateX(0); }
-
-  .panel > *:last-child {
-    transform: translateX(100%); }
-
-  .panel.open-active > *:last-child {
-    transform: translateX(0); } }
+  .panel {
+    font-size: 0.6em; } }
 
 /*# sourceMappingURL=class.css.map */

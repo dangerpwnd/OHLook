@@ -11,7 +11,7 @@
 		}
 	}
 
-	if(width <= 1024){
+	if(width < 1025){
 		// Hover over item to expand and add open class
 		panels.forEach(panel => panel.addEventListener('click', toggleOpen));
 		//Will toggle open-active on flexed items at end of transition
