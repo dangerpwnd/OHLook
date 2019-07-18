@@ -11,171 +11,79 @@ a:hover{
 ul {
   list-style-type: none;
 }
-
-//Select element for drop down effect
-.yearSelect{
-  cursor: pointer;
-  font-size: 1.5em;
-  font-weight: bold;
+//Flex wrapper
+.gradSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+//Flex item grad info
+.info{
+  flex: 1;
+  margin: 5%;
+  background: rgba(255,255,255,0.5);
+  border-radius: 50px;
+  padding: 2%;
+}
+
+.bold{
+  font-weight: bold;
+  color:#5E2590;
+}
+
+.clickYear{
+  color: #5E2590;
+}
+
 //Style for grad list
 .yearSelect > li{
   position: relative;
   visibility: hidden;
   height: auto;
   overflow: hidden;
-  font-size: .75em;
+  font-size: 2em;
   font-weight: normal;
   cursor: auto;
 }
-//Bold year for grad list
-.yearSelect > .year{
-  font-size: .80em;
+
+.yearSelect > li:first-child{
+  visibility: visible;
+  cursor: pointer;
+  font-size: 3em;
   font-weight: bold;
 }
 
-//Grid wrapper for grads
-.grad-wrapper{
-  display: flex;
-  flex-direction: row;
+//Bold year for grad list
+.yearSelect > .year{
+  font-size: 2.5em;
+  font-weight: bold;
+  color:#5E2590;
 }
 
-.gradSection{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex:1;
-}
 
-//Left tile
-.left-gradpic {
-  flex: 1;
-}
-//Right tile
-.right-gradpic {
-  flex: 1;
-}
-//Info section
-.info{
-  flex: 1;
-  background: rgba(255,255,255,0.5);
-  border-radius: 50px;
-  padding: 2%;
-}
 
-//Style for grad tile
-.grad{
-  min-height: 15em;
-  max-height: 20em;
-  width: 15em;
-  border-radius: 15px;
-  padding: 2%;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-//Transparent background for content
-.transBack{
-  background: rgba(255,255,255,0.5);
-  border-radius: 10px;
-  padding: 2%;
-  visibility: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-//Grad Style for All
-.gradInfo{
-  flex: 1;
-  visibility: hidden;
-  color: #5E2590;
-}
-
-//Grad Style for Info
-.subInfo{
-  flex: 1;
-  visibility: hidden;
-  color: #5E2590;
-  font-size: 0.5em;
-}
-
-.grad1{
-  background-image: url("/assets/images/Pim Head.jpg");
-  background-size: cover;
-}
-
-.grad2{
-  background-image: url("/assets/images/Victoria Head.jpg");
-  background-size: cover;
-}
-
-.grad3{
-  background-image: url("/assets/images/Zoe Head.jpg");
-  background-size: cover;
-}
-
-.grad4{
-  background-image: url("/assets/images/Lexy Head.jpg");
-  background-size: cover;
-}
-
-.grad5{
-  background-image: url("/assets/images/Logan Head.jpg");
-  background-size: cover;
-}
-
-.grad6{
-  background-image: url("/assets/images/Stephen Head.jpg");
-  background-size: cover;
-}
-
-.grad7{
-  background-image: url("/assets/images/Daniella Head.jpg");
-  background-size: cover;
-}
-
-.grad8{
-  background-image: url("/assets/images/Ryan Head.jpg");
-  background-size: cover;
-}
-
-.grad9{
-  background-image: url("/assets/images/PJ Head.jpeg");
-  background-size: cover;
-}
-
-@media all and (max-width: 599px){
-
-  .grad-wrapper{
-    flex-direction: column;
-    justify-content: stretch;
-    align-items: stretch;
+@media all and (max-width: 1024px){
+  .yearSelect > li{
+    position: relative;
+    visibility: hidden;
+    height: auto;
+    overflow: hidden;
+    font-size: 1em;
+    font-weight: normal;
+    cursor: auto;
+  }
+  
+  .yearSelect > li:first-child{
+    visibility: visible;
+    cursor: pointer;
+    font-size: 2em;
+    font-weight: bold;
   }
 
-  .grad{
-  min-height: 15em;
-  max-height: 30em;
-  min-width: 15em;
-  max-height: 30em;
-  }
-
-  .gradInfo{
-    font-size: 1.2em;
-  }
-
-  .subInfo{
-    font-size: 0.8em;
-  }
-
-}
-
-@media all and (min-width:600px) and (max-width: 1024px){
-  .grad-wrapper{
-    flex-direction: column;
+  .yearSelect > .year{
+    font-size: 1.5em;
+    font-weight: bold;
   }
 }

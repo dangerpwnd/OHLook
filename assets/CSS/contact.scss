@@ -160,6 +160,10 @@
   cursor: pointer;
 }
 
+.newsLetter > p {
+  font-weight: bold; 
+}
+
 .newsLetter > form > button:hover{
   color: #5E2590;
   background-color: white;
