@@ -1,3 +1,48 @@
+//Default element styles
+table{
+    width: 50vw;
+    margin: 0 auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+a{
+    text-decoration: none;
+    color:  #5E2590;
+}
+
+ul{
+    list-style-type: circle;
+}
+
+//Classes
+.center{
+    text-align: center;
+}
+
+.title{
+    font-size: 1.2em;
+    color: #5E2590;
+    margin: 1% 0;
+}
+
+.purpCol{
+    color: #5E2590;
+}
+
+.bold{
+    font-weight: bold;
+    color:#5E2590;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+// Main Flex container
 .mainContainer{
     display: flex;
     flex-direction: row;
@@ -38,35 +83,6 @@
     flex-direction: column;
 }
 
-.center{
-    text-align: center;
-}
-
-.title{
-    font-size: 1.2em;
-    color: #5E2590;
-    margin: 1% 0;
-}
-
-.purpCol{
-    color: #5E2590;
-}
-
-a{
-    text-decoration: none;
-    color:  #5E2590;
-}
-//For Active Account Review "Button"
-.border{
-    border: 2px solid white;
-    border-radius: 10px;
-    padding: 1%;
-}
-
-.border:hover{
-    background-color: white;
-}
-
 .purchaseClick{
     margin:5% 2%;
     padding: 0 1%;
@@ -80,6 +96,7 @@ a{
     cursor: pointer;
 }
 
+//Media Queries
 @media all and (max-width: 768px){
     .mainContainer{
         flex-direction: column;

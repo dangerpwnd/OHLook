@@ -189,6 +189,13 @@ body {
 .modalContent > img {
   object-fit: contain; }
 
+.bold {
+  font-weight: bold;
+  color: #5E2590; }
+
+.underline {
+  text-decoration: underline; }
+
 .showModal {
   opacity: 1;
   z-index: 11;
