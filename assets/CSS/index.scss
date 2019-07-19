@@ -11,8 +11,24 @@ body {
     box-sizing: inherit;
 }
 
+//OHLOOK news middle section of nav
+.navnews{
+    width: 100vw;
+    height: 20vh;
+    background-image: url("/assets/Images/news.svg");
+    background-size: cover;
+    background-position: center;
+    }
+    
+    //OHLOOK news link
+    .newsLink{
+      width: 100%;
+      height: 100%;
+      display:block;
+    }
+
 .panels {
-    min-height: 100vh;
+    min-height: 80vh;
     overflow: hidden;
     display: flex;
 }
