@@ -8,11 +8,16 @@
 .quicknav {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    margin-top: 2%;
+    margin: 2%;
   }
   
+.quickitem{
+    text-align: center;
+    flex: 1;
+}
+
   .quickitem a{
     font-size: 2em;
     font-weight: bold;
