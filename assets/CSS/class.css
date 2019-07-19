@@ -189,6 +189,10 @@ body {
 .modalContent > img {
   object-fit: contain; }
 
+.modalContent > p {
+  font-size: 0.3em;
+  color: #5E2590; }
+
 .closeButton {
   background: #5E2590;
   color: #FFFFFF;
@@ -200,6 +204,7 @@ body {
   width: 24px;
   z-index: 12;
   text-decoration: none;
+  font-size: 0.3em;
   font-weight: bold;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
