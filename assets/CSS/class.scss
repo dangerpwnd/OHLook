@@ -59,7 +59,6 @@ body {
     background-size: cover;
 }
 
-
 .panel a{
     text-decoration: none;
     color: white;
@@ -68,16 +67,14 @@ body {
 .panel p {
     text-transform: uppercase;
     text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
-    font-size: 1em;
+    font-size: 5em;
 }
 
 
 .panelTitle{
-    font-size: 5em;
 }
 
 .panelLink{
-    font-size: 5em;
     visibility: hidden;
     margin: auto;
 }

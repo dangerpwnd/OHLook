@@ -2,8 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center;
-}
+  align-items: center; }
 
 .thankYou {
   display: flex;
@@ -12,56 +11,45 @@
   width: 80vw;
   height: 40vh;
   text-align: center;
-  margin: 1% auto;
-}
+  margin: 1% auto; }
 
 .sponsors {
   display: flex;
   flex-direction: column;
   width: 45vw;
-  text-align: center;
-}
+  text-align: center; }
 
 .individual {
   width: 80%;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 15px;
-  padding: 2%;
-}
+  padding: 2%; }
 
 .individual > li {
   font-size: 2em;
   margin: 1%;
-  color: white;
-}
+  color: white; }
 
 .center {
   text-align: center;
-  color: white;
-}
+  color: white; }
 
 @media all and (max-width: 768px) {
   .flexSponsors {
-    flex-direction: column;
-  }
+    flex-direction: column; }
 
   .thankYou {
-    height: 20vh;
-  }
+    height: 20vh; }
 
   .sponsors {
-    width: 90vw;
-  }
+    width: 90vw; }
 
   .individual {
     width: 90%;
-    padding: 5%;
-  }
+    padding: 5%; }
 
   .individual > li {
     font-size: 1.5em;
-    margin: 5%;
-  }
-}
+    margin: 5%; } }
 
 /*# sourceMappingURL=sponsors.css.map */
