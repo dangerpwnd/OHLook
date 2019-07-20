@@ -1,13 +1,16 @@
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
-  font-family: 'Playfair Display', serif;
-  max-width: 100vw; }
+  font-family: "Playfair Display", serif;
+  max-width: 100vw;
+}
 
 *, *:before, *:after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 .panels {
   display: flex;
@@ -15,11 +18,13 @@ body {
   justify-content: center;
   align-items: stretch;
   min-height: 75vh;
-  font-size: 6em; }
+  max-width: 100vw;
+  font-size: 5em;
+  overflow: hidden;
+}
 
 .panel {
   box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
-  min-height: 100%;
   color: white;
   text-align: center;
   align-items: center;
@@ -32,35 +37,43 @@ body {
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
-  filter: grayscale(100%); }
+  filter: grayscale(100%);
+}
 
 .tColor .panelTitle {
-  color: #00ADEF; }
+  color: #00ADEF;
+}
 
 .panel1 {
   background-image: url(/assets/images/dance1.jpg);
-  background-size: cover; }
+  background-size: cover;
+}
 
 .panel2 {
   background-image: url(/assets/images/theater3.jpg);
-  background-size: cover; }
+  background-size: cover;
+}
 
 .panel3 {
   background-image: url(/assets/images/theater1.jpg);
-  background-size: cover; }
+  background-size: cover;
+}
 
 .panel a {
   text-decoration: none;
-  color: white; }
+  color: white;
+}
 
 .panel p {
   text-transform: uppercase;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
-  font-size: 1em; }
+  font-size: 1em;
+}
 
 .panelLink {
   visibility: hidden;
-  margin: auto; }
+  margin: auto;
+}
 
 .pContainer {
   display: flex;
@@ -69,7 +82,8 @@ body {
   perspective: 6000px;
   -webkit-perspective: 6000px;
   -o-perspective: 6000px;
-  -moz-perspective: 6000px; }
+  -moz-perspective: 6000px;
+}
 
 .card {
   width: 20em;
@@ -84,7 +98,8 @@ body {
   -moz-transform-style: preserve-3d;
   -moz-transition: -moz-transform 1s;
   cursor: pointer;
-  margin-bottom: 1%; }
+  margin-bottom: 1%;
+}
 
 .card-face {
   height: 100%;
@@ -94,12 +109,14 @@ body {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -o-backface-visibility: hidden;
-  border-radius: 15px; }
+  border-radius: 15px;
+}
 
 .card-front {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+}
 
 .card-back {
   display: flex;
@@ -109,14 +126,16 @@ body {
   -moz-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
-  overflow-y: auto; }
+  overflow-y: auto;
+}
 
 .card.is-flipped {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg); }
+  -ms-transform: rotateY(180deg);
+}
 
 .transCont {
   background-color: rgba(0, 0, 0, 0.5);
@@ -124,7 +143,8 @@ body {
   height: auto;
   text-align: center;
   padding: 2%;
-  border-radius: 15px; }
+  border-radius: 15px;
+}
 
 .textC {
   margin: 2% auto;
@@ -132,10 +152,12 @@ body {
   text-align: center;
   width: 80vw;
   background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 10px; }
+  border-radius: 10px;
+}
 
 .prodLinks {
-  color: white; }
+  color: white;
+}
 
 .card-front, .card-back {
   background: url("/assets/images/icons.svg");
@@ -143,7 +165,8 @@ body {
   padding: 1%;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+}
 
 .purchaseClick {
   margin: 1%;
@@ -152,16 +175,20 @@ body {
   border-radius: 5px;
   text-align: center;
   background-color: white;
-  color: #5E2590; }
+  color: #5E2590;
+}
 
 .purchaseClick:hover {
-  background-color: #5E2590; }
-  .purchaseClick:hover a {
-    color: white; }
+  background-color: #5E2590;
+}
+.purchaseClick:hover a {
+  color: white;
+}
 
 .purchaseLink > a {
   text-decoration: none;
-  color: #5E2590; }
+  color: #5E2590;
+}
 
 .modal {
   position: fixed;
@@ -172,7 +199,8 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   visibility: hidden;
-  transform: scale(1.1); }
+  transform: scale(1.1);
+}
 
 .modalContent {
   position: absolute;
@@ -184,14 +212,17 @@ body {
   border-radius: 0.5rem;
   max-width: 70vw;
   max-height: 90vh;
-  overflow-y: auto; }
+  overflow-y: auto;
+}
 
 .modalContent > img {
-  object-fit: contain; }
+  object-fit: contain;
+}
 
 .modalContent > p {
   font-size: 0.3em;
-  color: #5E2590; }
+  color: #5E2590;
+}
 
 .closeButton {
   background: #5E2590;
@@ -212,31 +243,37 @@ body {
   -moz-box-shadow: 1px 1px 3px #000;
   -webkit-box-shadow: 1px 1px 3px #000;
   box-shadow: 1px 1px 3px #000;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .closeButton:hover {
   background-color: #FFFFFF;
-  color: #5E2590; }
+  color: #5E2590;
+}
 
 .bold {
   font-weight: bold;
-  color: #5E2590; }
+  color: #5E2590;
+}
 
 .underline {
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 
 .showModal {
   opacity: 1;
   z-index: 11;
   visibility: visible;
   transform: scale(1);
-  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s; }
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
 
 .infoCont {
   margin: 2%;
   background: url(/assets/images/newsbkg.svg);
   background-size: cover;
-  border-radius: 15px; }
+  border-radius: 15px;
+}
 
 .infoButtons {
   margin: 5% 0;
@@ -244,7 +281,8 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  text-align: center; }
+  text-align: center;
+}
 
 .infoClick {
   margin: 2%;
@@ -254,36 +292,48 @@ body {
   border-radius: 5px;
   text-align: center;
   background-color: white;
-  color: #5E2590; }
+  color: #5E2590;
+}
 
 .infoClick:hover {
   color: white;
   background-color: #5E2590;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .tripleCont {
-  font-size: 2em; }
+  font-size: 2em;
+}
 
 .schedContTitle {
-  font-size: 3.5em; }
+  font-size: 3.5em;
+}
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .panels {
-    font-size: 4em; }
+    font-size: 4em;
+  }
 
   .tripleCont {
-    font-size: 1.2em; }
+    font-size: 1.2em;
+  }
 
   .panel {
-    font-size: 0.6em; } }
+    font-size: 0.6em;
+  }
+}
 @media only screen and (max-width: 767px) {
   .panels {
-    font-size: 2em; }
+    font-size: 2em;
+  }
 
   .tripleCont {
-    font-size: 1.2em; }
+    font-size: 1.2em;
+  }
 
   .panel {
-    font-size: 0.6em; } }
+    font-size: 0.6em;
+  }
+}
 
 /*# sourceMappingURL=class.css.map */
