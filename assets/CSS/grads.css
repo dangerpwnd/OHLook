@@ -1,32 +1,47 @@
 a {
   text-decoration: none;
-  color: #00ADEF; }
+  color: #00ADEF;
+}
 
 a:hover {
-  color: #37AB9C; }
+  color: #37AB9C;
+}
 
 ul {
-  list-style-type: none; }
+  list-style-type: none;
+}
+
+.bodyGrads {
+  margin: 0 auto;
+  z-index: 1;
+  background-image: url("/assets/images/backgrd3.svg");
+  background-size: contain;
+  background-repeat: repeat-y;
+}
 
 .gradSection {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .info {
   flex: 1;
   margin: 5%;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 50px;
-  padding: 2%; }
+  padding: 2%;
+}
 
 .bold {
   font-weight: bold;
-  color: #5E2590; }
+  color: #5E2590;
+}
 
 .clickYear {
-  color: #5E2590; }
+  color: #5E2590;
+}
 
 .yearSelect > li {
   position: relative;
@@ -35,18 +50,21 @@ ul {
   overflow: hidden;
   font-size: 2em;
   font-weight: normal;
-  cursor: auto; }
+  cursor: auto;
+}
 
 .yearSelect > li:first-child {
   visibility: visible;
   cursor: pointer;
   font-size: 3em;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .yearSelect > .year {
   font-size: 2.5em;
   font-weight: bold;
-  color: #5E2590; }
+  color: #5E2590;
+}
 
 @media all and (max-width: 1024px) {
   .yearSelect > li {
@@ -56,16 +74,20 @@ ul {
     overflow: hidden;
     font-size: 1em;
     font-weight: normal;
-    cursor: auto; }
+    cursor: auto;
+  }
 
   .yearSelect > li:first-child {
     visibility: visible;
     cursor: pointer;
     font-size: 2em;
-    font-weight: bold; }
+    font-weight: bold;
+  }
 
   .yearSelect > .year {
     font-size: 1.5em;
-    font-weight: bold; } }
+    font-weight: bold;
+  }
+}
 
 /*# sourceMappingURL=grads.css.map */

@@ -11,6 +11,16 @@ a:hover{
 ul {
   list-style-type: none;
 }
+
+//body class 
+.bodyGrads{
+  margin: 0 auto;
+  z-index:1;
+  background-image: url("/assets/images/backgrd3.svg");
+  background-size: contain;
+  background-repeat: repeat-y;
+}
+
 //Flex wrapper
 .gradSection{
   display: flex;

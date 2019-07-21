@@ -19,6 +19,13 @@ expandYearGrad.forEach(function(grad){
         margin: "2%",
         ease: Cubic.easeInOut
     });
+    // timeLine.to(target, 1, {
+    //     height: "auto",
+    //     autoAlpha:1,
+    //     display:"block",
+    //     margin: "2%",
+    //     ease: Cubic.easeInOut
+    // });
     clickT.addEventListener("click", toggleAnimation);
     timeLine.reverse();
     function toggleAnimation(){
