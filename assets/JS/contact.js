@@ -23,5 +23,6 @@ function submitForm(){
     });
 }
 function formSuccess(){
+    console.log("Form successful");
     $( "#success" ).removeClass( "hidden" );
 }

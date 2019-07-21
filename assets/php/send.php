@@ -1,5 +1,12 @@
 <?php
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'assets/php/PHPMailer/src/Exception.php';
+require 'assets/php/PHPMailer/src/PHPMailer.php';
+require 'assets/php/PHPMailer/src/SMTP.php';
+
 if(isset($_POST['submit'])){
     $name = $_POST['name'];
     $email = $_POST['email'];
