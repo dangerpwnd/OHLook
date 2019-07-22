@@ -14,17 +14,23 @@ body {
 //OHLOOK news middle section of nav
 .navnews{
     width: 100vw;
-    height: 20vh;
-    background-image: url("/assets/Images/news.svg");
+    height: auto;
+    background-image: url("/assets/Images/backgrd3.svg");
     background-size: cover;
     background-position: center;
     }
-    
-    //OHLOOK news link
-    .newsLink{
+
+.newspic{
+    display: block;
+    margin: 0 auto;
+}
+
+//OHLOOK news link
+.newsLink{
       width: 100%;
       height: 100%;
       display:block;
+      z-index:2;
     }
 
 .panels {
@@ -113,12 +119,13 @@ body {
 }
 
 @media all and (max-width: 1024px) {
+    .newspic{
+        max-width: 100%;
+    }
+    
     .panel p {
         font-size: 1em;
     }
-
-
-
     .panel.open:nth-child(2){
         font-size: 1.45em;
     }
