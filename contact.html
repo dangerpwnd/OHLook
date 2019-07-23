@@ -91,23 +91,23 @@
         </div>
         <div class="contactInfo">
             <h1 class="contactTitle">Get In Touch</h1>
-            <form class="contactForm" method="post" action="assets/php/send.php">
+            <form class="contactForm" id="contactForm" method="post" action="javascript:void(0);">
                 <ul class="formFlex">
                     <li>
                         <label for="name">Name</label>
-                        <input type="text" name="name" placeholder="Enter your name here" required>
+                        <input type="text" name="name" id="name" placeholder="Enter your name here" required>
                     </li>
                     <li>
                         <label for="email">Email</label>
-                        <input type="email" name="email" placeholder="Enter your email here" required>
+                        <input type="email" name="email" id="email" placeholder="Enter your email here" required>
                     </li>
                     <li>
                         <label for="phone">Phone</label>
-                        <input type="tel" name="phone" placeholder="Enter your phone here" required>
+                        <input type="tel" name="phone" id="phone" placeholder="Enter your phone here" required>
                     </li>
                     <li>
                         <label for="message">Message</label>
-                        <textarea rows="6" name="message" placeholder="Enter your message here" required></textarea>
+                        <textarea rows="6" name="message" id="message" placeholder="Enter your message here" required></textarea>
                     </li>
                     <!-- <li>
                         <div class="g-recaptcha" data-sitekey="6LfWCqsUAAAAAGxWeQoekaeHRXOJ-RbH85UzXi_O"></div>
@@ -115,7 +115,7 @@
                     <li>
                         <button type="submit" name="submit">Submit</button>
                     </li>
-                    <li id="success" class="hidden">Message Sent!</li>
+                    <li id="success" class="success hidden">Message Sent!</li>
                 </ul>
             </form>
             <h1 class="contactTitle">Email Us</h1>

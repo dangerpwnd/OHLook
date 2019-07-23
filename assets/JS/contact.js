@@ -1,6 +1,6 @@
 $(".contactForm").submit(function(event){
     // cancels the form submission
-    event.preventDefault();
+    // event.preventDefault();
     submitForm();
 });
 
@@ -15,14 +15,17 @@ function submitForm(){
         type: "POST",
         url: "assets/php/send.php",
         data: "name=" + name + "&email=" + email + "&phone=" + phone + "&message=" + message,
+        error: function(){
+            console.log("ajax failed");
+        },
         success : function(text){
-            if (text == "success"){
                 formSuccess();
             }
         }
-    });
+    );
 }
 function formSuccess(){
     console.log("Form successful");
     $( "#success" ).removeClass( "hidden" );
+    document.getElementById("contactForm").reset();
 }
