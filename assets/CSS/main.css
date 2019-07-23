@@ -1,71 +1,86 @@
 *, *:before, *:after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 *:focus {
-  border: blue 2px dotted; }
+  border: blue 2px dotted;
+}
 
 ul {
-  list-style: none; }
+  list-style: none;
+}
 
 body {
   margin: 0 auto;
   z-index: 1;
-  background-image: url("/assets/images/backgrd3.svg");
+  background-image: url("assets/Images/backgrd3.svg");
   background-size: cover;
-  font-family: 'Lato', sans-serif; }
+  font-family: "Lato", sans-serif;
+}
 
 .navcontainer {
   display: flex;
   flex-direction: row;
-  height: 25vh; }
+  height: 25vh;
+}
 
 .navlogo {
-  flex: 1; }
+  flex: 1;
+}
 
 .navlogo img {
   margin: 2% 5%;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+}
 
 .navnews {
   margin: 2%;
   flex: 2;
   border-radius: 15px;
-  background-image: url("/assets/images/news.svg");
+  background-image: url("assets/Images/news.svg");
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+}
 
 .newsLink {
   width: 100%;
   height: 100%;
-  display: block; }
+  display: block;
+}
 
 .navfirst {
   display: flex;
   justify-content: flex-end;
-  flex: 0.5; }
+  flex: 0.5;
+}
 
 .navTop:first-child {
   color: grey;
-  font-size: 24px; }
+  font-size: 24px;
+}
 
 .navTop:not(:first-child) {
   color: grey;
-  font-size: 48px; }
+  font-size: 48px;
+}
 
 .navSub {
   display: inline-block;
   visibility: hidden;
   color: grey;
   font-size: 48px;
-  margin: 0 2%; }
+  margin: 0 2%;
+}
 
 .navlink {
   text-decoration: none;
-  color: #fff; }
+  color: #fff;
+}
 
 .navlink:hover {
-  color: grey; }
+  color: grey;
+}
 
 .toggle-btn {
   position: fixed;
@@ -74,14 +89,16 @@ body {
   width: 40px;
   height: 36px;
   right: 5%;
-  z-index: 6; }
+  z-index: 6;
+}
 
 .one {
   position: absolute;
   width: 40px;
   height: 2px;
   background: #fff;
-  z-index: 6; }
+  z-index: 6;
+}
 
 .two {
   position: absolute;
@@ -89,7 +106,8 @@ body {
   height: 2px;
   background: #fff;
   margin-top: 12px;
-  z-index: 6; }
+  z-index: 6;
+}
 
 .menu {
   z-index: 5;
@@ -97,72 +115,85 @@ body {
   background: #101010;
   height: 100%;
   width: 100%;
-  top: -110%; }
+  top: -110%;
+}
 
 .data {
   padding-bottom: 2em;
-  text-align: left; }
+  text-align: left;
+}
 
 footer {
   display: flex;
   flex-direction: column;
   background-color: #5E2590;
   text-align: center;
-  max-width: 100%; }
+  max-width: 100%;
+}
 
 .ohlookSpon {
   height: 8em;
-  margin: 1%; }
+  margin: 1%;
+}
 
 .ohlookSponL {
   display: block;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+}
 
 .ohlookSponL:focus {
-  background: none; }
+  background: none;
+}
 
 .passion {
-  background-image: url("/assets/images/passion.svg");
+  background-image: url("assets/Images/passion.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+}
 
 .hopsting {
-  background-image: url("/assets/images/hopsting.png");
+  background-image: url("assets/Images/hopsting.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+}
 
 .ccare {
-  background-image: url("/assets/images/ccare.png");
+  background-image: url("assets/Images/ccare.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+}
 
 .gmemories {
-  background-image: url("/assets/images/memories.jpg");
+  background-image: url("assets/Images/memories.jpg");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+}
 
 .tamales {
-  background-image: url("/assets/images/tamale.png");
+  background-image: url("assets/Images/tamale.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+}
 
 .amores {
-  background-image: url("/assets/images/amores.png");
+  background-image: url("assets/Images/amores.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+}
 
 .amigos {
-  background-image: url("/assets/images/amigos.jpg");
+  background-image: url("assets/Images/amigos.jpg");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+}
 
 .linkContainer {
   display: flex;
@@ -170,48 +201,62 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  color: white; }
+  color: white;
+}
 
 .footerFlex {
-  flex: 1; }
+  flex: 1;
+}
 
 .links a {
   text-decoration: none;
-  color: white; }
+  color: white;
+}
 
 .links a:hover {
-  color: #00ADEF; }
+  color: #00ADEF;
+}
 
 .socialLinks {
-  align-self: center; }
+  align-self: center;
+}
 
 @media all and (max-width: 1024px) {
   .menu {
     position: fixed;
     height: 100%;
-    top: -100%; }
+    top: -100%;
+  }
 
   .navTop:first-child {
     color: grey;
-    font-size: 1.3em; }
+    font-size: 1.3em;
+  }
 
   .navTop:not(:first-child) {
     color: grey;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+  }
 
   .navSub {
     display: block;
     visibility: visible;
-    font-size: 1.2em; }
+    font-size: 1.2em;
+  }
 
   .navnews {
-    flex: 1; } }
+    flex: 1;
+  }
+}
 @media all and (max-width: 1024px) {
   .navnews {
     visibility: hidden;
-    flex: 1; }
+    flex: 1;
+  }
 
   .navlogo {
-    flex: 2; } }
+    flex: 2;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

@@ -88,12 +88,12 @@ body {
 }
 
 .card1-front {
-  background: url("/assets/images/jerry.png");
+  background: url("assets/Images/jerry.png");
   background-size: cover;
 }
 
 .card2-front {
-  background: url("/assets/images/silence.png");
+  background: url("assets/Images/silence.png");
   background-size: cover;
 }
 
@@ -106,7 +106,7 @@ body {
 }
 
 .hopstingLate {
-  background-image: url("/assets/images/hopstinglate.svg");
+  background-image: url("assets/Images/hopstinglate.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
