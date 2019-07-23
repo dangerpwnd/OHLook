@@ -13,7 +13,7 @@ ul {
 body {
   margin: 0 auto;
   z-index: 1;
-  background-image: url("assets/Images/backgrd3.svg");
+  background-image: url("/assets/Images/backgrd3.svg");
   background-size: cover;
   font-family: "Lato", sans-serif;
 }
@@ -38,7 +38,7 @@ body {
   margin: 2%;
   flex: 2;
   border-radius: 15px;
-  background-image: url("assets/Images/news.svg");
+  background-image: url("/assets/Images/news.svg");
   background-size: cover;
   background-position: center;
 }
@@ -147,49 +147,49 @@ footer {
 }
 
 .passion {
-  background-image: url("assets/Images/passion.svg");
+  background-image: url("/assets/Images/passion.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .hopsting {
-  background-image: url("assets/Images/hopsting.png");
+  background-image: url("/assets/Images/hopsting.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .ccare {
-  background-image: url("assets/Images/ccare.png");
+  background-image: url("/assets/Images/ccare.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .gmemories {
-  background-image: url("assets/Images/memories.jpg");
+  background-image: url("/assets/Images/memories.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .tamales {
-  background-image: url("assets/Images/tamale.png");
+  background-image: url("/assets/Images/tamale.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .amores {
-  background-image: url("assets/Images/amores.png");
+  background-image: url("/assets/Images/amores.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .amigos {
-  background-image: url("assets/Images/amigos.jpg");
+  background-image: url("/assets/Images/amigos.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

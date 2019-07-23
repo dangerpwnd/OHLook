@@ -99,42 +99,42 @@ h1 {
 }
 
 .card1-front, .card1-back {
-  background: url("assets/Images/aladdin.png");
+  background: url("/assets/Images/aladdin.png");
   background-size: cover;
 }
 
 .card2-front, .card2-back {
-  background: url("assets/Images/ella.png");
+  background: url("/assets/Images/ella.png");
   background-size: cover;
 }
 
 .card3-front, .card3-back {
-  background: url("assets/Images/matilda.png");
+  background: url("/assets/Images/matilda.png");
   background-size: cover;
 }
 
 .card4-front, .card4-back {
-  background: url("assets/Images/polkadots.png");
+  background: url("/assets/Images/polkadots.png");
   background-size: cover;
 }
 
 .card5-front, .card5-back {
-  background: url("assets/Images/psycho.png");
+  background: url("/assets/Images/psycho.png");
   background-size: cover;
 }
 
 .card6-front, .card6-back {
-  background: url("assets/Images/chicago.png");
+  background: url("/assets/Images/chicago.png");
   background-size: cover;
 }
 
 .card7-front, .card7-back {
-  background: url("assets/Images/disenchanted.png");
+  background: url("/assets/Images/disenchanted.png");
   background-size: cover;
 }
 
 .card8-front, .card8-back {
-  background: url("assets/Images/jekyll.png");
+  background: url("/assets/Images/jekyll.png");
   background-size: cover;
 }
 

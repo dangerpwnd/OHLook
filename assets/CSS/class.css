@@ -44,17 +44,17 @@ body {
 }
 
 .panel1 {
-  background-image: url(assets/Images/dance1.jpg);
+  background-image: url(/assets/Images/dance1.jpg);
   background-size: cover;
 }
 
 .panel2 {
-  background-image: url(assets/Images/theater3.jpg);
+  background-image: url(/assets/Images/theater3.jpg);
   background-size: cover;
 }
 
 .panel3 {
-  background-image: url(assets/Images/theater1.jpg);
+  background-image: url(/assets/Images/theater1.jpg);
   background-size: cover;
 }
 
@@ -159,7 +159,7 @@ body {
 }
 
 .card-front, .card-back {
-  background: url("assets/Images/icons.svg");
+  background: url("/assets/Images/icons.svg");
   border: 1px solid black;
   padding: 1%;
   background-size: contain;
