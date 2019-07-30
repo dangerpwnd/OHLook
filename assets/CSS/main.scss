@@ -219,7 +219,7 @@ footer{
 .linkContainer{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     color: white;
@@ -227,6 +227,7 @@ footer{
 
 .footerFlex{
   flex:1;
+  margin: 1%;
   
 }
 
