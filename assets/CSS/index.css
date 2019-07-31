@@ -8,8 +8,36 @@ body {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+.navnews {
+  width: 100vw;
+  height: auto;
+  background-image: url("/assets/images/newsbkg.svg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center; }
+
+.infoClick {
+  font-size: 1.5em;
+  padding: 0 1%;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: white; }
+  .infoClick a {
+    color: #5E2590; }
+
+.infoClick:hover {
+  background-color: #5E2590;
+  cursor: pointer; }
+  .infoClick:hover a {
+    color: white; }
+
 .panels {
-  min-height: 100vh;
+  min-height: 80vh;
   overflow: hidden;
   display: flex; }
 

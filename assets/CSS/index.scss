@@ -11,14 +11,35 @@ body {
     box-sizing: inherit;
 }
 
-//OHLOOK news middle section of nav
-// .navnews{
-//     width: 100vw;
-//     height: auto;
-//     background-image: url("/assets/Images/backgrd3.svg");
-//     background-size: cover;
-//     background-position: center;
-//     }
+//OHLOOK news at top
+.navnews{
+    width: 100vw;
+    height: auto;
+    background-image: url("/assets/images/newsbkg.svg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    text-align: center;
+    }
+
+.infoClick{
+        font-size: 1.5em;
+        padding: 0 1%;
+        border: 2px solid white;
+        border-radius: 5px;
+        background-color: white;
+        a{color: #5E2590;}
+}
+      
+.infoClick:hover{
+        a{color: white;}
+        background-color: #5E2590;
+        cursor: pointer;
+}
 
 // .newspic{
 //     display: block;
@@ -34,8 +55,10 @@ body {
 //     }
 
 .panels {
-    // min-height: 80vh; Use when also using newsLink at top
-    min-height: 100vh;
+    // Use when also using newsLink at top
+    min-height: 80vh; 
+    // Use when no newsLink at top
+    // min-height: 100vh; 
     overflow: hidden;
     display: flex;
 }
@@ -118,6 +141,12 @@ body {
     flex: 5;
     font-size: 3em;
 }
+
+  
+
+  
+  
+
 
 @media all and (max-width: 1024px) {
     .newspic{
