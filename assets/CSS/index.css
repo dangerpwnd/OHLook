@@ -5,6 +5,9 @@ html {
 body {
   margin: 0; }
 
+a {
+  text-decoration: none; }
+
 *, *:before, *:after {
   box-sizing: inherit; }
 
@@ -107,8 +110,8 @@ body {
   font-size: 3em; }
 
 @media all and (max-width: 1024px) {
-  .newspic {
-    max-width: 100%; }
+  .navnews {
+    font-size: 0.8em; }
 
   .panel p {
     font-size: 1em; }
