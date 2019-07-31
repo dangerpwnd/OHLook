@@ -1,3 +1,6 @@
+a {
+  text-decoration: none; }
+
 .center {
   text-align: center; }
 
@@ -39,11 +42,16 @@
   padding: 0 1%;
   border: 2px solid white;
   border-radius: 5px;
-  text-align: center; }
+  text-align: center;
+  background-color: white; }
+  .purchaseClick a {
+    color: #5E2590e; }
 
 .purchaseClick:hover {
-  background-color: white;
+  background-color: #5E2590;
   cursor: pointer; }
+  .purchaseClick:hover a {
+    color: white; }
 
 @media all and (max-width: 768px) {
   .mainContainer {

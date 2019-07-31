@@ -1,5 +1,7 @@
 
-
+a{
+    text-decoration: none;
+}
 
 //Classes
 .center{
@@ -54,10 +56,13 @@
     border: 2px solid white;
     border-radius: 5px;
     text-align: center;
+    background-color: white ;
+    a{color: #5E2590e;}
 }
 
 .purchaseClick:hover{
-    background-color: white;
+    a{color:white;}
+    background-color: #5E2590;
     cursor: pointer;
 }
 

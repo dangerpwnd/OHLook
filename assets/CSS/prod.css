@@ -117,6 +117,19 @@ h1 {
   background: url("/assets/Images/jekyll.png");
   background-size: cover; }
 
+.card-logofront, .card-logoback {
+  background: url("/assets/Images/icons.svg");
+  border: 1px solid black;
+  padding: 1%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.black {
+  margin: 2%;
+  text-align: right;
+  color: black; }
+
 .purchaseClick {
   margin: 1%;
   padding: 0 1%;
