@@ -46,17 +46,15 @@ body {
   flex: 0.5; }
 
 .navTop:first-child {
-  color: grey;
+  color: #fff;
   font-size: 24px; }
 
 .navTop:not(:first-child) {
-  color: grey;
   font-size: 48px; }
 
 .navSub {
   display: inline-block;
   visibility: hidden;
-  color: grey;
   font-size: 48px;
   margin: 0 2%; }
 
@@ -94,7 +92,7 @@ body {
 .menu {
   z-index: 5;
   position: fixed;
-  background: #101010;
+  background: #5E2590;
   height: 100%;
   width: 100%;
   top: -110%; }
