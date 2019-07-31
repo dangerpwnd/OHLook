@@ -35,8 +35,8 @@ body{
 //OHLOOK Logo image
 .navlogo img {
   margin: 2% 5%;
-  width: 100%;
-  height: 100%;
+  width: 35em;
+  height: 12em;
 }
 //OHLOOK news middle section of nav
 .navnews{
@@ -268,13 +268,10 @@ footer{
     font-size: 1.2em;
   }
 
-    .navnews{
-      flex: 1;
-    }
-
   }
 
-  @media all and (max-width: 1024px){
+  @media all and (min-width: 550px) and (max-width: 1024px){
+
     .navnews{
       visibility: hidden;
       flex: 1;
@@ -282,6 +279,26 @@ footer{
 
     .navlogo{
       flex: 2;
+    }
+
+    .navlogo img {
+      margin: 2% 5%;
+      width: 25em;
+      height: 10em;
+    }
+
+  }
+
+  @media all and (min-width: 300px) and (max-width: 549px){
+    .navlogo img {
+      margin: 2% 5%;
+      width: 20em;
+      height: 10em;
+    }
+
+    .navnews{
+      visibility: hidden;
+      flex: 1;
     }
 
   }

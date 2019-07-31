@@ -1,19 +1,8 @@
-input{
-  background-color: #5E2590;
-  border: 5px solid white;
-  color: white;
-  border-radius: 10px;
-  font-size: 2em;
-  cursor: pointer;
+a{
+  text-decoration: none;
 }
 
-input:hover{
-  background-color: white;
-  color: #5E2590;
-}
-
-
-//Grid container for all info
+//Flex container for all info
 .container {
     margin-top: 3%;
     display: flex;
@@ -32,18 +21,35 @@ input:hover{
 //Main window to schedule auditions
 .mainInfo{
   text-align: center;
-  width: 50%;
+  width: 40%;
   margin: 2%;
   border: 1px solid white;
   border-radius: 15px;
   background-color: rgba(94, 37, 144, 0.8);
 }
-//grid item of main pic and info
+//Main pic behind info
 .main1{
-  grid-area: main1;
-  height: 25em;
+  min-height: 50em;
   background-image: url("/assets/Images/singing1.jpg");
   background-size: cover;
+  margin: 2%;
+}
+
+.infoClick{
+  margin:2%;
+  font-size: 1.5em;
+  padding: 0 1%;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-align: center;
+  background-color: white;
+  a{color: #5E2590;}
+}
+
+.infoClick:hover{
+  a{color: white;}
+  background-color: #5E2590;
+  cursor: pointer;
 }
 
 .content {
@@ -84,26 +90,21 @@ input:hover{
   font-weight: bold;
 }
 
+
+
 @media all and (max-width: 768px){
 .container{
   display: flex;
   flex-direction: column;
+  margin: 2%;
 }
 .mainInfo{
   width: 100%;
 }
-.subCont{
-  justify-content: center;
-}
 
 .main1{
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  max-height: 40em;
   background-position: center;
-}
-
-form{
-  font-size: 0.7em;
 }
 
 .contentFlex{
