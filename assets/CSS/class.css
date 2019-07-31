@@ -52,7 +52,7 @@ a {
   color: #00ADEF; }
 
 .panel1 {
-  background-image: url(/assets/Images/dance1.jpg);
+  background-image: url(/assets/Images/dance.jpg);
   background-size: cover; }
 
 .panel2 {
@@ -61,6 +61,10 @@ a {
 
 .panel3 {
   background-image: url(/assets/Images/theater1.jpg);
+  background-size: cover; }
+
+.panel4 {
+  background-image: url(/assets/Images/masterclass.jpg);
   background-size: cover; }
 
 .panel a {
