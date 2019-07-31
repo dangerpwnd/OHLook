@@ -304,7 +304,7 @@ a {
   font-size: 2em; }
 
 .schedContTitle {
-  font-size: 3.5em; }
+  font-size: 2.5em; }
 
 .center {
   text-align: center; }
@@ -315,6 +315,9 @@ a {
 
 .underline {
   text-decoration: underline; }
+
+.wColor {
+  color: white; }
 
 .purchasePolicy {
   padding: 1%;
