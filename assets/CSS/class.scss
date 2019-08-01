@@ -352,6 +352,23 @@ a{
 }
 
 .infoClick:hover{
+    color: white;
+    background-color: #5E2590;
+    cursor: pointer;
+}
+
+.registerClick{
+    margin:2%;
+    font-size: 2.5em;
+    padding: 0 1%;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    color: #5E2590
+}
+
+.registerClick:hover{
     a{color: white;}
     background-color: #5E2590;
     cursor: pointer;
@@ -451,6 +468,10 @@ a{
     .purchasePolicy{
         margin: 3%;
         padding: 3%;
+    }
+
+    .infoButtons{
+        flex-direction: column;
     }
     
     }

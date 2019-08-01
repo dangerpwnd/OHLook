@@ -18,7 +18,7 @@ a{
 //OHLOOK news at top
 .navnews{
     width: 100vw;
-    height: auto;
+    height: 20vh;
     background-image: url("/assets/Images/newsbkg.svg");
     background-size: cover;
     background-position: center;
@@ -60,7 +60,8 @@ a{
 
 .panels {
     // Use when also using newsLink at top
-    min-height: 80vh; 
+    min-height: 80vh;
+    max-height: 100vh;
     // Use when no newsLink at top
     // min-height: 100vh; 
     overflow: hidden;
