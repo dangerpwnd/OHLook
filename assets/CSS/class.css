@@ -226,8 +226,8 @@ a {
   background-color: white;
   padding: 5%;
   border-radius: 0.5rem;
-  max-width: 70vw;
-  max-height: 90vh;
+  max-width: 100%;
+  max-height: 100%;
   overflow-y: auto; }
 
 .modalContent > img {
@@ -235,6 +235,16 @@ a {
 
 .modalContent > p {
   font-size: 1em;
+  color: #5E2590; }
+
+.modalList {
+  font-size: 1em;
+  color: #5E2590;
+  font-weight: bold;
+  margin: 1% 0; }
+
+.modalTitle {
+  font-size: 1.5em;
   color: #5E2590; }
 
 .closeButton {
