@@ -19,7 +19,10 @@ table, th, td {
 
 a {
   text-decoration: none;
-  color: #5E2590; }
+  color: #5E2590;
+  display: block;
+  width: 100%;
+  height: 100%; }
 
 .liDots {
   list-style-type: circle; }
@@ -203,9 +206,11 @@ a {
   .purchaseClick:hover a {
     color: white; }
 
-.purchaseLink > a {
+.purchaseLink {
   text-decoration: none;
-  color: #5E2590; }
+  color: #5E2590;
+  font-weight: bold;
+  font-size: 1.2em; }
 
 .modal {
   position: fixed;

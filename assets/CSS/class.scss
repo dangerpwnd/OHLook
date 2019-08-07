@@ -26,6 +26,9 @@ table, th, td {
 a{
     text-decoration: none;
     color:  #5E2590;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .liDots{
@@ -242,9 +245,11 @@ a{
     background-color: #5E2590;
 }
 
-.purchaseLink > a{
+.purchaseLink{
     text-decoration: none;
     color: #5E2590;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 //Info container
