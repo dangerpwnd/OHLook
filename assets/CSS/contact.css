@@ -97,9 +97,11 @@
   color: #5E2590;
   background-color: white; }
 
-.hidden {
+.success {
   font-size: 2em;
-  color: #5E2590;
+  color: #5E2590; }
+
+.hidden {
   visibility: hidden; }
 
 .bigIcons {

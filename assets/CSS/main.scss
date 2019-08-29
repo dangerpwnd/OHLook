@@ -16,7 +16,7 @@ ul{
 body{
     margin: 0 auto;
     z-index:1;
-    background-image: url("/assets/images/backgrd3.svg");
+    background-image: url("/assets/Images/backgrd3.svg");
     background-size: cover;
     font-family: 'Lato', sans-serif;
     // max-width: 100%;
@@ -26,7 +26,7 @@ body{
   display: flex;
   flex-direction: row;
   // max-width: 100%;
-  height: 25vh;
+  height: 30vh;
 }
 //OHLOOK Logo flex item
 .navlogo {
@@ -38,12 +38,13 @@ body{
   width: 100%;
   height: 100%;
 }
+
 //OHLOOK news middle section of nav
 .navnews{
 margin:2%;
 flex: 2;
 border-radius: 15px;
-background-image: url("/assets/images/news.svg");
+background-image: url("/assets/Images/news-triple.svg");
 background-size: cover;
 background-position: center;
 }
@@ -64,19 +65,17 @@ background-position: center;
 
   //.navTop are top catagories
   .navTop:first-child{
-    color: grey;
+    color: #fff;
     font-size: 24px;
   }
   
   .navTop:not(:first-child){
-    color: grey;
     font-size: 48px;
   }
   //.navsub are sub-catagories of top
   .navSub{
     display: inline-block;
     visibility: hidden;
-    color: grey;
     font-size: 48px;
     margin: 0 2%;
   }
@@ -123,10 +122,11 @@ background-position: center;
   .menu{
     z-index: 5;
     position: fixed;
-    background: #101010;
+    // background: #101010;
+    background: #5E2590;
     height: 100%;
     width:100%;
-    top: -110%;
+    top: -150%;
   }
   
   .data{
@@ -161,7 +161,7 @@ footer{
 
 //Passion Lighting Ad 
 .passion{
-  background-image: url("/assets/images/passion.svg");
+  background-image: url("/assets/Images/passion.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -169,7 +169,7 @@ footer{
 }
 //Hop and Sting Ad
 .hopsting{
-  background-image: url("/assets/images/hopsting.png");
+  background-image: url("/assets/Images/hopsting.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -177,7 +177,7 @@ footer{
 
 //Complete Care Ad
 .ccare{
-  background-image: url("/assets/images/ccare.png");
+  background-image: url("/assets/Images/ccare.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -185,7 +185,7 @@ footer{
 
 //Grapevine Memories Ad
 .gmemories{
-  background-image: url("/assets/images/memories.jpg");
+  background-image: url("/assets/Images/memories.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -193,7 +193,7 @@ footer{
 
 //Tommy Tamales Ad
 .tamales{
-  background-image: url("/assets/images/tamale.png");
+  background-image: url("/assets/Images/tamale.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -201,7 +201,7 @@ footer{
 
 //Amores Ad
 .amores{
-  background-image: url("/assets/images/amores.png");
+  background-image: url("/assets/Images/amores.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -209,7 +209,7 @@ footer{
 
 //Los Amigos Ad
 .amigos{
-  background-image: url("/assets/images/amigos.jpg");
+  background-image: url("/assets/Images/amigos.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -219,7 +219,7 @@ footer{
 .linkContainer{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     color: white;
@@ -227,6 +227,7 @@ footer{
 
 .footerFlex{
   flex:1;
+  margin: 1%;
   
 }
 
@@ -268,13 +269,10 @@ footer{
     font-size: 1.2em;
   }
 
-    .navnews{
-      flex: 1;
-    }
-
   }
 
-  @media all and (max-width: 1024px){
+  @media all and (min-width: 550px) and (max-width: 1024px){
+
     .navnews{
       visibility: hidden;
       flex: 1;
@@ -282,6 +280,26 @@ footer{
 
     .navlogo{
       flex: 2;
+    }
+
+    .navlogo img {
+      margin: 2% 5%;
+      width: 25em;
+      height: 10em;
+    }
+
+  }
+
+  @media all and (min-width: 300px) and (max-width: 549px){
+    .navlogo img {
+      margin: 2% 5%;
+      width: 20em;
+      height: 10em;
+    }
+
+    .navnews{
+      visibility: hidden;
+      flex: 1;
     }
 
   }

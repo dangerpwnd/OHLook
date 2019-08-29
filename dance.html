@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Come explore different forms of dance with our nationally renowned instructors!">
     <title>OHLOOK - Dance Class</title>
-    <link href="assets/css/normalize.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/class.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="/assets/Images/favicon3.ico" />
+    <link href="/assets/css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/class.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0ef99a5ae8.js"></script>
 </head>
@@ -17,10 +18,10 @@
     <nav>
         <div class="navcontainer">
             <div class="navlogo">
-                <img src="/assets/images/logo.png" alt="OHLOOK Logo" />
+                <a class="newsLink" href="index.html"><img src="/assets/Images/logo.png" alt="OHLOOK Logo" /></a>
             </div>
             <div class="navnews"><a class="newsLink" target="_blank"
-                    href="https://app.akadadance.com/customer/login?schoolId=ak603481j"></a>
+                    href="class.html"></a>
             </div>
             <div class="navfirst">
                 <div class="toggle-btn">
@@ -49,6 +50,7 @@
                                 <ul>
                                     <li class="navSub"><a class="navlink" href="dance.html">Dance</a></li>
                                     <li class="navSub"><a class="navlink" href="theater.html">Theater</a></li>
+                                    <li class="navSub"><a class="navlink" href="voice.html">Voice</a></li>
                                     <li class="navSub"><a class="navlink" href="masterclass.html">Masterclass</a></li>
                                 </ul>
                             </li>
@@ -69,20 +71,38 @@
     <div class="infoCont">
         <div class="transCont">
             <p class="schedContTitle">Fall Classes begin August 19th</p>
+            <ul class="schedCont">
+                <li>Semester runs August 19 - May 29</li>
+                <li>November 25-29 - off for Thanksgiving Break</li>
+                <li>December 16 - January 3 - off for Winter Break</li>
+                <li>March 9 - 13 - off for Spring Break</li>
+                <li>June 6 - Recital</li>
+            </ul>
+        </div>
+    </div>
+    <div class="infoCont">
+        <div class="transCont">
+            <p class="tripleCont">OHLOOK is now offering a full-fledged triple threat training program. Enrollment in
+                each of the areas of
+                focus will help equip your young performer with all of the skills necessary to thrive in the competitive
+                world of musical theatre.</p>
         </div>
     </div>
     <div class="infoButtons">
         <button class="modalClick infoClick mClick1">Our Schedule</button>
         <button class="modalClick infoClick mClick2">Dress Code</button>
+        <button class="modalClick infoClick" onclick="location.href='class.html#tuition'" type="button">Tuition</button>
+        <button class="modalClick infoClick" onclick="location.href='class.html#policy'"
+            type="button">Procedures/Policies</button>
         <div class="modal modal1">
             <div class="modalContent">
-                    <span class="closeButton">x</span>
-                <img src="/assets/images/Schedule.png" alt="Dance Week Schedule" />
+                <span class="closeButton">x</span>
+                <img src="/assets/Images/Schedule.png" alt="Dance Week Schedule" />
             </div>
         </div>
         <div class="modal modal2">
             <div class="modalContent">
-                    <span class="closeButton">x</span>
+                <span class="closeButton">x</span>
                 <h2 class="bold">DRESS CODE</h2>
                 <p>Dancers should be dressed to dance. Tights, leotards, dance shorts and close fitting dance clothes
                     are the only appropriate attire, so that the instructors can observe proper body alignment. Dancers
@@ -115,52 +135,15 @@
             </div>
         </div>
     </div>
+    <div class="infoCont">
+            <div class="transCont">
+                <p class="schedContTitle">Click to schedule your private lesson with Devin here: <a
+                        class="underline wColor"
+                        href="https://m.signupgenius.com/#!/showSignUp/805094cacae2aa7ff2-private">Private Lessons</a>
+                </p>
+            </div>
+        </div>
     <div class="pContainer">
-        <div class="card">
-            <div class="card-face card-front">
-                <h1 class="textC">Tap Intensive</h1>
-            </div>
-            <div class="card-face card-back">
-                <div class="transCont">
-                    <h2>Tap Intensive</h2>
-                    <h4>08/05/2019 - 08/09/2019 M - F, 1:30 PM - 4:30 PM</h4>
-                    <h4>Ages 10-18</h4>
-                    <h4>$175</h4>
-                    <p>Love to Tap? Join us and learn some choreography from some of Broadways greatest Tap shows!
-                        Anything Goes, Thoroughly Modern Millie, Crazy For You, 42nd Street, Singing in the Rain and
-                        more while building foundational tap skills. For the intermediate to advanced tapper.</p>
-                    <div class="purchaseClick">
-                        <h4 class="purchaseLink"><a target="_blank"
-                                href="https://campscui.active.com/orgs/OhLookPerformingArtsCenter#/selectSessions/2611206">Register</a>
-                        </h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-face card-front">
-                <h1 class="textC">Dance Intensive</h1>
-            </div>
-            <div class="card-face card-back">
-                <div class="transCont">
-                    <h2>Dance Intensive</h2>
-                    <h4>07/01/2019 - 07/05/2019 M - F, 1:30 PM - 4:30 PM</h4>
-                    <h4>07/29/2019 - 08/02/2019 M - F, 9:30 AM - 12:30 PM</h4>
-                    <h4>Ages 12-18</h4>
-                    <h4>$175</h4>
-                    <p>Join us for a week filled with all different forms of dance! Every day will focus on a different
-                        form of dance so that you can get a chance to experience them all! You will learn technique and
-                        combinations. Geared toward intermediate to advanced dancers, but anyone who loves to dance is
-                        welcome to join! Friends and family can come and watch combinations on the final day that
-                        dancers learned throughout the week!</p>
-                    <div class="purchaseClick">
-                        <h4 class="purchaseLink"><a target="_blank"
-                                href="https://campscui.active.com/orgs/OhLookPerformingArtsCenter#/selectSessions/2611206">Register</a>
-                        </h4>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="card">
             <div class="card-face card-front">
                 <h1 class="textC">2yr Intro to Dance</h1>
@@ -172,9 +155,8 @@
                         dance movement, musicality, practice counting, and body awareness. Your tiny dancer’s creativity
                         will soar in this fun, theatrical introduction to dance.</p>
                     <div class="purchaseClick">
-                        <h4 class="purchaseLink"><a target="_blank"
+                        <a class="purchaseLink" target="_blank"
                                 href="https://app.akadadance.com/customer/login?schoolId=ak603481j">Register</a>
-                        </h4>
                     </div>
                 </div>
             </div>
@@ -191,9 +173,8 @@
                         performances on stage. In a nurturing environment, our young dancers also learn classroom
                         etiquette, body awareness, and musicality. </p>
                     <div class="purchaseClick">
-                        <h4 class="purchaseLink"><a target="_blank"
+                        <a class="purchaseLink" target="_blank"
                                 href="https://app.akadadance.com/customer/login?schoolId=ak603481j">Register</a>
-                        </h4>
                     </div>
                 </div>
             </div>
@@ -211,9 +192,8 @@
                         stylistically, and begin to have a deeper understanding of the technical elements. When the
                         discipline of ballet is paired with jazz hands and hip shakes, magic happens!</p>
                     <div class="purchaseClick">
-                        <h4 class="purchaseLink"><a target="_blank"
+                        <a class="purchaseLink" target="_blank"
                                 href="https://app.akadadance.com/customer/login?schoolId=ak603481j">Register</a>
-                        </h4>
                     </div>
                 </div>
             </div>
@@ -231,9 +211,8 @@
                         stylistically, and begin to have a deeper understanding of the technical elements. This class is
                         high energy and really brings out our students’ personalities!</p>
                     <div class="purchaseClick">
-                        <h4 class="purchaseLink"><a target="_blank"
+                        <a class="purchaseLink" target="_blank"
                                 href="https://app.akadadance.com/customer/login?schoolId=ak603481j">Register</a>
-                        </h4>
                     </div>
                 </div>
             </div>
@@ -249,9 +228,8 @@
                         extensive vocabulary than any other dance technique. Ballet is graceful and disciplined and is
                         highly recommended for any dancer who wishes to take jazz, lyrical, or leaps and turns. </p>
                     <div class="purchaseClick">
-                        <h4 class="purchaseLink"><a target="_blank"
+                        <a class="purchaseLink" target="_blank"
                                 href="https://app.akadadance.com/customer/login?schoolId=ak603481j">Register</a>
-                        </h4>
                     </div>
                 </div>
             </div>
@@ -267,9 +245,8 @@
                         learn the articulation of tap sounds while mastering skills of staying grounded and on the balls
                         of their feet along with style and presentation.</p>
                     <div class="purchaseClick">
-                        <h4 class="purchaseLink"><a target="_blank"
+                        <a class="purchaseLink" target="_blank"
                                 href="https://app.akadadance.com/customer/login?schoolId=ak603481j">Register</a>
-                        </h4>
                     </div>
                 </div>
             </div>
@@ -285,9 +262,8 @@
                         dance movement, musicality, practice counting, and body awareness. Your tiny dancer’s creativity
                         will soar in this fun, theatrical introduction to dance.</p>
                     <div class="purchaseClick">
-                        <h4 class="purchaseLink"><a target="_blank"
+                        <a class="purchaseLink" target="_blank"
                                 href="https://app.akadadance.com/customer/login?schoolId=ak603481j">Register</a>
-                        </h4>
                     </div>
                 </div>
             </div>
@@ -304,9 +280,8 @@
                         elevation and body alignment. This is a great class to help dancers improve and practice
                         technical elements, which will in turn help students in many other styles here at Ohlook. </p>
                     <div class="purchaseClick">
-                        <h4 class="purchaseLink"><a target="_blank"
+                        <a class="purchaseLink" target="_blank"
                                 href="https://app.akadadance.com/customer/login?schoolId=ak603481j">Register</a>
-                        </h4>
                     </div>
                 </div>
             </div>
@@ -322,9 +297,8 @@
                         evolved as part of hip hop culture. These classes are high energy, beat oriented, and are based
                         upon a common pulse known as rhythm!</p>
                     <div class="purchaseClick">
-                        <h4 class="purchaseLink"><a target="_blank"
+                        <a class="purchaseLink" target="_blank"
                                 href="https://app.akadadance.com/customer/login?schoolId=ak603481j">Register</a>
-                        </h4>
                     </div>
                 </div>
             </div>
@@ -341,9 +315,8 @@
                         that inspires movement to express strong emotions, it seeks to connect and entertain through a
                         clear storyline. If you love music with an emotional emphasis this class is for you!</p>
                     <div class="purchaseClick">
-                        <h4 class="purchaseLink"><a target="_blank"
+                        <a class="purchaseLink" target="_blank"
                                 href="https://app.akadadance.com/customer/login?schoolId=ak603481j">Register</a>
-                        </h4>
                     </div>
                 </div>
             </div>
@@ -359,9 +332,8 @@
                         and vocabulary. This is a perfect class to supplement with your child’s dance training, as it
                         gives them a stronger foundation and is guaranteed to increase your child’s athleticism. </p>
                     <div class="purchaseClick">
-                        <h4 class="purchaseLink"><a target="_blank"
+                        <a class="purchaseLink" target="_blank"
                                 href="https://app.akadadance.com/customer/login?schoolId=ak603481j">Register</a>
-                        </h4>
                     </div>
                 </div>
             </div>
@@ -378,9 +350,8 @@
                         ballet and jazz technique that are made just for boys/men and in this class, they will work on
                         just that!</p>
                     <div class="purchaseClick">
-                        <h4 class="purchaseLink"><a target="_blank"
+                        <a class="purchaseLink" target="_blank"
                                 href="https://app.akadadance.com/customer/login?schoolId=ak603481j">Register</a>
-                        </h4>
                     </div>
                 </div>
             </div>
@@ -396,9 +367,8 @@
                         dancing heels, booties, or gogo boots, and let’s light up the dance floor together. Afterward,
                         let’s toast with BYOB wine and get to know our new girl gang!</p>
                     <div class="purchaseClick">
-                        <h4 class="purchaseLink"><a target="_blank"
+                        <a class="purchaseLink" target="_blank"
                                 href="https://app.akadadance.com/customer/login?schoolId=ak603481j">Register</a>
-                        </h4>
                     </div>
                 </div>
             </div>
@@ -416,20 +386,19 @@
                         fun combinations with a variety of both musical theater and current pop songs. Using its upbeat
                         movement, jazz dance emphasizes rhythm, style, lines, and a strong low center of gravity.</p>
                     <div class="purchaseClick">
-                        <h4 class="purchaseLink"><a target="_blank"
+                        <a class="purchaseLink" target="_blank"
                                 href="https://app.akadadance.com/customer/login?schoolId=ak603481j">Register</a>
-                        </h4>
                     </div>
                 </div>
             </div>
         </div>
 
     </div>
-    <script src="/assets/js/jquery.js"></script>
-    <script src="/assets/js/greensock/TweenMax.min.js"></script>
+    <script src="/assets/JS/jquery.js"></script>
+    <script src="/assets/JS/greensock/TweenMax.min.js"></script>
     <script src="/assets/JS/nav.js"></script>
-    <script src="/assets/js/prod.js"></script>
-    <script src="/assets/js/modal.js"></script>
+    <script src="/assets/JS/prod.js"></script>
+    <script src="/assets/JS/modal.js"></script>
     <footer>
         <div class="ohlookSpon amores"></div>
         <div class="linkContainer">
@@ -443,6 +412,8 @@
             </div>
             <div class="footerFlex contactLinks links">
                 <p><a href="contact.html">Contact Us</a></p>
+                <p>1631 W Northwest Hwy, Grapevine, TX 76051</p>
+                <p>(817)421-2825</p>
             </div>
         </div>
     </footer>

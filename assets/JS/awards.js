@@ -7,7 +7,7 @@ $(document).ready(function(){
             //build a scene
     var ourScene = new ScrollMagic.Scene({
         triggerElement: this,
-        duration: '40%'
+        duration: '60%'
     })
     .setClassToggle(this, 'fade-in') //add class to firstpic
     // .addIndicators({

@@ -10,14 +10,14 @@ ul {
 body {
   margin: 0 auto;
   z-index: 1;
-  background-image: url("/assets/images/backgrd3.svg");
+  background-image: url("/assets/Images/backgrd3.svg");
   background-size: cover;
   font-family: 'Lato', sans-serif; }
 
 .navcontainer {
   display: flex;
   flex-direction: row;
-  height: 25vh; }
+  height: 30vh; }
 
 .navlogo {
   flex: 1; }
@@ -31,7 +31,7 @@ body {
   margin: 2%;
   flex: 2;
   border-radius: 15px;
-  background-image: url("/assets/images/news.svg");
+  background-image: url("/assets/Images/news-triple.svg");
   background-size: cover;
   background-position: center; }
 
@@ -46,17 +46,15 @@ body {
   flex: 0.5; }
 
 .navTop:first-child {
-  color: grey;
+  color: #fff;
   font-size: 24px; }
 
 .navTop:not(:first-child) {
-  color: grey;
   font-size: 48px; }
 
 .navSub {
   display: inline-block;
   visibility: hidden;
-  color: grey;
   font-size: 48px;
   margin: 0 2%; }
 
@@ -94,10 +92,10 @@ body {
 .menu {
   z-index: 5;
   position: fixed;
-  background: #101010;
+  background: #5E2590;
   height: 100%;
   width: 100%;
-  top: -110%; }
+  top: -150%; }
 
 .data {
   padding-bottom: 2em;
@@ -123,43 +121,43 @@ footer {
   background: none; }
 
 .passion {
-  background-image: url("/assets/images/passion.svg");
+  background-image: url("/assets/Images/passion.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center; }
 
 .hopsting {
-  background-image: url("/assets/images/hopsting.png");
+  background-image: url("/assets/Images/hopsting.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center; }
 
 .ccare {
-  background-image: url("/assets/images/ccare.png");
+  background-image: url("/assets/Images/ccare.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center; }
 
 .gmemories {
-  background-image: url("/assets/images/memories.jpg");
+  background-image: url("/assets/Images/memories.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center; }
 
 .tamales {
-  background-image: url("/assets/images/tamale.png");
+  background-image: url("/assets/Images/tamale.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center; }
 
 .amores {
-  background-image: url("/assets/images/amores.png");
+  background-image: url("/assets/Images/amores.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center; }
 
 .amigos {
-  background-image: url("/assets/images/amigos.jpg");
+  background-image: url("/assets/Images/amigos.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center; }
@@ -167,13 +165,14 @@ footer {
 .linkContainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
   color: white; }
 
 .footerFlex {
-  flex: 1; }
+  flex: 1;
+  margin: 1%; }
 
 .links a {
   text-decoration: none;
@@ -202,16 +201,27 @@ footer {
   .navSub {
     display: block;
     visibility: visible;
-    font-size: 1.2em; }
-
-  .navnews {
-    flex: 1; } }
-@media all and (max-width: 1024px) {
+    font-size: 1.2em; } }
+@media all and (min-width: 550px) and (max-width: 1024px) {
   .navnews {
     visibility: hidden;
     flex: 1; }
 
   .navlogo {
-    flex: 2; } }
+    flex: 2; }
+
+  .navlogo img {
+    margin: 2% 5%;
+    width: 25em;
+    height: 10em; } }
+@media all and (min-width: 300px) and (max-width: 549px) {
+  .navlogo img {
+    margin: 2% 5%;
+    width: 20em;
+    height: 10em; }
+
+  .navnews {
+    visibility: hidden;
+    flex: 1; } }
 
 /*# sourceMappingURL=main.css.map */

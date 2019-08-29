@@ -1,37 +1,69 @@
 body {
-  font-family: "Montserrat", sans-serif;
-}
+  font-family: 'Montserrat', sans-serif; }
+
+a {
+  display: block;
+  width: 100%;
+  height: 100%; }
+
+.auditionInfo {
+  border: 1px solid white;
+  margin: 2% auto;
+  width: 40vw;
+  background-color: rgba(255, 255, 255, 0.4);
+  background-size: cover;
+  border-radius: 15px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+.auditionInfo h1 {
+  text-shadow: -1px 0 5px #ff0000, 1px 0 5px #ff0000, 0 -1px 5px #ff0000, 0 1px 5px #ff0000;
+  color: white; }
+
+.infoClick {
+  font-size: 1.5em;
+  padding: 0 1%;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: white; }
+  .infoClick a {
+    color: #5E2590; }
+
+.infoClick:hover {
+  background-color: #5E2590;
+  cursor: pointer; }
+  .infoClick:hover a {
+    color: white; }
 
 .latenight {
   background-color: black;
-  background-image: none;
-}
+  background-image: none; }
 
 .lnInfo {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex: 1;
-}
+  flex: 1; }
 
 .lnColumn {
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 15px;
   text-align: center;
   margin: 2%;
-  padding: 0 1%;
-}
+  padding: 0 1%; }
 
 .lnColumn h1 {
   text-shadow: -1px 0 5px #ff0000, 1px 0 5px #ff0000, 0 -1px 5px #ff0000, 0 1px 5px #ff0000;
-  color: white;
-}
+  color: white; }
 
 .lnColumn p {
   flex: 1;
-  color: #B1E4FC;
-}
+  color: #B1E4FC; }
 
 .lnFollow {
   margin: 2%;
@@ -39,16 +71,14 @@ body {
   flex: 1;
   font-size: 3em;
   text-shadow: -1px 0 5px #ff0000, 1px 0 5px #ff0000, 0 -1px 5px #ff0000, 0 1px 5px #ff0000;
-  color: white;
-}
+  color: white; }
 
 .pContainer {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   margin-bottom: 2%;
-  perspective: 600px;
-}
+  perspective: 600px; }
 
 .card {
   width: 30em;
@@ -56,8 +86,7 @@ body {
   position: relative;
   transition: transform 1s;
   transform-style: preserve-3d;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .card-face {
   position: absolute;
@@ -65,8 +94,7 @@ body {
   width: 100%;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  border-radius: 15px;
-}
+  border-radius: 15px; }
 
 .card-back {
   display: flex;
@@ -74,87 +102,69 @@ body {
   color: white;
   transform: rotateY(180deg);
   overflow-y: auto;
-  padding: 2%;
-}
+  padding: 2%; }
 
 .card.is-flipped {
-  transform: rotateY(180deg);
-}
+  transform: rotateY(180deg); }
 
 .card-front {
   display: flex;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .card1-front {
-  background: url("/assets/images/jerry.png");
-  background-size: cover;
-}
+  background: url("/assets/Images/jerry.jpg");
+  background-size: cover; }
 
 .card2-front {
-  background: url("/assets/images/silence.png");
-  background-size: cover;
-}
+  background: url("/assets/Images/evil.jpg");
+  background-size: cover; }
 
 .lateFooter {
   display: flex;
   flex-direction: column;
   background-color: black;
   text-align: center;
-  max-width: 100%;
-}
+  max-width: 100%; }
 
 .hopstingLate {
-  background-image: url("/assets/images/hopstinglate.svg");
+  background-image: url("/assets/Images/hopstinglate.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
-}
+  background-position: center; }
 
 .purchaseClick {
   margin: 1%;
-  padding: 0 1%;
   border: 2px solid white;
   border-radius: 5px;
   text-align: center;
   background-color: white;
-  color: #5E2590;
-}
+  color: #5E2590; }
 
 .purchaseClick:hover {
-  background-color: #5E2590;
-}
-.purchaseClick:hover a {
-  color: white;
-}
+  background-color: #5E2590; }
+  .purchaseClick:hover a {
+    color: white; }
 
-.purchaseLink > a {
+.purchaseLink {
   text-decoration: none;
-  color: #5E2590;
-}
+  color: #5E2590; }
 
 @media all and (max-width: 400px) {
   .lnInfo {
-    flex-direction: column;
-  }
+    flex-direction: column; }
 
   .card {
     width: 18em;
     height: 18em;
-    margin-bottom: 5%;
-  }
-}
+    margin-bottom: 5%; } }
 @media all and (min-width: 401px) and (max-width: 768px) {
   .lnInfo {
-    flex-direction: column;
-  }
+    flex-direction: column; }
 
   .card {
     width: 20em;
     height: 20em;
-    margin-bottom: 5%;
-  }
-}
+    margin-bottom: 5%; } }
 
 /*# sourceMappingURL=latenight.css.map */

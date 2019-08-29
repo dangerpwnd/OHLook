@@ -1,5 +1,4 @@
 body {
-  height: 100vh;
   width: 100vw;
   max-width: 100%; }
 
@@ -87,36 +86,61 @@ h1 {
   color: white; }
 
 .card1-front, .card1-back {
-  background: url("/assets/images/aladdin.png");
+  background: url("/assets/Images/aladdin.png");
   background-size: cover; }
 
 .card2-front, .card2-back {
-  background: url("/assets/images/ella.png");
+  background: url("/assets/Images/ella.png");
   background-size: cover; }
 
 .card3-front, .card3-back {
-  background: url("/assets/images/matilda.png");
+  background: url("/assets/Images/matilda.png");
   background-size: cover; }
 
 .card4-front, .card4-back {
-  background: url("/assets/images/polkadots.png");
+  background: url("/assets/Images/polkadots.png");
   background-size: cover; }
 
 .card5-front, .card5-back {
-  background: url("/assets/images/psycho.png");
+  background: url("/assets/Images/psycho.png");
   background-size: cover; }
 
 .card6-front, .card6-back {
-  background: url("/assets/images/chicago.png");
+  background: url("/assets/Images/chicago.png");
   background-size: cover; }
 
 .card7-front, .card7-back {
-  background: url("/assets/images/disenchanted.png");
+  background: url("/assets/Images/disenchanted.png");
   background-size: cover; }
 
 .card8-front, .card8-back {
-  background: url("/assets/images/jekyll.png");
+  background: url("/assets/Images/jekyll.png");
   background-size: cover; }
+
+.card9-front, .card9-back {
+  background: url("/assets/Images/13.jpg");
+  background-size: cover; }
+
+.card10-front, .card10-back {
+  background: url("/assets/Images/footloose.jpg");
+  background-size: cover; }
+
+.card11-front, .card11-back {
+  background: url("/assets/Images/hansel.jpg");
+  background-size: cover; }
+
+.card-logofront, .card-logoback {
+  background: url("/assets/Images/icons.svg");
+  border: 1px solid black;
+  padding: 1%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.black {
+  margin: 2%;
+  text-align: right;
+  color: black; }
 
 .purchaseClick {
   margin: 1%;
@@ -145,7 +169,7 @@ h1 {
     width: 18em;
     height: 18em;
     margin-bottom: 5%; } }
-@media all and (min-width: 401px) and (max-width: 768px) {
+@media all and (min-width: 300px) and (max-width: 768px) {
   .pContainer, .pContainer2 {
     flex-direction: column;
     justify-content: center;
@@ -157,6 +181,7 @@ h1 {
     margin-bottom: 5%; }
 
   .quicknav {
+    flex-direction: column;
     text-align: center;
     font-size: 0.9em; }
 

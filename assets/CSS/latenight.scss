@@ -2,6 +2,49 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.auditionInfo{
+    border: 1px solid white;
+    margin: 2% auto;
+    width: 40vw;
+    background-color: rgba(255,255,255,0.4);
+    background-size: cover;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+  }
+
+.auditionInfo h1{
+    text-shadow: -1px 0 5px #ff0000, 1px 0 5px #ff0000, 0 -1px 5px #ff0000, 0 1px 5px #ff0000;
+    color: white;
+}
+  
+  .infoClick{
+      font-size: 1.5em;
+      padding: 0 1%;
+      border: 2px solid white;
+      border-radius: 5px;
+      background-color: white;
+      a{color: #5E2590;}
+    }
+    
+    .infoClick:hover{
+      a{color: white;}
+      background-color: #5E2590;
+      cursor: pointer;
+    }
+  
+  
 //body container
 .latenight{
     background-color: black;
@@ -90,12 +133,12 @@ body{
 }
 
 .card1-front{
-    background:url("/assets/images/jerry.png");
+    background:url("/assets/Images/jerry.jpg");
     background-size: cover;
 }
 
 .card2-front {
-    background: url("/assets/images/silence.png");
+    background: url("/assets/Images/evil.jpg");
     background-size: cover;
 }
 //Footer for late night page
@@ -109,7 +152,7 @@ body{
 
 //Hop and sting logo for late night page
 .hopstingLate{
-  background-image: url("/assets/images/hopstinglate.svg");
+  background-image: url("/assets/Images/hopstinglate.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -118,7 +161,7 @@ body{
 //Purchase button for each production
 .purchaseClick{
     margin:1%;
-    padding: 0 1%;
+    // padding: 0 1%;
     border: 2px solid white;
     border-radius: 5px;
     text-align: center;
@@ -131,7 +174,7 @@ body{
     background-color: #5E2590;
   }
   
-  .purchaseLink > a{
+  .purchaseLink{
     text-decoration: none;
     color: #5E2590;
   }

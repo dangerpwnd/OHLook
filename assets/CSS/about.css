@@ -79,51 +79,51 @@
   color: white; }
 
 .biono {
-  background-image: url("/assets/images/icons.svg");
+  background-image: url("/assets/Images/icons.svg");
   background-size: cover; }
 
 .biodir1 {
-  background-image: url("/assets/images/jill.jpg");
+  background-image: url("/assets/Images/jill.jpg");
   background-size: cover; }
 
 .biodir2 {
-  background-image: url("/assets/images/devin.jpg");
+  background-image: url("/assets/Images/devin.jpg");
   background-size: cover; }
 
 .biodir3 {
-  background-image: url("/assets/images/taylor.jpg");
+  background-image: url("/assets/Images/taylor.jpg");
   background-size: cover; }
 
 .biomus1 {
-  background-image: url("/assets/images/kelley.jpg");
+  background-image: url("/assets/Images/kelley.jpg");
   background-size: cover; }
 
 .biomus2 {
-  background-image: url("/assets/images/kristin.jpg");
+  background-image: url("/assets/Images/kristin.jpg");
   background-size: cover; }
 
 .bioinst1 {
-  background-image: url("/assets/images/brittany.jpg");
+  background-image: url("/assets/Images/brittany.jpg");
   background-size: cover; }
 
 .bioinst2 {
-  background-image: url("/assets/images/taylor.png");
+  background-image: url("/assets/Images/taylor.png");
   background-size: cover; }
 
 .bioinst3 {
-  background-image: url("/assets/images/kristin.jpeg");
+  background-image: url("/assets/Images/kristin.jpeg");
   background-size: cover; }
 
 .bioinst4 {
-  background-image: url("/assets/images/roel.jpg");
+  background-image: url("/assets/Images/roel.jpg");
   background-size: cover; }
 
 .bioinst5 {
-  background-image: url("/assets/images/lacey.jpeg");
+  background-image: url("/assets/Images/lacey.jpeg");
   background-size: cover; }
 
 .bioinst6 {
-  background-image: url("/assets/images/barry.jpg");
+  background-image: url("/assets/Images/barry.jpg");
   background-size: cover; }
 
 @media all and (max-width: 768px) {
