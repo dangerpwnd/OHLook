@@ -60,10 +60,10 @@ a{
 
 .panels {
     // Use when also using newsLink at top
-    min-height: 80vh;
-    max-height: 100vh;
+    // min-height: 80vh;
+    // max-height: 100vh;
     // Use when no newsLink at top
-    // min-height: 100vh; 
+    min-height: 100vh; 
     overflow: hidden;
     display: flex;
 }
