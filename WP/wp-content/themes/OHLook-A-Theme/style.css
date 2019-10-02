@@ -11,6 +11,26 @@ Tags:
 Text Domain: ohlook
 */
 
+/*
+  About Line 214
+  Auditions Line 344
+  Awards Line 434
+  Class Line 500
+  Contact Line 846
+  Donate Line 991
+  Grads Line 1052
+  Late Night Line 1109 
+  Masterclass Line 
+  Prod Line
+  Purchase Line
+  Sponsors Line
+  Normalize Line
+  Media Queries Line
+*/
+
+/*
+  Main Sheet
+*/
 *, *:before, *:after {
     box-sizing: inherit; }
   
@@ -27,6 +47,47 @@ Text Domain: ohlook
     background-size: cover;
     font-family: 'Lato', sans-serif; }
   
+    /*Auditions page, need to change to class*/
+  a {
+  text-decoration: none;
+  color: yellow; }
+
+    /*Class page, need to change to class*/
+a {
+  text-decoration: none;
+  color: #5E2590;
+  display: block;
+  width: 100%;
+  height: 100%; }
+
+/*Grads page, need to change to class*/
+
+a {
+  text-decoration: none;
+  color: #00ADEF;
+}
+/*Grads page, need to change to class*/
+a:hover {
+  color: #37AB9C;
+}
+
+/* Class page, need to change to class */
+html {
+  box-sizing: border-box; }
+/* Class page, need to change to class */
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  max-width: 100vw; }
+
+table {
+  width: 50vw;
+  margin: 0 auto; }
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse; }
+
   .navcontainer {
     display: flex;
     flex-direction: row;
@@ -196,7 +257,861 @@ Text Domain: ohlook
   
   .socialLinks {
     align-self: center; }
+
+
+  /* About Page */
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 2%; }
   
+  .quicknav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2%; }
+  
+  .quickitem {
+    text-align: center;
+    flex: 1; }
+  
+  .quickitem a {
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #5E2590; }
+  
+  .aboutInfo {
+    border: 1px solid white;
+    padding: 1%;
+    flex: 1; }
+  
+  .bio-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+    position: relative; }
+  
+  .bio {
+    display: flex;
+    min-height: 15em;
+    max-height: 30em;
+    width: 15em;
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    cursor: pointer; }
+  
+  .transBack {
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 5%; }
+  
+  .bioInfo {
+    visibility: hidden;
+    color: white; }
+  
+  .subTitleInfo {
+    font-size: 1em; }
+  
+  .subInfo {
+    font-size: 0.5em; }
+  
+  .about {
+    background-color: black;
+    color: white; }
+  
+  .directors {
+    background-color: #00ADEF;
+    color: white; }
+  
+  .musicians {
+    background-color: #37AB9C;
+    color: white; }
+  
+  .instructors {
+    background-color: #5E2590;
+    color: white; }
+  
+  .biono {
+    background-image: url("/assets/Images/icons.svg");
+    background-size: cover; }
+  
+  .biodir1 {
+    background-image: url("/assets/Images/jill.jpg");
+    background-size: cover; }
+  
+  .biodir2 {
+    background-image: url("/assets/Images/devin.jpg");
+    background-size: cover; }
+  
+  .biodir3 {
+    background-image: url("/assets/Images/taylor.jpg");
+    background-size: cover; }
+  
+  .biomus1 {
+    background-image: url("/assets/Images/kelley.jpg");
+    background-size: cover; }
+  
+  .biomus2 {
+    background-image: url("/assets/Images/kristin.jpg");
+    background-size: cover; }
+  
+  .bioinst1 {
+    background-image: url("/assets/Images/brittany.jpg");
+    background-size: cover; }
+  
+  .bioinst2 {
+    background-image: url("/assets/Images/taylor.png");
+    background-size: cover; }
+  
+  .bioinst3 {
+    background-image: url("/assets/Images/kristin.jpeg");
+    background-size: cover; }
+  
+  .bioinst4 {
+    background-image: url("/assets/Images/roel.jpg");
+    background-size: cover; }
+  
+  .bioinst5 {
+    background-image: url("/assets/Images/lacey.jpeg");
+    background-size: cover; }
+  
+  .bioinst6 {
+    background-image: url("/assets/Images/barry.jpg");
+    background-size: cover; }  
+
+  /*
+    Audition Page
+  */
+
+    /*Need to rename something more specific*/
+.container {
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column; }
+/*Need to rename something more specific*/
+.subCont {
+  display: flex;
+  justify-content: flex-end; }
+/*Need to rename something more specific*/
+.subCont2 {
+  display: flex;
+  flex-direction: column; }
+/*Need to rename something more specific*/
+.mainInfo {
+  text-align: center;
+  width: 40%;
+  margin: 2%;
+  border: 1px solid white;
+  border-radius: 15px;
+  background-color: rgba(94, 37, 144, 0.8); }
+/*Need to rename something more specific*/
+.main1 {
+  min-height: 50em;
+  background-image: url("/assets/Images/singing1.jpg");
+  background-size: cover;
+  margin: 2%; }
+
+.infoClick {
+  margin: 2%;
+  font-size: 1.5em;
+  padding: 0 1%;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-align: center;
+  background-color: white; }
+  .infoClick a {
+    color: #5E2590; }
+
+.infoClick:hover {
+  background-color: #5E2590;
+  cursor: pointer; }
+  .infoClick:hover a {
+    color: white; }
+
+.content {
+  margin: 1%;
+  padding: 2%;
+  border-radius: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 1em;
+  border-radius: 15px;
+  flex: 1; }
+
+.contentFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
+.picture {
+  padding: 1%;
+  flex: 1; }
+
+.picture > img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 15px; }
+
+.noticeY {
+  color: yellow;
+  font-weight: bold; }
+
+.bold {
+  font-weight: bold; }
+
+/*
+  Awards
+*/
+
+/*Need more specific name*/
+.sitewrap {
+  max-width: 90%;
+  margin: 2% auto;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 1%;
+  border-radius: 15px; }
+
+.sitewrap > h1, h3 {
+  text-align: center; }
+/*Need more specific name*/
+.flexcontainer {
+  display: flex;
+  flex-direction: row; }
+/*Need more specific name*/
+.flexitem {
+  padding: 2%;
+  align-self: center; }
+/*Need more specific name*/
+.pic {
+  border-radius: 15px; }
+
+.align-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 1s ease-out; }
+
+.align-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 1s ease-out; }
+
+.fade-in {
+  opacity: 1;
+  transform: translateX(0); }
+
+/*
+  Class
+*/
+
+.liDots {
+  list-style-type: circle; }
+/* Class page need more specific name */
+.panels {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 100vw;
+  overflow: hidden; }
+/* Class page need more specific name */
+.panel {
+  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+  color: white;
+  text-align: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%); }
+/* Class page need more specific name */
+.tColor .panelTitle {
+  color: #00ADEF; }
+/* Class page need more specific name */
+.panel1 {
+  background-image: url(/assets/Images/dance.jpg);
+  background-size: cover; }
+/* Class page need more specific name */
+.panel2 {
+  background-image: url(/assets/Images/theater1.jpg);
+  background-size: cover; }
+/* Class page need more specific name */
+.panel3 {
+  background-image: url(/assets/Images/xanadu.jpg);
+  background-size: cover; }
+/* Class page need more specific name */
+.panel4 {
+  background-image: url(/assets/Images/masterclass.jpg);
+  background-size: cover; }
+/* Class page need more specific name */
+.panel5 {
+  background-image: url(/assets/Images/charlie.jpg);
+  background-size: cover; }
+/* Class page need more specific name */
+.panel a {
+  text-decoration: none;
+  color: white; }
+/* Class page need more specific name */
+.panel p {
+  text-transform: uppercase;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+  font-size: 5em; }
+/* Class page need more specific name */
+.panelLink {
+  visibility: hidden;
+  margin: auto; }
+/* Class page need more specific name */
+.cHeading {
+  text-align: left;
+  margin-left: 2%;
+  color: white; }
+
+/* Class page need more specific name */
+.pContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  perspective: 6000px;
+  -webkit-perspective: 6000px;
+  -o-perspective: 6000px;
+  -moz-perspective: 6000px; }
+/* Class page need more specific name */
+.card {
+  width: 20em;
+  height: 20em;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 1s;
+  -o-transform-style: preserve-3d;
+  -o-transition: -o-transform 1s;
+  -moz-transform-style: preserve-3d;
+  -moz-transition: -moz-transform 1s;
+  cursor: pointer;
+  margin-bottom: 1%; }
+
+.card-face {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  border-radius: 15px; }
+
+.card-front {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.card-back {
+  display: flex;
+  flex-direction: column;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  overflow-y: auto; }
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg); }
+
+.transCont {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  height: auto;
+  text-align: center;
+  padding: 2%;
+  border-radius: 15px; }
+
+.textC {
+  margin: 2% auto;
+  padding: 2%;
+  text-align: center;
+  width: 80vw;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px; }
+
+.prodLinks {
+  color: white; }
+
+.card-front, .card-back {
+  background: url("/assets/Images/icons.svg");
+  border: 1px solid black;
+  padding: 1%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.purchaseClick {
+  margin: 1%;
+  padding: 0 1%;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-align: center;
+  background-color: white;
+  color: #5E2590; }
+
+.purchaseClick:hover {
+  background-color: #5E2590; }
+  .purchaseClick:hover a {
+    color: white; }
+
+.purchaseLink {
+  text-decoration: none;
+  color: #5E2590;
+  font-weight: bold;
+  font-size: 1.2em; }
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1); }
+
+.modalContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 5%;
+  border-radius: 0.5rem;
+  max-width: 100%;
+  max-height: 100%;
+  overflow-y: auto; }
+
+.modalContent > img {
+  object-fit: contain; }
+
+.modalContent > p {
+  font-size: 1em;
+  color: #5E2590; }
+
+.modalList {
+  font-size: 1em;
+  color: #5E2590;
+  font-weight: bold;
+  margin: 1% 0; }
+
+.modalTitle {
+  font-size: 1.5em;
+  color: #5E2590; }
+
+.closeButton {
+  background: #5E2590;
+  color: #FFFFFF;
+  position: absolute;
+  left: 12px;
+  text-align: center;
+  top: 12px;
+  z-index: 12;
+  text-decoration: none;
+  font-family: Arial;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0 auto;
+  width: 1em;
+  height: 1em;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 5px;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
+  cursor: pointer; }
+
+.closeButton:hover {
+  background-color: #FFFFFF;
+  color: #5E2590; }
+
+.bold {
+  font-weight: bold;
+  color: #5E2590; }
+
+.underline {
+  text-decoration: underline; }
+
+.showModal {
+  opacity: 1;
+  z-index: 11;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s; }
+
+.infoCont {
+  margin: 2%;
+  background: url(/assets/Images/newsbkg.svg);
+  background-size: cover;
+  border-radius: 15px; }
+
+.infoButtons {
+  margin: 5% 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center; }
+
+.infoClick {
+  margin: 2%;
+  font-size: 2.5em;
+  padding: 0 1%;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-align: center;
+  background-color: white;
+  color: #5E2590; }
+
+.infoClick:hover {
+  color: white;
+  background-color: #5E2590;
+  cursor: pointer; }
+
+.registerClick {
+  margin: 2%;
+  font-size: 2.5em;
+  padding: 0 1%;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-align: center;
+  background-color: white;
+  color: #5E2590; }
+
+.registerClick:hover {
+  background-color: #5E2590;
+  cursor: pointer; }
+  .registerClick:hover a {
+    color: white; }
+
+.tripleCont {
+  font-size: 2em; }
+
+.schedContTitle {
+  font-size: 2.5em; }
+
+.center {
+  text-align: center; }
+
+.bold {
+  font-weight: bold;
+  color: #5E2590; }
+
+.underline {
+  text-decoration: underline; }
+
+.wColor {
+  color: white; }
+
+.purchasePolicy {
+  padding: 1%;
+  margin: 1%;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column; }
+
+.registerCont {
+  padding: 1%;
+  margin: 1%;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.infoFlex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+
+/* 
+  Contact
+*/
+
+/*Need more specific name */
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  max-width: 100vw;
+  justify-content: space-evenly; }
+
+.mapFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.contactFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.contactInfo {
+  padding: 1%;
+  margin: 1%;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.5); }
+
+.contactLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; }
+
+.contactTitle {
+  text-align: center;
+  color: #5E2590; }
+
+.contactClick {
+  margin: 1%;
+  padding: 0 1%;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-align: center;
+  background-color: white;
+  color: #5E2590; }
+
+.contactClick:hover {
+  background-color: #5E2590; }
+  .contactClick:hover a {
+    color: white; }
+
+.contactLink > a {
+  text-decoration: none;
+  color: #5E2590; }
+
+.formFlex {
+  list-style-type: none;
+  padding: 0;
+  max-width: 45vw;
+  margin: 0 auto; }
+
+.formFlex li {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center; }
+
+.formFlex > li:not(:last-child) {
+  margin-bottom: 1%; }
+
+.formFlex li label {
+  padding: 0.5%;
+  font-weight: 300;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  flex: 1; }
+
+.formFlex li input {
+  flex: 3;
+  padding: 0.5%; }
+
+.formFlex li textarea {
+  flex: 3;
+  padding: 1%; }
+
+.formFlex li button {
+  margin-left: auto;
+  padding: 1%;
+  background: #5E2590;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 15px;
+  cursor: pointer; }
+
+.formFlex li button:hover {
+  color: #5E2590;
+  background-color: white; }
+
+.success {
+  font-size: 2em;
+  color: #5E2590; }
+
+.hidden {
+  visibility: hidden; }
+
+.bigIcons {
+  margin: 2%;
+  text-align: center;
+  font-size: 3em;
+  color: white; }
+
+.newsLetter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1%;
+  margin: 1%;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #5E2590; }
+
+.newsLetter > form > button {
+  padding: 1%;
+  background: #5E2590;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 5px;
+  cursor: pointer; }
+
+.newsLetter > p {
+  font-weight: bold; }
+
+.newsLetter > form > button:hover {
+  color: #5E2590;
+  background-color: white; }
+
+/*
+  Donate
+*/
+
+.amazonSmile {
+  background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/x-locale/paladin/charitycentral/banner-background-image._CB309675353_.png");
+  width: 300px;
+  height: 250px; }
+/*Need specific name*/
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  max-width: 100vw;
+  justify-content: space-evenly; }
+
+.donateFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.donateInfo {
+  padding: 1%;
+  margin: 1%;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.5); }
+
+.donateInfo > h1, h2 {
+  text-align: center;
+  color: #5E2590; }
+
+.donateClick {
+  margin: 1%;
+  padding: 0 1%;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-align: center;
+  background-color: white;
+  color: #5E2590; }
+
+.donateClick:hover {
+  background-color: #5E2590; }
+  .donateClick:hover a {
+    color: white; }
+
+.donateLink > a {
+  text-decoration: none;
+  color: #5E2590; }
+
+  /*
+    Grads
+  */
+  .bodyGrads {
+    margin: 0 auto;
+    z-index: 1;
+    background-image: url("/assets/Images/backgrd3.svg");
+    background-size: cover;
+  }
+  
+  .gradSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  /*Need more specific*/
+  .info {
+    flex: 1;
+    margin: 5%;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    padding: 2%;
+  }
+  /*Need more specific*/
+  .bold {
+    font-weight: bold;
+    color: #5E2590;
+  }
+  
+  .clickYear {
+    color: #5E2590;
+  }
+  
+  .yearSelect > li {
+    position: relative;
+    visibility: hidden;
+    height: auto;
+    overflow: hidden;
+    font-size: 2em;
+    font-weight: normal;
+    cursor: auto;
+  }
+  
+  .yearSelect > li:first-child {
+    visibility: visible;
+    cursor: pointer;
+    font-size: 3em;
+    font-weight: bold;
+  }
+  
+  .yearSelect > .year {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #5E2590;
+  }
+
+  /*
+    Late Night
+  */
+
+  /*
+    Media Queries
+  */
   @media all and (max-width: 1024px) {
     .menu {
       position: fixed;
@@ -214,7 +1129,126 @@ Text Domain: ohlook
     .navSub {
       display: block;
       visibility: visible;
-      font-size: 1.2em; } }
+      font-size: 1.2em; } 
+    
+      /*
+        Awards
+      */
+
+      .flexcontainer {
+        flex-direction: column; }
+    
+      .orderTop {
+        order: 1; }
+    
+      .orderBottom {
+        order: 2; }
+    
+      .flexitem > img {
+        width: 90vw; } }
+    
+      /*
+        Contact
+      */
+          .mainContainer {
+    flex-direction: column; }
+
+  .mapFlex > iframe {
+    width: 300px;
+    height: 300px; }
+
+  .formFlex > li {
+    flex-direction: column; } 
+    /*Needs specific name -- see current Contact*/
+        .mainContainer {
+      flex-direction: column; }
+
+      .mapFlex > iframe {
+    width: 300px;
+    height: 300px; }
+
+      .formFlex > li {
+    flex-direction: column; } 
+
+
+        /*
+        Grads
+        */
+        .yearSelect > li {
+          position: relative;
+          visibility: hidden;
+          height: auto;
+          overflow: hidden;
+          font-size: 1em;
+          font-weight: normal;
+          cursor: auto;
+        }
+      
+        .yearSelect > li:first-child {
+          visibility: visible;
+          cursor: pointer;
+          font-size: 2em;
+          font-weight: bold;
+        }
+      
+        .yearSelect > .year {
+          font-size: 1.5em;
+          font-weight: bold;
+        }
+    
+  }
+   @media all and (max-width: 768px) {
+     /*
+      Auditions
+     */ 
+        .container {
+          display: flex;
+          flex-direction: column;
+          margin: 2%; }
+      
+        .mainInfo {
+          width: 100%; }
+      
+        .main1 {
+          max-height: 40em;
+          background-position: center; }
+      
+        .contentFlex {
+          flex-direction: column; } 
+
+
+        /*
+          About
+        */
+
+        .mainContainer {
+          flex-direction: column; }
+      
+        .quicknav {
+          flex-direction: column; }
+      
+        .bio {
+          min-height: 12em;
+          max-height: 25em;
+          width: 12em; }
+      
+        .subTitleInfo {
+          font-size: 0.7em; }
+      
+        .subInfo {
+          font-size: 0.4em; }
+        
+          /*
+            Donate
+          */
+          /*Need specific name -- check current donate*/
+        .mainContainer {
+        flex-direction: column; }
+
+        .donateInfo {
+        padding: 3%;
+        margin: 3%; } 
+        }
   @media all and (min-width: 550px) and (max-width: 1024px) {
     .navnews {
       visibility: hidden;
@@ -227,6 +1261,8 @@ Text Domain: ohlook
       margin: 2% 5%;
       width: 25em;
       height: 10em; } }
+    
+
   @media all and (min-width: 300px) and (max-width: 549px) {
     .navlogo img {
       margin: 2% 5%;
@@ -237,3 +1273,37 @@ Text Domain: ohlook
       visibility: hidden;
       flex: 1; } }
   
+
+/* Class */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .panels {
+    align-items: stretch; }
+
+  .panel p {
+    font-size: 4em; }
+
+  .tripleCont {
+    font-size: 1.2em; }
+
+  .panel {
+    font-size: 0.6em; } }
+    /* Class */
+@media only screen and (max-width: 767px) {
+  .panels {
+    align-items: stretch; }
+
+  .panel p {
+    font-size: 2em; }
+
+  .tripleCont {
+    font-size: 1.2em; }
+
+  .panel {
+    font-size: 0.6em; }
+
+  .purchasePolicy {
+    margin: 3%;
+    padding: 3%; }
+
+  .infoButtons {
+    flex-direction: column; } }
