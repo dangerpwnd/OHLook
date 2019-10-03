@@ -86,11 +86,11 @@ h1 {
   color: white; }
 
 .card1-front, .card1-back {
-  background: url("/assets/Images/aladdin.png");
+  background: url("/assets/Images/crucible.jpg");
   background-size: cover; }
 
 .card2-front, .card2-back {
-  background: url("/assets/Images/ella.png");
+  background: url("/assets/Images/christmas.jpg");
   background-size: cover; }
 
 .card3-front, .card3-back {
