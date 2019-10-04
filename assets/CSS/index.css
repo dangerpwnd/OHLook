@@ -3,8 +3,10 @@ a {
     color: white;
 }
 
+
+
 .playFont{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Permanent Marker', cursive;
     color: white;
 }
 
@@ -74,24 +76,146 @@ a {
 
 .indexInfo3{
 
-    background-image: url(/assets/Images/forest.jpg);
+    background-image: url(/assets/Images/darkforest3.jpg);
     background-size: 100% 100%;
+    font-family: 'Creepster', cursive;
+
 }
 
 .indexInfo4{
     background-image: url(/assets/Images/zombiel.jpg);
     background-size: 100% 100%;
+    font-family: 'Creepster', cursive;
 }
 
 .indexInfo1 a, .indexInfo2 a, .indexInfo3 a, .indexInfo4 a{
     flex: 1;
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
 
-.indexNewsButton1{
-    margin: 0 auto;
+.indexInfo1 a:hover, .indexInfo2 a:hover{
+    color: #5E2590;
 }
 
-.indexNewsButton2{
-    margin: 0 auto;
+.indexInfo3 a:hover, .indexInfo4 a:hover{
+    color: red;
+}
+
+@media all and (min-width: 401px) and (max-width: 1024px) {
+
+.indexPanel1, .indexPanel2, .indexPanel3, .indexPanel4{
+    width: 50vw;
+    font-size: 2em;
+    padding-left: 1em;
+}
+
+.indexPanel1{
+        background-color:#5E2590;
+        background-image: none;
+    }
     
+.indexPanel2{
+        background-color: #00ADEF;
+        background-image: none;
+    }
+    
+    
+.indexPanel3{
+        background-color: #37AB9C;
+        background-image: none;
+    }
+    
+    
+.indexPanel4{
+        background-color: black;
+        background-image: none;
+    }
+
+    .indexInfo1, .indexInfo2, .indexInfo3, .indexInfo4{
+        width: 50vw;
+        font-size: 1.9em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .indexInfo1{
+        background-color:#5E2590;
+    }
+    .indexInfo2{
+        background-color:#00ADEF;
+    }
+
+    .indexInfo1 a:focus{
+        color: #00ADEF;
+    }
+
+    .indexInfo2 a:focus{
+        color: #5E2590;
 }
+
+.indexInfo3 a:focus, .indexInfo4 a:focus{
+    color: red;
+}
+
+}
+
+@media all and (max-width: 400px){
+    .indexPanel1, .indexPanel2, .indexPanel3, .indexPanel4{
+        width: 50vw;
+        font-size: 1.5em;
+        padding-left: 1em;
+    }
+    
+    .indexPanel1{
+            background-color:#5E2590;
+            background-image: none;
+        }
+        
+    .indexPanel2{
+            background-color: #00ADEF;
+            background-image: none;
+        }
+        
+        
+    .indexPanel3{
+            background-color: #37AB9C;
+            background-image: none;
+        }
+        
+        
+    .indexPanel4{
+            background-color: black;
+            background-image: none;
+        }
+    
+        .indexInfo1, .indexInfo2, .indexInfo3, .indexInfo4{
+            width: 50vw;
+            font-size: 1.9em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+        .indexInfo1{
+            background-color:#5E2590;
+        }
+        .indexInfo2{
+            background-color:#00ADEF;
+        }
+    
+        .indexInfo1 a:focus{
+            color: #00ADEF;
+        }
+    
+        .indexInfo2 a:focus{
+            color: #5E2590;
+    }
+    
+    .indexInfo3 a:focus, .indexInfo4 a:focus{
+        color: red;
+    }
+}
+
