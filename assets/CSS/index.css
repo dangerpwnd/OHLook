@@ -22,38 +22,50 @@ a {
     display: flex;
     flex-direction: row;
     flex: 1;
-    text-align: center;
+    /* border: 1px solid white; */
 }
 
 .indexPanel1, .indexPanel2, .indexPanel3, .indexPanel4{
-    flex: 1;
-    font-size: 4em;
+    width: 50vw;
+    font-size: 3em;
+    padding-left: 1em;
 }
 
-
 .indexPanel1{
-    background-color: #5E2590; 
+    background-color:#5E2590;
+    background-image: -webkit-linear-gradient( 138deg, #5E2590 0%, #5E2590 50%, #00ADEF 50%, #00ADEF 50%);
+    background-image: linear-gradient( 138deg, #5E2590 0%, #5E2590 50%, #00ADEF 50%, #00ADEF 50%);
 }
 
 .indexPanel2{
     background-color: #00ADEF;
+    background-image: -webkit-linear-gradient( 138deg, #00ADEF 0%, #00ADEF 50%, #37AB9C 50%, #37AB9C 50%);
+    background-image: linear-gradient( 138deg, #00ADEF 0%, #00ADEF 50%, #37AB9C 50%, #37AB9C 50%);
 }
+
 
 .indexPanel3{
     background-color: #37AB9C;
+    background-image: -webkit-linear-gradient( 138deg, #37AB9C 0%, #37AB9C 50%, black 50%, black 50%);
+    background-image: linear-gradient( 138deg, #37AB9C 0%, #37AB9C 50%, black 50%, black 50%);
 }
+
 
 .indexPanel4{
     background-color: black;
+    background-image: -webkit-linear-gradient( 138deg, black 0%, black 50%, #5E2590 50%, #5E2590 50%);
+    background-image: linear-gradient( 138deg, black 0%, black 50%, #5E2590 50%, #5E2590 50%);
 }
 
 .indexInfo1, .indexInfo2, .indexInfo3, .indexInfo4{
-    flex: 2;
-    font-size: 3em;
+    width: 50vw;
+    font-size: 1.9em;
+    display: flex;
+    flex-direction: row;
 }
 
 .indexInfo1{ 
-    background-color: black;   
+    background-color: #00ADEF;   
 }
 
 .indexInfo2{
@@ -61,55 +73,25 @@ a {
 }
 
 .indexInfo3{
-    background-color: #00ADEF;
+
+    background-image: url(/assets/Images/forest.jpg);
+    background-size: 100% 100%;
 }
 
 .indexInfo4{
-    background-color: #5E2590;
+    background-image: url(/assets/Images/zombiel.jpg);
+    background-size: 100% 100%;
 }
 
-.indexInfo1::before{
-    content: "";
-    position: absolute;
-    display: block;
-    border: 2.5em solid #5E2590;
-    z-index: 2;
-    border-left-width: 2em;
-    border-right-color: transparent;
+.indexInfo1 a, .indexInfo2 a, .indexInfo3 a, .indexInfo4 a{
+    flex: 1;
 }
 
-.indexInfo2::before{
-    content: "";
-    position: absolute;
-    display: block;
-    border: 2.5em solid #00ADEF;
-    z-index: 2;
-    border-left-width: 2em;
-    border-right-color: transparent;
+.indexNewsButton1{
+    margin: 0 auto;
 }
 
-.indexInfo3::before{
-    content: "";
-    position: absolute;
-    display: block;
-    border: 2.5em solid #37AB9C;
-    z-index: 2;
-    border-left-width: 2em;
-    border-right-color: transparent;
-}
-
-.indexInfo4::before{
-    content: "";
-    position: absolute;
-    display: block;
-    border: 2.5em solid black;
-    z-index: 2;
-    border-left-width: 1em;
-    border-right-color: transparent;
+.indexNewsButton2{
+    margin: 0 auto;
     
-}
-
-.indexInfo1 p, .indexInfo2 p, .indexInfo3 p, .indexInfo4 p{
-    display: inline-block;
-    margin-left: 4em;
 }
