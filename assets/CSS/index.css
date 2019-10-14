@@ -3,8 +3,6 @@ a {
     color: white;
 }
 
-
-
 .playFont{
     font-family: 'Permanent Marker', cursive;
     color: white;
@@ -23,199 +21,44 @@ a {
 .indexPanel{
     display: flex;
     flex-direction: row;
-    flex: 1;
-    /* border: 1px solid white; */
+    justify-content: center;
 }
 
-.indexPanel1, .indexPanel2, .indexPanel3, .indexPanel4{
-    width: 50vw;
-    font-size: 3em;
-    padding-left: 1em;
-}
-
-.indexPanel1{
-    background-color:#5E2590;
-    background-image: -webkit-linear-gradient( 138deg, #5E2590 0%, #5E2590 50%, #00ADEF 50%, #00ADEF 50%);
-    background-image: linear-gradient( 138deg, #5E2590 0%, #5E2590 50%, #00ADEF 50%, #00ADEF 50%);
-}
-
-.indexPanel2{
-    background-color: #00ADEF;
-    background-image: -webkit-linear-gradient( 138deg, #00ADEF 0%, #00ADEF 50%, #37AB9C 50%, #37AB9C 50%);
-    background-image: linear-gradient( 138deg, #00ADEF 0%, #00ADEF 50%, #37AB9C 50%, #37AB9C 50%);
-}
-
-
-.indexPanel3{
-    background-color: #37AB9C;
-    background-image: -webkit-linear-gradient( 138deg, #37AB9C 0%, #37AB9C 50%, black 50%, black 50%);
-    background-image: linear-gradient( 138deg, #37AB9C 0%, #37AB9C 50%, black 50%, black 50%);
-}
-
-
-.indexPanel4{
-    background-color: black;
-    background-image: -webkit-linear-gradient( 138deg, black 0%, black 50%, #5E2590 50%, #5E2590 50%);
-    background-image: linear-gradient( 138deg, black 0%, black 50%, #5E2590 50%, #5E2590 50%);
-}
-
-.indexInfo1, .indexInfo2, .indexInfo3, .indexInfo4{
-    width: 50vw;
-    font-size: 1.9em;
-    display: flex;
-    flex-direction: row;
-}
-
-.indexInfo1{ 
-    background-color: #00ADEF;   
-}
-
-.indexInfo2{
-    background-color: #37AB9C;
-}
-
-.indexInfo3{
-
-    background-image: url(/assets/Images/darkforest3.jpg);
-    background-size: 100% 100%;
-    font-family: 'Creepster', cursive;
-
-}
-
-.indexInfo4{
-    background-image: url(/assets/Images/zombiel.jpg);
-    background-size: 100% 100%;
-    font-family: 'Creepster', cursive;
-}
-
-.indexInfo1 a, .indexInfo2 a, .indexInfo3 a, .indexInfo4 a{
-    flex: 1;
-    width: 100%;
-    height: 100%;
+.indexPanel h1{
     text-align: center;
+    font-size: 3.5em;
 }
 
-.indexInfo1 a:hover, .indexInfo2 a:hover{
-    color: #5E2590;
+.indexTopNav, .indexBottomNav{
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 3em;
 }
 
-.indexInfo3 a:hover, .indexInfo4 a:hover{
-    color: red;
+.indexTopNav a, .indexBottomNav a{
+    border: 1px solid white;
+    padding: 2%;
 }
+
+.indexLogo{
+    width: 30vw;
+    height: 45vh;
+    background-image: url("/assets/Images/logo.png");
+    background-size: 100% 100%;
+}
+
+
 
 @media all and (min-width: 401px) and (max-width: 1024px) {
 
-.indexPanel1, .indexPanel2, .indexPanel3, .indexPanel4{
-    width: 50vw;
-    font-size: 2em;
-    padding-left: 1em;
-}
 
-.indexPanel1{
-        background-color:#5E2590;
-        background-image: none;
-    }
-    
-.indexPanel2{
-        background-color: #00ADEF;
-        background-image: none;
-    }
-    
-    
-.indexPanel3{
-        background-color: #37AB9C;
-        background-image: none;
-    }
-    
-    
-.indexPanel4{
-        background-color: black;
-        background-image: none;
-    }
-
-    .indexInfo1, .indexInfo2, .indexInfo3, .indexInfo4{
-        width: 50vw;
-        font-size: 1.9em;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .indexInfo1{
-        background-color:#5E2590;
-    }
-    .indexInfo2{
-        background-color:#00ADEF;
-    }
-
-    .indexInfo1 a:focus{
-        color: #00ADEF;
-    }
-
-    .indexInfo2 a:focus{
-        color: #5E2590;
-}
-
-.indexInfo3 a:focus, .indexInfo4 a:focus{
-    color: red;
-}
-
-}
 
 @media all and (max-width: 400px){
-    .indexPanel1, .indexPanel2, .indexPanel3, .indexPanel4{
-        width: 50vw;
-        font-size: 1.5em;
-        padding-left: 1em;
-    }
-    
-    .indexPanel1{
-            background-color:#5E2590;
-            background-image: none;
-        }
-        
-    .indexPanel2{
-            background-color: #00ADEF;
-            background-image: none;
-        }
-        
-        
-    .indexPanel3{
-            background-color: #37AB9C;
-            background-image: none;
-        }
-        
-        
-    .indexPanel4{
-            background-color: black;
-            background-image: none;
-        }
-    
-        .indexInfo1, .indexInfo2, .indexInfo3, .indexInfo4{
-            width: 50vw;
-            font-size: 1.9em;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-    
-        .indexInfo1{
-            background-color:#5E2590;
-        }
-        .indexInfo2{
-            background-color:#00ADEF;
-        }
-    
-        .indexInfo1 a:focus{
-            color: #00ADEF;
-        }
-    
-        .indexInfo2 a:focus{
-            color: #5E2590;
-    }
-    
-    .indexInfo3 a:focus, .indexInfo4 a:focus{
-        color: red;
-    }
+
+
 }
 
