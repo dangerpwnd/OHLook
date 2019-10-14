@@ -8,58 +8,102 @@ a {
     color: white;
 }
 
-.indexContainer{
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: stretch;
-    
-}
+.indexGrid {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    "panel1 logo panel2"
+    "panel3 logo panel4"             
+    "season season season"
+    "panel5 panel6 panel7"
 
-.indexPanel{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
 }
-
 .indexSeason{
-    width: 100vw;
-    height: 40vh;
     background-image: url("/assets/Images/FallProductions.png");
     background-size: 100% 100%;
+    grid-area: season;
 }
 
 .indexSeason h1{
     text-align: center;
     font-size: 3.5em;
-    /* background-color: purple;
-    border: 1px solid white; */
 }
 
-.indexTopNav, .indexBottomNav{
-    text-align: center;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 3em;
-}
-
-.indexTopNav a, .indexBottomNav a{
-    border: 1px solid white;
-    padding: 2%;
-}
 
 .indexLogo{
-    width: 30vw;
-    height: 45vh;
     background-image: url("/assets/Images/logo.png");
     background-size: 100% 100%;
+    grid-area: logo;
 }
 
+  
+.indexPanel {
+    box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+    color: white;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%); 
+    height: 25vh;
+}
+  
+.tColor .panelTitle {
+    color: #00ADEF; 
+}
+  
+.indexPanel1 {
+    background-image: url(/assets/Images/dance.jpg);
+    background-size: cover;
+    grid-area: panel1;
+}
+  
+.indexPanel2 {
+    background-image: url(/assets/Images/theater1.jpg);
+    background-size: cover;
+    grid-area: panel2;
+}
+  
+.indexPanel3 {
+    background-image: url(/assets/Images/xanadu.jpg);
+    background-size: cover; 
+    grid-area: panel3;
+}
+  
+.indexPanel4 {
+    background-image: url(/assets/Images/masterclass.jpg);
+    background-size: cover; 
+    grid-area: panel4;
+}
+  
+.indexPanel5 {
+    background-image: url(/assets/Images/charlie.jpg);
+    background-size: cover;
+    grid-area: panel5;
+}
+.indexPanel6 {
+    background-image: url(/assets/Images/charlie.jpg);
+    background-size: cover;
+    grid-area: panel6;
+}
+.indexPanel7 {
+    background-image: url(/assets/Images/charlie.jpg);
+    background-size: cover;
+    grid-area: panel7;
+}
 
+.panel a {
+    text-decoration: none;
+    color: white; }
+  
+.panel p {
+    text-transform: uppercase;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+    font-size: 5em; }
 
 @media all and (min-width: 401px) and (max-width: 1024px) {
 
