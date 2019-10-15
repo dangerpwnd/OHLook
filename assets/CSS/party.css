@@ -1,0 +1,45 @@
+.partyBG1{
+    background-image: url("/assets/images/dance.jpg");
+    height: 90vh;
+}
+
+.partyBG2{
+    background-image: url("/assets/images/theater1.JPG");
+    height: 100vh;
+}
+
+
+.partyBG3{
+    background-image: url("/assets/images/xanadu.jpg");
+    height: 70vh;
+}
+
+.partyBG1, .partyBG2, .partyBG3{
+    position: relative;
+    opacity: 0.85;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.partyinfo1{
+    background-color: #5E2590;
+}
+
+
+.partyinfo2{
+    background-color: #00ADEF;
+}
+
+.partyinfo3{
+    background-color: #37AB9C;
+}
+
+.partyinfo1, .partyinfo2, .partyinfo3{
+    margin: 0 auto;
+    padding: 1em;
+    position: relative;
+    color: white;
+    text-align: justify;
+}
