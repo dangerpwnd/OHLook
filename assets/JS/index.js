@@ -1,32 +1,58 @@
-	//Animation for index
-	const panels = document.querySelectorAll('.panel');
-	var width = $(window).width();
+//variables
+const panels = document.querySelectorAll(".indexPanel");
+const links = document.querySelectorAll(".indexLink");
+var width = $(window).width();
 
-	function toggleOpen() {
-		this.classList.toggle('open');
-	}
-	function toggleActive(e) {
-		if (e.propertyName.includes('flex')) {
-			this.classList.toggle('open-active');
+//Color toggle animation for panel titles
+function toggleColor() {
+	this.classList.toggle('tColor');
+}
+//Panel navigation animation for mobile/PC
+if (width < 1025) {
+	panels.forEach(function (panel) {
+		var timeLine = new TimelineMax();
+		var tween = timeLine.add(TweenMax.to(panel, 0.5, { filter: "greyscale(0)" }));
+		panel.addEventListener("click", toggleAnimation);
+		timeLine.reverse();
+		function toggleAnimation() {
+			if (timeLine.reversed()) {
+				timeLine.play();
+			}
+			else {
+				timeLine.reverse();
+			}
 		}
 	}
+	)
+	links.forEach(function (link) {
+		link.addEventListener("click", toggleColor);
+	}
+	)
+}
+else {
+	panels.forEach(function (panel) {
+		var timeLine = new TimelineMax();
+		var tween = timeLine.add(TweenMax.to(panel, 0.5, { filter: "greyscale(0)" }));
+		panel.addEventListener("mouseenter", toggleAnimation);
+		panel.addEventListener("mouseleave", toggleAnimation);
+		timeLine.reverse();
+		function toggleAnimation() {
+			if (timeLine.reversed()) {
+				timeLine.play();
+			}
+			else {
+				timeLine.reverse();
+			}
+		}
+	}
+	)
+	links.forEach(function (link) {
+		link.addEventListener("mouseenter", toggleColor);
+		link.addEventListener("mouseleave", toggleColor);
+	}
+	)
+}
 
-	if(width < 1025){
-		// Hover over item to expand and add open class
-		panels.forEach(panel => panel.addEventListener('click', toggleOpen));
-		//Will toggle open-active on flexed items at end of transition
-		panels.forEach(function(panel){
-		if(!panel.className.includes('toggleActive')){
-		panel.addEventListener('transitionend', toggleActive);}})
-	}
-	else{
-		panels.forEach(panel => panel.addEventListener('mouseenter', toggleOpen));
-		panels.forEach(panel => panel.addEventListener('mouseleave', toggleOpen));
-	
-		//Will toggle open-active on flexed items at end of transition
-		panels.forEach(function(panel){
-		if(!panel.className.includes('toggleActive')){
-			panel.addEventListener('transitionend', toggleActive);}})
-	}
-	
-	
+
+
+
