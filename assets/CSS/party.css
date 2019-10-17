@@ -1,16 +1,16 @@
 .partyBG1{
-    background-image: url("/assets/images/dance.jpg");
+    background-image: url("/assets/Images/dance.jpg");
     height: 90vh;
 }
 
 .partyBG2{
-    background-image: url("/assets/images/theater1.JPG");
+    background-image: url("/assets/Images/theater1.jpg");
     height: 100vh;
 }
 
 
 .partyBG3{
-    background-image: url("/assets/images/xanadu.jpg");
+    background-image: url("/assets/Images/xanadu.jpg");
     height: 70vh;
 }
 
