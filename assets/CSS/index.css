@@ -15,14 +15,13 @@
     "season season season"
     "panel5 panel6 panel7";
     overflow: hidden;
-
 }
 
 .indexSeason{
     background-image: url("/assets/Images/FallProductions.png");
     background-size: 100% 100%;
     grid-area: season;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .indexLogo{
@@ -44,6 +43,7 @@
     text-align: center;
     text-transform: uppercase;
     text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+    display: inline-block;
     
 }
 
@@ -53,51 +53,57 @@
     display: block;
     width: 100%;
     height: 100%;
-    font-size: 5em;
+    font-size: 4.5em;
     padding-top: 5%;
- 
+    margin: 0 auto;
 }
   
 .tColor{
     color: #00ADEF; 
 }
-  
+
+.transBack{
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0 1%;
+    border-radius: 10px;
+}
+
 .indexPanel1 {
-    background-image: url(/assets/Images/dance.jpg);
+    background-image: url(/assets/Images/front1.jpg);
     background-size: cover;
     grid-area: panel1;
 }
   
 .indexPanel2 {
-    background-image: url(/assets/Images/theater1.JPG);
+    background-image: url(/assets/Images/dance.jpg);
     background-size: cover;
     grid-area: panel2;
 }
   
 .indexPanel3 {
-    background-image: url(/assets/Images/xanadu.jpg);
+    background-image: url(/assets/Images/front5.jpg);
     background-size: cover; 
     grid-area: panel3;
 }
   
 .indexPanel4 {
-    background-image: url(/assets/Images/masterclass.jpg);
+    background-image: url(/assets/Images/front8.JPG);
     background-size: cover; 
     grid-area: panel4;
 }
   
 .indexPanel5 {
-    background-image: url(/assets/Images/charlie.jpg);
+    background-image: url(/assets/Images/front4.JPG);
     background-size: cover;
     grid-area: panel5;
 }
 .indexPanel6 {
-    background-image: url(/assets/Images/charlie.jpg);
+    background-image: url(/assets/Images/front6.JPG);
     background-size: cover;
     grid-area: panel6;
 }
 .indexPanel7 {
-    background-image: url(/assets/Images/charlie.jpg);
+    background-image: url(/assets/Images/xanadu.jpg);
     background-size: cover;
     grid-area: panel7;
 }
