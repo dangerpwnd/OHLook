@@ -1,5 +1,4 @@
 .partyBG1{
-    /* background-image: url("/assets/Images/dance.jpg"); */
     height: 100vh;
 }
 
@@ -21,7 +20,6 @@
 
 .partyBG1, .partyBG2, .partyBG3{
     position: relative;
-    /* opacity: 0.85; */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -68,4 +66,24 @@
     position: relative;
     color: white;
     text-align: justify;
+}
+
+@media all and (max-width: 1024px){
+    .partyBG1, .partyBG2, .partyBG3{
+        height: 50vh;
+    }
+
+    .partyFlex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .partyinfo1, .partyinfo2, .partyinfo3{
+        text-align: center;
+    }
+
+    .partyFlexList li{
+        margin-bottom: 5px;
+        text-align:justify;
+    }
 }

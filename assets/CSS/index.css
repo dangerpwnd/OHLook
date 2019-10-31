@@ -81,13 +81,13 @@
 }
   
 .indexPanel3 {
-    background-image: url(/assets/Images/front5.jpg);
+    background-image: url(/assets/Images/front5.JPG);
     background-size: cover; 
     grid-area: panel3;
 }
   
 .indexPanel4 {
-    background-image: url(/assets/Images/front8.JPG);
+    background-image: url(/assets/Images/front8.jpg);
     background-size: cover; 
     grid-area: panel4;
 }
