@@ -1,6 +1,6 @@
 .partyBG1{
     /* background-image: url("/assets/Images/dance.jpg"); */
-    height: 90vh;
+    height: 100vh;
 }
 
 .partyBG1 video{
@@ -26,6 +26,27 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.partyFlex{
+    display: flex;
+    justify-content: center;
+}
+
+.partyFlexItem2{
+    flex: 2;
+}
+
+.partyFlexItem1{
+    flex: 1;
+}
+
+.partyFlexASelf{
+    align-self: center;
+}
+
+.partyFlexList li{
+    margin-bottom: 5px;
 }
 
 .partyinfo1{
