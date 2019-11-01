@@ -75,8 +75,6 @@
 
     .partyFlex{
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
     .partyinfo1, .partyinfo2, .partyinfo3{
         text-align: center;
