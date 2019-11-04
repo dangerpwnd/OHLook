@@ -47,15 +47,15 @@ body {
 
 .navTop:first-child {
   color: #fff;
-  font-size: 24px; }
+  font-size: 2em; }
 
 .navTop:not(:first-child) {
-  font-size: 48px; }
+  font-size: 3em; }
 
 .navSub {
   display: inline-block;
   visibility: hidden;
-  font-size: 48px;
+  font-size: 1em;
   margin: 0 2%; }
 
 .navlink {
@@ -192,16 +192,17 @@ footer {
 
   .navTop:first-child {
     color: grey;
-    font-size: 1.3em; }
+    font-size: 1em; }
 
   .navTop:not(:first-child) {
     color: grey;
-    font-size: 1.5em; }
+    font-size: 2em; }
 
   .navSub {
     display: block;
     visibility: visible;
-    font-size: 1.2em; } }
+    font-size: 1em; } 
+  }
 @media all and (min-width: 550px) and (max-width: 1024px) {
   .navnews {
     visibility: hidden;
@@ -212,9 +213,24 @@ footer {
 
   .navlogo img {
     margin: 2% 5%;
-    width: 25em;
-    height: 10em; } }
-@media all and (min-width: 300px) and (max-width: 549px) {
+    width: 30em;
+    height: 15em; } 
+
+    .navTop:first-child {
+      color: grey;
+      font-size: 1em; }
+  
+    .navTop:not(:first-child) {
+      color: grey;
+      font-size: 2em; }
+
+      .navSub {
+        display: block;
+        visibility: visible;
+        font-size: 1em; } 
+      }
+
+@media all and (min-width: 376px) and (max-width: 549px) {
   .navlogo img {
     margin: 2% 5%;
     width: 20em;
@@ -222,5 +238,42 @@ footer {
 
   .navnews {
     visibility: hidden;
-    flex: 1; } }
+    flex: 1; } 
 
+    .navTop:first-child {
+      color: grey;
+      font-size: 1em; }
+  
+    .navTop:not(:first-child) {
+      color: grey;
+      font-size: 2em; }
+      .navSub {
+        display: block;
+        visibility: visible;
+        font-size: 1em; } 
+
+      }
+
+      @media all and (max-width: 375px) {
+        .navlogo img {
+          margin: 2% 5%;
+          width: 15em;
+          height: 10em; }
+      
+        .navnews {
+          visibility: hidden;
+          flex: 1; } 
+      
+          .navTop:first-child {
+            color: grey;
+            font-size: 0.7em; }
+        
+          .navTop:not(:first-child) {
+            color: grey;
+            font-size: 1.7em; }
+            .navSub {
+              display: block;
+              visibility: visible;
+              font-size: 0.7em; } 
+      
+            }
