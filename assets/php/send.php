@@ -23,7 +23,7 @@ $mail->SMTPOptions = array(
     'allow_self_signed' => true
     )
     );
-$mail->SMTPDebug = 0;
+$mail->SMTPDebug = 1;
 //Set the hostname of the mail server
 $mail->Host = 'mail.ohlookperform.com';
 //Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
@@ -54,6 +54,7 @@ EOT;
 
     /* Finally send the mail. */
     $mail->send();
+    
  }
  catch (Exception $e)
  {
