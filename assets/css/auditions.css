@@ -73,7 +73,9 @@ a {
 
 .noticeY {
   color: yellow;
-  font-weight: bold; }
+  font-weight: bold; 
+  font-size: 1.5em; }
+
 
 .bold {
   font-weight: bold; }
@@ -92,5 +94,10 @@ a {
     background-position: center; }
 
   .contentFlex {
-    flex-direction: column; } }
+    flex-direction: column; }
 
+  .noticeY {
+    color: yellow;
+    font-weight: bold; 
+    font-size: 1em; }
+}
