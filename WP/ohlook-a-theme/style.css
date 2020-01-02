@@ -1,0 +1,309 @@
+/*
+    Theme Name: Ohlook-A-Theme
+    Author: Eric Dangerstone
+    Version: 1.0
+*/
+
+*, *:before, *:after {
+    box-sizing: inherit; }
+  
+  *:focus {
+    border: blue 2px dotted; }
+  
+  ul {
+    list-style: none; }
+  
+  body {
+    margin: 0 auto;
+    z-index: 1;
+    background-image: url("./assets/images/backgrd3.svg");
+    background-size: cover;
+    font-family: 'Lato', sans-serif; }
+  
+  .navcontainer {
+    display: flex;
+    flex-direction: row;
+    height: 30vh; }
+  
+  .navlogo {
+    flex: 1; 
+  }
+  
+  .navlogo img {
+    margin: 2% 5%;
+    width: 100%;
+    height: 100%; }
+  
+  .navnews {
+    margin: 2%;
+    flex: 2;
+    border-radius: 15px;
+    background-image: url("./assets/images/news-triple.svg");
+    background-size: cover;
+    background-position: center; }
+  
+  .audnews {
+    margin: 2%;
+    flex: 2;
+    border-radius: 15px;
+    background-image: url("./assets/images/spring2020.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+  }
+  
+  .newsLink {
+    width: 100%;
+    height: 100%;
+    display: block; }
+  
+  .navfirst {
+    display: flex;
+    justify-content: flex-end;
+    flex: 0.5; }
+  
+  .navTop:first-child {
+    color: #fff;
+    font-size: 2em; }
+  
+  .navTop:not(:first-child) {
+    font-size: 3em; }
+  
+  .navSub {
+    display: inline-block;
+    visibility: hidden;
+    font-size: 1em;
+    margin: 0 2%; }
+  
+  .navlink {
+    text-decoration: none;
+    color: #fff; }
+  
+  .navlink:hover {
+    color: grey; }
+  
+  .toggle-btn {
+    position: fixed;
+    margin: 1.4em;
+    padding: 1em;
+    width: 40px;
+    height: 36px;
+    right: 5%;
+    z-index: 6; }
+  
+  .one {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #fff;
+    z-index: 6; }
+  
+  .two {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #fff;
+    margin-top: 12px;
+    z-index: 6; }
+  
+  .menu {
+    z-index: 5;
+    position: fixed;
+    background: #5E2590;
+    height: 100%;
+    width: 100%;
+    top: -150%; }
+  
+  .data {
+    padding-bottom: 2em;
+    text-align: left; }
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #5E2590;
+    text-align: center;
+    max-width: 100%; }
+  
+  .ohlookSpon {
+    height: 8em;
+    margin: 1%; }
+  
+  .ohlookSponL {
+    display: block;
+    width: 100%;
+    height: 100%; }
+  
+  .ohlookSponL:focus {
+    background: none; }
+  
+  .passion {
+    background-image: url("./assets/images/passion.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; }
+  
+  .hopsting {
+    background-image: url("./assets/images/hopsting.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; }
+  
+  .ccare {
+    background-image: url("./assets/images/ccare.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; }
+  
+  .gmemories {
+    background-image: url("./assets/images/memories.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; }
+  
+  .tamales {
+    background-image: url("./assets/images/tamale.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; }
+  
+  .amores {
+    background-image: url("./assets/images/amores.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; }
+  
+  .amigos {
+    background-image: url("./assets/images/amigos.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; }
+  
+  .linkContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: white; }
+  
+  .footerFlex {
+    flex: 1;
+    margin: 1%; }
+  
+  .links a {
+    text-decoration: none;
+    color: white; }
+  
+  .links a:hover {
+    color: #00ADEF; }
+  
+  .socialLinks {
+    align-self: center; }
+  
+@media all and (max-width: 1024px) {
+    .menu {
+      position: fixed;
+      height: 100%;
+      top: -100%; }
+  
+    .navTop:first-child {
+      color: grey;
+      font-size: 1em; }
+  
+    .navTop:not(:first-child) {
+      color: grey;
+      font-size: 2em; }
+  
+    .navSub {
+      display: block;
+      visibility: visible;
+      font-size: 1em; } 
+    }
+@media all and (min-width: 550px) and (max-width: 1024px) {
+    .navnews {
+      visibility: hidden;
+      flex: 1; }
+    
+    .audnews {
+      visibility: hidden;
+      flex: 1; } 
+  
+    .navlogo {
+      flex: 2; }
+  
+    .navlogo img {
+      margin: 2% 5%;
+      width: 30em;
+      height: 15em; } 
+  
+    .navTop:first-child {
+      color: grey;
+      font-size: 1em; }
+    
+    .navTop:not(:first-child) {
+      color: grey;
+      font-size: 2em; }
+  
+    .navSub {
+      display: block;
+      visibility: visible;
+      font-size: 1em; } 
+        }
+  
+@media all and (min-width: 376px) and (max-width: 549px) {
+    .navlogo img {
+      margin: 2% 5%;
+      width: 20em;
+      height: 10em; }
+  
+    .navnews {
+      visibility: hidden;
+      flex: 1; } 
+  
+    .audnews {
+      visibility: hidden;
+      flex: 1; } 
+  
+    .navTop:first-child {
+      color: grey;
+      font-size: 1em; }
+    
+    .navTop:not(:first-child) {
+      color: grey;
+      font-size: 2em; }
+    
+    .navSub {
+      display: block;
+      visibility: visible;
+      font-size: 1em; } 
+  
+    }
+  
+@media all and (max-width: 375px) {
+    .navlogo img {
+      margin: 2% 5%;
+      width: 15em;
+      height: 10em; }
+        
+    .navnews {
+      visibility: hidden;
+      flex: 1; } 
+  
+    .audnews {
+      visibility: hidden;
+      flex: 1; } 
+        
+    .navTop:first-child {
+      color: grey;
+      font-size: 0.7em; }
+          
+    .navTop:not(:first-child) {
+      color: grey;
+      font-size: 1.7em; }
+    .navSub {
+      display: block;
+      visibility: visible;
+      font-size: 0.7em; } 
+        
+              }
+  

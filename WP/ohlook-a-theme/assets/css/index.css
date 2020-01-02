@@ -1,0 +1,143 @@
+
+.playFont{
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+}
+
+.indexGrid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5,20vh);
+    grid-template-areas: 
+    "panel1 news panel2"
+    "panel3 news panel4"             
+    "season season season"
+    "season season season"
+    "panel5 panel6 panel7";
+    overflow: hidden;
+}
+
+.indexSeason{
+    background-image: url(/wp/wordpress/wp-content/themes/ohlook-a-theme/assets/images/2020index.jpg);
+    background-size: 100% 100%;
+    grid-area: season;
+    font-size: 1.5em;
+}
+
+.indexNews{
+    grid-area: news;
+}
+
+  
+.indexPanel {
+    box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+    background-size: cover;
+    background-position: center;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%); 
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+    display: inline-block;
+    
+}
+
+.indexLink{
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 4.5em;
+    padding-top: 5%;
+    margin: 0 auto;
+}
+  
+.tColor{
+    color: #00ADEF; 
+}
+
+.transBack{
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0 1%;
+    border-radius: 10px;
+}
+
+.indexPanel1 {
+    background-image: url(/wp/wordpress/wp-content/themes/ohlook-a-theme/assets/images/front1.jpg);
+    background-size: cover;
+    grid-area: panel1;
+}
+  
+.indexPanel2 {
+    background-image: url(/wp/wordpress/wp-content/themes/ohlook-a-theme/assets/images/dance.jpg);
+    background-size: cover;
+    grid-area: panel2;
+}
+  
+.indexPanel3 {
+    background-image: url(/wp/wordpress/wp-content/themes/ohlook-a-theme/assets/images/front5.JPG);
+    background-size: cover; 
+    grid-area: panel3;
+}
+  
+.indexPanel4 {
+    background-image: url(/wp/wordpress/wp-content/themes/ohlook-a-theme/assets/images/front8.jpg);
+    background-size: cover; 
+    grid-area: panel4;
+}
+  
+.indexPanel5 {
+    background-image: url(/wp/wordpress/wp-content/themes/ohlook-a-theme/assets/images/front4.JPG);
+    background-size: cover;
+    grid-area: panel5;
+}
+.indexPanel6 {
+    background-image: url(/wp/wordpress/wp-content/themes/ohlook-a-theme/assets/images/front6.JPG);
+    background-size: cover;
+    grid-area: panel6;
+}
+.indexPanel7 {
+    background-image: url(/wp/wordpress/wp-content/themes/ohlook-a-theme/assets/images/xanadu.jpg);
+    background-size: cover;
+    grid-area: panel7;
+}
+  
+
+@media all and (max-width: 1024px){
+
+    .indexGrid{
+        grid-template-columns: 100vw;
+        grid-template-rows: repeat(10,20vh);
+        grid-template-areas: 
+        "logo"
+        "logo"
+        "panel1"
+        "panel2" 
+        "panel3"
+        "panel4"             
+        "season"
+        "panel5"
+        "panel6"
+        "panel7";
+    }
+    
+    .indexPanel{
+        -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    filter: grayscale(0%); 
+    }
+
+    .indexLink{
+        font-size: 3em;
+    }
+
+    .indexSeason{
+        font-size: 1.5em;
+    }
+
+}

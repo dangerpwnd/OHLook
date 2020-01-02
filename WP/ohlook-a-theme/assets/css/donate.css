@@ -1,0 +1,53 @@
+.amazonSmile {
+  background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/x-locale/paladin/charitycentral/banner-background-image._CB309675353_.png");
+  width: 300px;
+  height: 250px; }
+
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  max-width: 100vw;
+  justify-content: space-evenly; }
+
+.donateFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.donateInfo {
+  padding: 1%;
+  margin: 1%;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.5); }
+
+.donateInfo > h1, h2 {
+  text-align: center;
+  color: #5E2590; }
+
+.donateClick {
+  margin: 1%;
+  padding: 0 1%;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-align: center;
+  background-color: white;
+  color: #5E2590; }
+
+.donateClick:hover {
+  background-color: #5E2590; }
+  .donateClick:hover a {
+    color: white; }
+
+.donateLink > a {
+  text-decoration: none;
+  color: #5E2590; }
+
+@media all and (max-width: 768px) {
+  .mainContainer {
+    flex-direction: column; }
+
+  .donateInfo {
+    padding: 3%;
+    margin: 3%; } }
+
