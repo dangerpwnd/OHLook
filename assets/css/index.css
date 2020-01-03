@@ -6,56 +6,86 @@
 
 .indexGrid {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(5,20vh);
-    grid-template-areas: 
-    "panel1 logo panel2"
-    "panel3 logo panel4"             
-    "season season season"
-    "season season season"
-    "panel5 panel6 panel7";
-    overflow: hidden;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(8,1fr);
+    grid-template-areas:
+    "panel-front1 panel-frontinfo"
+    "panel-front2 panel-frontinfo"
+    "panel-front3 panel-frontinfo"
+    "panel-front4 pane1-frontinfo"
+    "panel-front5 panel-frontinfo"
+    "panel-front6 panel-frontinfo"
+    "panel-front7 panel-frontinfo"
+    "panel-front8 panel-frontinfo";
+    overflow: visible;
+    width: 100%;
 }
 
-.indexSeason{
-    background-image: url("/assets/Images/2020index.jpg");
-    background-size: 100% 100%;
-    grid-area: season;
-    font-size: 1.5em;
-}
-
-.indexLogo{
-    background-image: url("/assets/Images/logo.png");
-    background-size: 100% 100%;
-    grid-area: logo;
-}
-
-  
 .indexPanel {
     box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
-    background-size: cover;
-    background-position: center;
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    filter: grayscale(100%); 
     color: white;
     text-align: center;
     text-transform: uppercase;
     text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
-    display: inline-block;
-    
+}
+
+
+.panel-front1 {
+    grid-area: panel-front1;   
+    background-color: #5E2590;
+}
+
+.panel-front2 {
+    grid-area: panel-front2;
+    background-color: #00ADEF; 
+}
+
+.panel-front3 {
+    grid-area: panel-front3;
+    background-color: #37AB9C;    
+}
+
+.panel-front4 {
+    grid-area: panel-front4;
+    background-color: black;    
+}
+
+.panel-front5 {
+    grid-area: panel-front5;
+    background-color: #5E2590;    
+}
+
+.panel-front6 {
+    grid-area: panel-front6;
+    background-color: #00ADEF;    
+}
+
+.panel-front7 {
+    grid-area: panel-front7;
+    background-color: #37AB9C;    
+}
+
+.panel-front8 {
+    grid-area: panel-front8;
+    background-color: black;    
+}
+
+.panel-frontinfo {
+    grid-area: panel-frontinfo;
+    background-color: white;
+}
+
+.panel-frontinfo img {
+    /* width: 100%; */
 }
 
 .indexLink{
     text-decoration: none;
     color: white;
     display: block;
-    width: 100%;
-    height: 100%;
-    font-size: 4.5em;
-    padding-top: 5%;
-    margin: 0 auto;
+    /* width: 100%;
+    height: 100%; */
+    font-size: 3.5em;
 }
   
 .tColor{
@@ -68,7 +98,15 @@
     border-radius: 10px;
 }
 
-.indexPanel1 {
+
+/* .indexSeason{
+    background-image: url("/assets/Images/2020index.jpg");
+    background-size: 100% 100%;
+    grid-area: season;
+    font-size: 1.5em;
+}
+
+/* .indexPanel1 {
     background-image: url(/assets/Images/front1.jpg);
     background-size: cover;
     grid-area: panel1;
@@ -106,7 +144,7 @@
     background-image: url(/assets/Images/xanadu.jpg);
     background-size: cover;
     grid-area: panel7;
-}
+} */
   
 
 @media all and (max-width: 1024px){
@@ -126,20 +164,10 @@
         "panel6"
         "panel7";
     }
-    
-    .indexPanel{
-        -webkit-filter: grayscale(0%);
-    -moz-filter: grayscale(0%);
-    -ms-filter: grayscale(0%);
-    filter: grayscale(0%); 
-    }
 
     .indexLink{
         font-size: 3em;
     }
 
-    .indexSeason{
-        font-size: 1.5em;
-    }
 
 }
