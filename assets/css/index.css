@@ -97,70 +97,21 @@
 }
 
 
-/* .indexSeason{
-    background-image: url("/assets/Images/2020index.jpg");
-    background-size: 100% 100%;
-    grid-area: season;
-    font-size: 1.5em;
-}
-
-/* .indexPanel1 {
-    background-image: url(/assets/Images/front1.jpg);
-    background-size: cover;
-    grid-area: panel1;
-}
-  
-.indexPanel2 {
-    background-image: url(/assets/Images/dance.jpg);
-    background-size: cover;
-    grid-area: panel2;
-}
-  
-.indexPanel3 {
-    background-image: url(/assets/Images/front5.JPG);
-    background-size: cover; 
-    grid-area: panel3;
-}
-  
-.indexPanel4 {
-    background-image: url(/assets/Images/front8.jpg);
-    background-size: cover; 
-    grid-area: panel4;
-}
-  
-.indexPanel5 {
-    background-image: url(/assets/Images/front4.JPG);
-    background-size: cover;
-    grid-area: panel5;
-}
-.indexPanel6 {
-    background-image: url(/assets/Images/front6.JPG);
-    background-size: cover;
-    grid-area: panel6;
-}
-.indexPanel7 {
-    background-image: url(/assets/Images/xanadu.jpg);
-    background-size: cover;
-    grid-area: panel7;
-} */
-  
-
 @media all and (max-width: 1024px){
 
     .indexGrid{
         grid-template-columns: 100vw;
-        grid-template-rows: repeat(10,20vh);
+        grid-template-rows: repeat(9,20vh);
         grid-template-areas: 
-        "logo"
-        "logo"
+        "frontinfo"
         "panel1"
-        "panel2" 
-        "panel3"
-        "panel4"             
-        "season"
-        "panel5"
+        "panel2"
+        "panel3" 
+        "panel4"
+        "panel5"           
         "panel6"
-        "panel7";
+        "panel7"
+        "panel8";
     }
 
     .indexLink{
