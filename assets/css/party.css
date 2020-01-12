@@ -70,7 +70,9 @@
 
 @media all and (max-width: 1024px){
     .partyBG1, .partyBG2, .partyBG3{
-        height: 50vh;
+        height:40vh;
+        background-size: cover;
+        background-attachment: scroll;
     }
 
     .partyFlex{
